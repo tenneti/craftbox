@@ -1,0 +1,22 @@
+{
+  "$id": "filmcraft.lighting_instructions.v1",
+  "title": "Per-shot lighting instructions: the shared scene setup and, for each shot, the lights that are on with positions in stage coordinates and metres, for Cinematography, previz and Scene Maker",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "plan_id", "stage", "conventions", "conditions", "scene_setup", "shots", "art_reference", "model_note", "plan_hash"],
+  "properties": {
+    "schema": {"const": "filmcraft.lighting_instructions.v1"},
+    "project_id": {"type": "string"},
+    "scene_id": {"type": "string"},
+    "plan_id": {"type": "string"},
+    "plan_name": {"type": "string"},
+    "stage": {"type": "object", "required": ["width_m", "depth_m"]},
+    "conventions": {"type": "object"},
+    "conditions": {"type": "object"},
+    "scene_setup": {"type": "array", "items": {"type": "object", "required": ["id", "role", "metres", "rotation_deg", "intensity", "color_temp_k"]}},
+    "shots": {"type": "array", "items": {"type": "object", "required": ["shot_id", "beat_id", "camera", "lights"]}},
+    "art_reference": {"type": "object", "required": ["treatment_id", "art_hash"]},
+    "model_note": {"type": "string"},
+    "plan_hash": {"type": "string"},
+    "generated_at": {"type": "string"}
+  }
+}

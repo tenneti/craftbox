@@ -1,0 +1,78 @@
+{
+  "schema": "filmcraft.asset_reference_manifest.v1",
+  "manifest_id": "arm-6aca96d6-1090-4b89-9761-3f64abac4b68",
+  "exported_at": "2026-11-01T16:10:32.273Z",
+  "source": {
+    "application": "craftbox",
+    "version": "0.3.0",
+    "run_id": "6aca96d6-1090-4b89-9761-3f64abac4b68",
+    "experiment_id": "2bec72e1-cd65-4b9c-9ec3-00519800cdf7",
+    "source_status": "current"
+  },
+  "approval": {
+    "status": "approved",
+    "reviewer": "Sample Art Director",
+    "approved_at": "2026-11-01T16:10:32.236Z",
+    "note": "Sample approval"
+  },
+  "overrides": [],
+  "provenance": {
+    "ai_used": false,
+    "source": "local-manual"
+  },
+  "import_policy": {
+    "auto_import": false,
+    "requires_user_confirmation": true,
+    "note": "A Dreambox-owned adapter must validate schema, IDs, hashes and asset rights and stage the import; nothing is imported automatically."
+  },
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "treatment_id": "TR-WARM-NOSTALGIA",
+  "assets": [
+    {
+      "id": "A-001",
+      "name": "Oak grain",
+      "kind": "texture",
+      "sha256": "614c237650eed8b05ca2d8ad79430439c310544dfd90a97364f583250097deb8",
+      "filename": "oak-grain.png",
+      "size_bytes": 74,
+      "mime": "image/png",
+      "source": {
+        "creator": "Sample",
+        "type": "own"
+      },
+      "rights": {
+        "licence": "own work",
+        "owner": "Sample",
+        "status": "cleared"
+      },
+      "usage": {
+        "allowed": [
+          "film"
+        ]
+      },
+      "used_by": [
+        "treatment:TR-WARM-NOSTALGIA"
+      ],
+      "file_present": true,
+      "dreambox_hint": {
+        "library_kind": "texture",
+        "suggested_tags": [
+          "sc-001",
+          "texture",
+          "tr-warm-nostalgia",
+          "warm",
+          "wood"
+        ],
+        "copy_policy": "Reference only. Craftbox never writes to the Dreambox library; an adapter decides whether to copy the file."
+      }
+    }
+  ],
+  "summary": {
+    "assets": 1,
+    "rights_cleared": 1,
+    "rights_open": 0,
+    "missing_from_register": []
+  },
+  "manifest_sha256": "b7027625c080c50e4982e61180e14e72e154faab369cc036db1e6c7e6c612b3f"
+}

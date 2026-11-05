@@ -1,0 +1,99 @@
+{
+  "$id": "filmcraft.direction_plan.v1",
+  "title": "Director's plan for one scene: interpretation, blocking, coverage and shots (Direction Lab)",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "approach", "interpretation", "stage", "blocking", "shots"],
+  "properties": {
+    "schema": {"const": "filmcraft.direction_plan.v1"},
+    "project_id": {"type": "string", "minLength": 1},
+    "scene_id": {"type": "string", "minLength": 1},
+    "fps": {"type": "integer", "minimum": 1, "maximum": 120},
+    "note": {"type": "string"},
+    "approach": {
+      "type": "object",
+      "required": ["id", "name", "avg_shot_seconds"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1}, "summary": {"type": "string"},
+        "avg_shot_seconds": {"type": "number", "minimum": 0.5, "maximum": 60},
+        "intensity_sensitivity": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "source": {"type": "object"},
+    "interpretation": {
+      "type": "object",
+      "required": ["summary", "directorial_intent"],
+      "properties": {
+        "summary": {"type": "string"}, "directorial_intent": {"type": "string"}, "tone": {"type": "string"},
+        "visual_motifs": {"type": "array", "items": {"type": "string"}},
+        "emotional_arc": {"type": "array", "items": {"type": "object", "required": ["beat_id"], "properties": {"beat_id": {"type": "string"}, "emotion": {"type": "string"}, "intensity": {"type": "number", "minimum": 0, "maximum": 10}}}}
+      }
+    },
+    "stage": {
+      "type": "object",
+      "required": ["objects"],
+      "properties": {
+        "width_m": {"type": "number", "minimum": 1}, "depth_m": {"type": "number", "minimum": 1}, "layout_note": {"type": "string"},
+        "objects": {"type": "array", "items": {"type": "object", "required": ["id", "name", "x", "y"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "x": {"type": "number", "minimum": 0, "maximum": 1}, "y": {"type": "number", "minimum": 0, "maximum": 1}}}},
+        "axis": {"type": "object", "properties": {"between": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2}, "note": {"type": "string"}}}
+      }
+    },
+    "blocking": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["beat_id", "characters"],
+        "properties": {
+          "beat_id": {"type": "string"}, "notes": {"type": "string"},
+          "characters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["character_id", "start", "end", "facing"],
+              "properties": {
+                "character_id": {"type": "string"},
+                "start": {"type": "object", "required": ["x", "y"], "properties": {"x": {"type": "number", "minimum": 0, "maximum": 1}, "y": {"type": "number", "minimum": 0, "maximum": 1}}},
+                "end": {"type": "object", "required": ["x", "y"], "properties": {"x": {"type": "number", "minimum": 0, "maximum": 1}, "y": {"type": "number", "minimum": 0, "maximum": 1}}},
+                "path": {"type": "array", "items": {"type": "object", "required": ["x", "y"], "properties": {"x": {"type": "number", "minimum": 0, "maximum": 1}, "y": {"type": "number", "minimum": 0, "maximum": 1}}}},
+                "facing": {"type": "string", "minLength": 1},
+                "posture": {"type": "string"}, "action": {"type": "string"},
+                "eyeline": {"type": "object", "properties": {"target": {"type": "string"}, "note": {"type": "string"}}},
+                "entrance": {"type": ["object", "null"]}, "exit": {"type": ["object", "null"]}
+              }
+            }
+          }
+        }
+      }
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["shot_id", "beat_id", "purpose", "purpose_note", "size", "angle", "movement", "framing", "camera_side", "duration_seconds", "subject", "status"],
+        "properties": {
+          "shot_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+          "beat_id": {"type": "string", "minLength": 1},
+          "covers": {"type": "array", "items": {"type": "string"}},
+          "purpose": {"enum": ["establish", "reveal", "emphasize_emotion", "reaction", "connect", "follow_movement", "insert_detail", "show_distance", "transition", "closure"]},
+          "purpose_note": {"type": "string", "minLength": 8, "maxLength": 400},
+          "size": {"enum": ["ECU", "CU", "MCU", "MS", "MWS", "WS", "EWS"]},
+          "angle": {"enum": ["eye", "low", "high", "dutch", "overhead"]},
+          "movement": {"enum": ["static", "push_in", "pull_out", "pan", "tilt", "track", "handheld", "crane"]},
+          "framing": {"enum": ["single", "two_shot", "over_shoulder", "insert", "wide", "group"]},
+          "camera_side": {"enum": ["A", "B", "axis"]},
+          "axis_cross": {"type": ["object", "boolean", "null"]},
+          "lens_mm": {"type": "number", "minimum": 8, "maximum": 400},
+          "subject": {"type": "array", "items": {"type": "string"}},
+          "duration_seconds": {"type": "number", "minimum": 0.5, "maximum": 120},
+          "transition_in": {"enum": ["cut", "dissolve", "match_cut", "fade", "j_cut", "l_cut", "smash_cut"]},
+          "intensity": {"type": "number", "minimum": 0, "maximum": 10},
+          "status": {"enum": ["proposed", "approved", "rejected", "needs_review"]},
+          "previous_status": {"type": "string"},
+          "review_note": {"type": "string"},
+          "previz": {"type": "object"},
+          "storyboard": {"type": "object"}
+        }
+      }
+    },
+    "analysis": {"type": "object"}
+  }
+}

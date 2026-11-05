@@ -1,0 +1,9 @@
+id,name,kind,status,x,y,scenes,shots,script_lines,states,assets
+P-BOOK,Worn paperback,prop,proposed,0.5,0.12,SC-001,SC-001-S02; SC-001-S04; SC-001-S12; SC-001-S21,SC-001-E02; SC-001-E05; SC-001-E15; SC-001-E23,,
+P-SIGN,CLOSED / OPEN sign,prop,proposed,0.14,0.82,SC-001,SC-001-S03; SC-001-S11; SC-001-S12; SC-001-S22,SC-001-E03; SC-001-E14; SC-001-E15; SC-001-E24,,
+PR-TICKET,Ticket,prop,proposed,,,SC-001,SC-001-S12; SC-001-S18; SC-001-S21,SC-001-E15; SC-001-E20; SC-001-E23,,
+PR-COAT,Coat,prop,proposed,,,SC-001,SC-001-S02,SC-001-E02,,
+PR-LAMP,Lamp,practical,proposed,,,SC-001,SC-001-S01,SC-001-E01,,
+PR-TEA-CUP,Tea cup,personal,proposed,0.72,0.43,SC-001,,,,
+PR-READING-GLASSES,Reading glasses,personal,proposed,0.88,0.2,SC-001,,,,
+PR-FRAMED-PHOTOGRAPH,Framed photograph,personal,proposed,0.28,0.06,SC-001,,,,

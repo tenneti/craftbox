@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Craftbox — independent craft experiments</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brandmark">CB</div><div><strong>Craftbox</strong><small>Try one filmmaking craft at a time. Everything stays on this computer.</small></div></div>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button id="tab-story" role="tab" class="tab active" data-view="story" data-testid="tab-story">Story Lab</button>
+    <button id="tab-lab" role="tab" class="tab" data-view="lab" data-testid="tab-lab">Scene Lab</button>
+    <button id="tab-art" role="tab" class="tab" data-view="art" data-testid="tab-art">Art Lab</button>
+    <button id="tab-lib" role="tab" class="tab" data-view="lib" data-testid="tab-lib">Art Library</button>
+    <button id="tab-light" role="tab" class="tab" data-view="light" data-testid="tab-light">Lighting Lab</button>
+    <button id="tab-new" role="tab" class="tab" data-view="new" data-testid="tab-new">Single craft</button>
+    <button id="tab-history" role="tab" class="tab" data-view="history" data-testid="tab-history">History</button>
+  </nav>
+  <span id="summary" class="summary" aria-live="polite"></span>
+</header>
+<main class="main">
+  <div id="banner" class="banner" role="status" hidden></div>
+  <section id="view-story"><div id="story-mount"></div></section>
+  <section id="view-lab" hidden><div id="lab-mount"></div></section>
+  <section id="view-art" hidden><div id="art-mount"></div></section>
+  <section id="view-lib" hidden><div id="lib-mount"></div></section>
+  <section id="view-light" hidden><div id="light-mount"></div></section>
+  <section id="view-new" hidden><div id="wizard-mount"></div></section>
+  <section id="view-history" hidden>
+    <h1>History</h1>
+    <p class="intro">Every experiment you have saved, newest first. Pick one to see its runs, check that it still gives the same result, compare two runs side by side, or continue working on it in the wizard.</p>
+    <div class="filters">
+      <label>Craft <select id="f-craft"><option value="">All</option></select></label>
+      <label>Approval <select id="f-approval"><option value="">Any</option><option>draft</option><option>review</option><option>approved</option><option>rejected</option><option>exported</option></select></label>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+    <div class="grid">
+      <section class="panel"><h2>Experiments</h2>
+        <table id="exp-table" class="table" aria-label="Experiments"><thead><tr><th>Name</th><th>Craft</th><th>Runs</th><th>Latest</th><th>Created</th></tr></thead><tbody></tbody></table>
+        <p id="exp-empty" class="hint" hidden>Nothing here yet. Go to the <strong>Scene Lab</strong> or <strong>Single craft</strong>, save something, and it will appear here.</p>
+      </section>
+      <section class="panel" id="detail" aria-live="polite"><h2>Details</h2><p class="hint">Select an experiment on the left to see its details.</p></section>
+    </div>
+    <section class="panel" id="compare-panel" hidden><h2>Comparison</h2><div id="compare-body"></div></section>
+  </section>
+</main>
+<script src="/static/ui.js"></script>
+<script src="/static/lab.js"></script>
+<script src="/static/lab-direction.js"></script>
+<script src="/static/story.js"></script>
+<script src="/static/art.js"></script>
+<script src="/static/artlib.js"></script>
+<script src="/static/light.js"></script>
+<script src="/static/main.js"></script>
+</body>
+</html>

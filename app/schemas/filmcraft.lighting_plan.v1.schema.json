@@ -1,0 +1,27 @@
+{
+  "$id": "filmcraft.lighting_plan.v1",
+  "title": "A lighting plan for one scene: conditions, a shared scene setup of lights, per-shot adjustments, analysis and the upstream versions it was made from",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "plan", "conditions", "lights", "adjustments"],
+  "properties": {
+    "schema": {"const": "filmcraft.lighting_plan.v1"},
+    "project_id": {"type": "string", "minLength": 1},
+    "scene_id": {"type": "string", "minLength": 1},
+    "note": {"type": "string"},
+    "plan": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string", "minLength": 1, "maxLength": 120}, "preset": {"type": "string"}, "summary": {"type": "string"}, "intent": {"type": "string"}}},
+    "from_setup": {"type": "object"},
+    "conditions": {"type": "object", "required": ["time_of_day", "weather"], "properties": {
+      "time_of_day": {"enum": ["dawn", "day", "golden_hour", "dusk", "night"]},
+      "weather": {"enum": ["unspecified", "clear", "overcast", "rain", "fog", "snow"]},
+      "mood_words": {"type": "array", "items": {"type": "string"}},
+      "narrative_purpose": {"type": "string"}}},
+    "lights": {"type": "array", "items": {"$ref": "filmcraft.light.v1"}},
+    "adjustments": {"type": "array", "items": {"type": "object", "required": ["id", "shot_id", "changes"], "properties": {
+      "id": {"type": "string", "minLength": 1}, "shot_id": {"type": "string", "minLength": 1}, "reason": {"type": "string"},
+      "changes": {"type": "array", "items": {"type": "object", "required": ["light_id"], "properties": {"light_id": {"type": "string"}}}},
+      "added_lights": {"type": "array", "items": {"$ref": "filmcraft.light.v1"}},
+      "status": {"enum": ["proposed", "approved", "needs_review"]}, "previous_status": {"enum": ["proposed", "approved", "needs_review"]}}}},
+    "source": {"type": "object", "required": ["project_id", "scene_id", "scene_hash", "art"]},
+    "analysis": {"type": "object", "required": ["issues", "metrics", "reading", "shots", "readiness", "plan_hash"]}
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "schema": "filmcraft.blocking.v1",
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "stage": {
+    "axis": {
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "note": "Line between the two main characters; camera side A is the audience (master) side."
+    },
+    "depth_m": 5.0,
+    "layout_note": "Normalised 0-1 plan: x left to right as the master camera sees it, y back wall to audience.",
+    "objects": [
+      {
+        "id": "P-COUNTER",
+        "name": "Counter with till",
+        "x": 0.74,
+        "y": 0.42
+      },
+      {
+        "id": "P-DOOR",
+        "name": "Shop door",
+        "x": 0.08,
+        "y": 0.88
+      },
+      {
+        "id": "P-SHELF",
+        "name": "Crooked shelf of poetry",
+        "x": 0.5,
+        "y": 0.08
+      },
+      {
+        "id": "P-SIGN",
+        "name": "CLOSED / OPEN sign",
+        "x": 0.14,
+        "y": 0.82
+      },
+      {
+        "id": "P-BOOK",
+        "name": "Worn paperback",
+        "x": 0.5,
+        "y": 0.12
+      }
+    ],
+    "width_m": 6.0
+  },
+  "beats": [
+    {
+      "beat_id": "SC-001-B1",
+      "title": "Closing routine",
+      "intensity": 2,
+      "notes": "Intensity 2: distance is kept.",
+      "characters": [
+        {
+          "action": "enters through the door",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.272,
+            "y": 0.56
+          },
+          "entrance": {
+            "from": "P-DOOR"
+          },
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "P-COUNTER"
+          },
+          "facing": "object:P-COUNTER",
+          "path": [
+            {
+              "x": 0.1,
+              "y": 0.88
+            },
+            {
+              "x": 0.186,
+              "y": 0.76
+            },
+            {
+              "x": 0.272,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.1,
+            "y": 0.88
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "P-COUNTER"
+          },
+          "facing": "object:P-COUNTER",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "SC-001-B2",
+      "title": "The returned book",
+      "intensity": 3,
+      "notes": "Intensity 3: distance is kept.",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.308,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.272,
+              "y": 0.56
+            },
+            {
+              "x": 0.308,
+              "y": 0.61
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.272,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "SC-001-B3",
+      "title": "Small cuts",
+      "intensity": 5,
+      "notes": "Intensity 5: distance is kept.",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.38,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.308,
+              "y": 0.61
+            },
+            {
+              "x": 0.38,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.308,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "SC-001-B4",
+      "title": "Open it",
+      "intensity": 7,
+      "notes": "Intensity 7: characters close the distance.",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.452,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.38,
+              "y": 0.56
+            },
+            {
+              "x": 0.452,
+              "y": 0.61
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.38,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "SC-001-B5",
+      "title": "What he kept",
+      "intensity": 8,
+      "notes": "Intensity 8: characters close the distance.",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.448,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.452,
+              "y": 0.61
+            },
+            {
+              "x": 0.448,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.452,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.66,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.66,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "SC-001-B6",
+      "title": "Ask me",
+      "intensity": 10,
+      "notes": "Intensity 10: characters close the distance.",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.52,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.448,
+              "y": 0.56
+            },
+            {
+              "x": 0.52,
+              "y": 0.61
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.448,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.66,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.66,
+              "y": 0.56
+            },
+            {
+              "x": 0.66,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.66,
+            "y": 0.56
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "SC-001-B7",
+      "title": "The sign",
+      "intensity": 6,
+      "notes": "Intensity 6: characters close the distance.",
+      "characters": [
+        {
+          "action": "leaves through the door",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.14,
+            "y": 0.84
+          },
+          "entrance": null,
+          "exit": {
+            "to": "P-DOOR"
+          },
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.52,
+              "y": 0.61
+            },
+            {
+              "x": 0.33,
+              "y": 0.765
+            },
+            {
+              "x": 0.14,
+              "y": 0.84
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.52,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.66,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.66,
+            "y": 0.56
+          }
+        }
+      ]
+    }
+  ]
+}

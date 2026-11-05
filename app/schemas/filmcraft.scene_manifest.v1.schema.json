@@ -1,0 +1,25 @@
+{
+  "$id": "filmcraft.scene_manifest.v1",
+  "title": "Scene manifest prepared for a future Dreambox Scene Maker import adapter",
+  "type": "object",
+  "required": ["schema", "manifest_id", "exported_at", "source", "project", "scene", "characters", "elements", "beats", "blocking", "stage", "approval", "hashes", "provenance", "import_policy", "manifest_sha256"],
+  "properties": {
+    "schema": {"const": "filmcraft.scene_manifest.v1"},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string"},
+    "source": {"type": "object", "required": ["application", "version", "run_id", "experiment_id"]},
+    "project": {"type": "object", "required": ["id", "title"]},
+    "scene": {"type": "object", "required": ["id", "slugline", "fps", "duration_frames"]},
+    "characters": {"type": "array", "items": {"type": "object", "required": ["id", "name"]}},
+    "elements": {"type": "array"},
+    "beats": {"type": "array"},
+    "blocking": {"type": "array"},
+    "stage": {"type": "object"},
+    "approval": {"type": "object", "required": ["status", "reviewer", "approved_at"]},
+    "hashes": {"type": "object", "required": ["scene_hash", "plan_hash"]},
+    "overrides": {"type": "array", "items": {"type": "string"}},
+    "provenance": {"type": "object"},
+    "import_policy": {"type": "object", "required": ["auto_import"]},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "screenwriting",
+  "name": "Screenwriting",
+  "group": "Story & Direction",
+  "description": "Structure scenes, actions, dialogue and story beats",
+  "dreambox_target": "Screenwright / Scene Maker",
+  "mvp": "Import a manually authored scene; validate scene metadata and export a consistent scene contract.",
+  "status": "pilot",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false,
+  "input_schema": "filmcraft.input.screenwriting.v1",
+  "output_schema": "filmcraft.scene.v1",
+  "modes": [
+    {
+      "id": "screenplay",
+      "match_schema": "filmcraft.screenplay.v1",
+      "input_schema": "filmcraft.screenplay.v1",
+      "output_schema": "filmcraft.screenplay.v1"
+    }
+  ]
+}

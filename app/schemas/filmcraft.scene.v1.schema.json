@@ -1,0 +1,18 @@
+{
+  "$id": "filmcraft.scene.v1",
+  "title": "Scene artifact (screenwriting output)",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "slugline", "action", "characters", "dialogue", "fps", "duration_frames"],
+  "properties": {
+    "schema": {"const": "filmcraft.scene.v1"},
+    "project_id": {"type": "string", "minLength": 1},
+    "scene_id": {"type": "string", "minLength": 1},
+    "slugline": {"type": "string", "minLength": 1},
+    "action": {"type": "string", "minLength": 1},
+    "synopsis": {"type": "string"},
+    "characters": {"type": "array", "items": {"type": "object", "required": ["id"], "properties": {"id": {"type": "string", "minLength": 1}, "name": {"type": "string"}}}},
+    "dialogue": {"type": "array", "items": {"type": "object", "required": ["speaker_id"], "properties": {"speaker_id": {"type": "string"}, "text": {"type": "string"}}}},
+    "fps": {"type": "integer", "minimum": 1, "maximum": 120},
+    "duration_frames": {"type": "integer", "minimum": 1}
+  }
+}

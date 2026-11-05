@@ -1,0 +1,32 @@
+{
+  "$id": "filmcraft.shot_manifest.v1",
+  "title": "Shot manifest (coverage, camera and previz metadata) prepared for a future Dreambox Scene Maker import adapter",
+  "type": "object",
+  "required": ["schema", "manifest_id", "exported_at", "source", "project_id", "scene_id", "fps", "approach", "shots", "excluded", "totals", "continuity", "approval", "hashes", "provenance", "import_policy", "manifest_sha256"],
+  "properties": {
+    "schema": {"const": "filmcraft.shot_manifest.v1"},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string"},
+    "source": {"type": "object", "required": ["application", "version", "run_id", "experiment_id"]},
+    "project_id": {"type": "string"}, "scene_id": {"type": "string"},
+    "fps": {"type": "integer", "minimum": 1},
+    "approach": {"type": "object"},
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["shot_id", "order", "beat_id", "purpose", "purpose_note", "size", "angle", "movement", "framing", "camera_side", "start_frame", "duration_frames", "previz", "storyboard"],
+        "properties": {"order": {"type": "integer", "minimum": 1}, "start_frame": {"type": "integer", "minimum": 0}, "duration_frames": {"type": "integer", "minimum": 1}}
+      }
+    },
+    "excluded": {"type": "object"},
+    "totals": {"type": "object", "required": ["shots", "frames", "seconds"]},
+    "continuity": {"type": "object"},
+    "approval": {"type": "object", "required": ["status", "reviewer", "approved_at"]},
+    "hashes": {"type": "object", "required": ["scene_hash", "plan_hash"]},
+    "overrides": {"type": "array", "items": {"type": "string"}},
+    "provenance": {"type": "object"},
+    "import_policy": {"type": "object", "required": ["auto_import"]},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

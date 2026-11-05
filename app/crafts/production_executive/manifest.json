@@ -1,0 +1,12 @@
+{
+  "id": "production_executive",
+  "name": "Production Executive",
+  "group": "Production Operations",
+  "description": "Scheduling, cost forecasts and production dependencies",
+  "dreambox_target": "Production Board",
+  "mvp": "Estimate costs, track resources and build production milestones.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

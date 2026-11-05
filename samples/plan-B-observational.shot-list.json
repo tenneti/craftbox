@@ -1,0 +1,335 @@
+{
+  "schema": "filmcraft.shot_list.v1",
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "fps": 24,
+  "approach": "B — Observational: wide, still, restrained",
+  "total_seconds": 82.5,
+  "shots": [
+    {
+      "shot_id": "SC-001-S01",
+      "order": 1,
+      "status": "approved",
+      "beat_id": "SC-001-B1",
+      "purpose": "establish",
+      "purpose_note": "Establish the room and the two people in it before anything is said (Closing routine). Covers: “Rain ticks on the window. ARJUN counts the till,…”.",
+      "size": "EWS",
+      "angle": "eye",
+      "movement": "static",
+      "framing": "wide",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E01",
+        "SC-001-E02"
+      ],
+      "duration_seconds": 9.0,
+      "start_seconds": 0.0,
+      "transition_in": "fade",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S02",
+      "order": 2,
+      "status": "approved",
+      "beat_id": "SC-001-B2",
+      "purpose": "show_distance",
+      "purpose_note": "Frame Nila and Arjun apart to show the space still between them (The returned book). Covers: “We're closed.”.",
+      "size": "WS",
+      "angle": "eye",
+      "movement": "static",
+      "framing": "two_shot",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E03",
+        "SC-001-E04",
+        "SC-001-E05",
+        "SC-001-E06"
+      ],
+      "duration_seconds": 12.5,
+      "start_seconds": 9.0,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S03",
+      "order": 3,
+      "status": "approved",
+      "beat_id": "SC-001-B3",
+      "purpose": "show_distance",
+      "purpose_note": "Frame Nila and Arjun apart to show the space still between them (Small cuts). Covers: “too lightly”.",
+      "size": "MWS",
+      "angle": "high",
+      "movement": "track",
+      "framing": "two_shot",
+      "camera_side": "A",
+      "lens_mm": 45,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E07",
+        "SC-001-E08",
+        "SC-001-E09",
+        "SC-001-E10"
+      ],
+      "duration_seconds": 11.0,
+      "start_seconds": 21.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S04",
+      "order": 4,
+      "status": "approved",
+      "beat_id": "SC-001-B3",
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (Small cuts). Covers: “You never fixed that shelf.”.",
+      "size": "MS",
+      "angle": "eye",
+      "movement": "static",
+      "framing": "two_shot",
+      "camera_side": "A",
+      "lens_mm": 55,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E11",
+        "SC-001-E12",
+        "SC-001-E13"
+      ],
+      "duration_seconds": 9.5,
+      "start_seconds": 32.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S05",
+      "order": 5,
+      "status": "approved",
+      "beat_id": "SC-001-B4",
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Arjun so the audience reads the feeling directly (Open it). Covers: “Nila. Open it.”.",
+      "size": "MCU",
+      "angle": "low",
+      "movement": "push_in",
+      "framing": "single",
+      "camera_side": "A",
+      "lens_mm": 75,
+      "subjects": [
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E14"
+      ],
+      "duration_seconds": 1.5,
+      "start_seconds": 42.0,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S06",
+      "order": 6,
+      "status": "approved",
+      "beat_id": "SC-001-B4",
+      "purpose": "reveal",
+      "purpose_note": "Reveal what changes the scene: hold on the space as it lands (Open it). Object: ticket. Covers: “She stops. He nods at the book. She opens it. In…”.",
+      "size": "ECU",
+      "angle": "high",
+      "movement": "static",
+      "framing": "insert",
+      "camera_side": "A",
+      "lens_mm": 115,
+      "subjects": [],
+      "covers": [
+        "SC-001-E15"
+      ],
+      "duration_seconds": 5.0,
+      "start_seconds": 43.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S07",
+      "order": 7,
+      "status": "approved",
+      "beat_id": "SC-001-B4",
+      "purpose": "reaction",
+      "purpose_note": "Show Nila taking in what was just said or shown (Open it).",
+      "size": "CU",
+      "angle": "eye",
+      "movement": "static",
+      "framing": "single",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "subjects": [
+        "Nila"
+      ],
+      "covers": [],
+      "duration_seconds": 1.5,
+      "start_seconds": 48.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S08",
+      "order": 8,
+      "status": "approved",
+      "beat_id": "SC-001-B5",
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (What he kept). Covers: “You bought this.”.",
+      "size": "MWS",
+      "angle": "eye",
+      "movement": "push_in",
+      "framing": "two_shot",
+      "camera_side": "A",
+      "lens_mm": 45,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E16",
+        "SC-001-E17"
+      ],
+      "duration_seconds": 7.5,
+      "start_seconds": 50.0,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S09",
+      "order": 9,
+      "status": "approved",
+      "beat_id": "SC-001-B5",
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (What he kept). Covers: “Why tell me now?”.",
+      "size": "WS",
+      "angle": "low",
+      "movement": "static",
+      "framing": "two_shot",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E18",
+        "SC-001-E19"
+      ],
+      "duration_seconds": 6.0,
+      "start_seconds": 57.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S10",
+      "order": 10,
+      "status": "approved",
+      "beat_id": "SC-001-B6",
+      "purpose": "reveal",
+      "purpose_note": "Reveal what changes the scene: hold on the space as it lands (Ask me). Object: ticket. Covers: “Nila folds the ticket along its old crease. Her …”.",
+      "size": "CU",
+      "angle": "eye",
+      "movement": "static",
+      "framing": "insert",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "subjects": [],
+      "covers": [
+        "SC-001-E20"
+      ],
+      "duration_seconds": 3.0,
+      "start_seconds": 63.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S11",
+      "order": 11,
+      "status": "approved",
+      "beat_id": "SC-001-B6",
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Nila so the audience reads the feeling directly (Ask me). Covers: “Ask me.”.",
+      "size": "MS",
+      "angle": "eye",
+      "movement": "push_in",
+      "framing": "single",
+      "camera_side": "A",
+      "lens_mm": 55,
+      "subjects": [
+        "Nila"
+      ],
+      "covers": [
+        "SC-001-E21"
+      ],
+      "duration_seconds": 1.0,
+      "start_seconds": 66.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S12",
+      "order": 12,
+      "status": "approved",
+      "beat_id": "SC-001-B6",
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Arjun so the audience reads the feeling directly (Ask me). Covers: “Stay.”.",
+      "size": "MCU",
+      "angle": "low",
+      "movement": "static",
+      "framing": "single",
+      "camera_side": "A",
+      "lens_mm": 75,
+      "subjects": [
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E22"
+      ],
+      "duration_seconds": 2.0,
+      "start_seconds": 67.5,
+      "transition_in": "cut",
+      "review_note": ""
+    },
+    {
+      "shot_id": "SC-001-S13",
+      "order": 13,
+      "status": "approved",
+      "beat_id": "SC-001-B7",
+      "purpose": "closure",
+      "purpose_note": "Close the scene on Nila and Arjun and leave the question open (The sign). Covers: “She holds his gaze. Doesn't answer. Pockets the …”.",
+      "size": "EWS",
+      "angle": "eye",
+      "movement": "static",
+      "framing": "wide",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "subjects": [
+        "Nila",
+        "Arjun"
+      ],
+      "covers": [
+        "SC-001-E23",
+        "SC-001-E24"
+      ],
+      "duration_seconds": 13.0,
+      "start_seconds": 69.5,
+      "transition_in": "dissolve",
+      "review_note": ""
+    }
+  ]
+}

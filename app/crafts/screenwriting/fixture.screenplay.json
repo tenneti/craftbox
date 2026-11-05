@@ -1,0 +1,589 @@
+{
+  "schema": "filmcraft.screenplay.v1",
+  "project": {
+    "id": "closing-hour",
+    "title": "The Closing Hour",
+    "logline": "On the night before she leaves the city for good, a translator returns a borrowed book to the bookshop owner she once loved, and learns what he kept.",
+    "genre": "Romantic drama",
+    "theme": "What we keep instead of asking for what we want",
+    "story_idea": "Two people who loved each other and never said the one thing that mattered get one quiet closing hour.",
+    "fps": 24
+  },
+  "revision": {
+    "number": 1,
+    "note": "First complete draft of the test scene"
+  },
+  "characters": [
+    {
+      "id": "C-001",
+      "name": "Nila",
+      "role": "Protagonist",
+      "age_range": "early 30s",
+      "description": "A translator, precise with other people's words and careful with her own. Leaving the city at dawn.",
+      "motivation": "To close the chapter with dignity and without being seen to need anyone.",
+      "want": "To return the book and leave unaffected.",
+      "need": "To say aloud what she never said.",
+      "flaw": "Pride; she deflects with precision.",
+      "relationships": [
+        {
+          "character_id": "C-002",
+          "relation": "Former love; she ended it two years ago",
+          "tension": "Unspoken regret on both sides"
+        }
+      ],
+      "emotional_arc": {
+        "start": "Controlled, brisk",
+        "end": "Open, undecided"
+      }
+    },
+    {
+      "id": "C-002",
+      "name": "Arjun",
+      "role": "Deuteragonist",
+      "age_range": "mid 30s",
+      "description": "Runs his late father's bookshop. Hides in routine; keeps things instead of asking for them.",
+      "motivation": "To keep the evening ordinary so that nothing can be lost in it.",
+      "want": "To get through closing time without a scene.",
+      "need": "To ask her to stay.",
+      "flaw": "Fear of asking; he waits to be chosen.",
+      "relationships": [
+        {
+          "character_id": "C-001",
+          "relation": "The one who did not follow her",
+          "tension": "He has rehearsed this meeting for two years"
+        }
+      ],
+      "emotional_arc": {
+        "start": "Casual, guarded",
+        "end": "Exposed, hopeful"
+      }
+    }
+  ],
+  "structure": {
+    "acts": [
+      {
+        "act": 1,
+        "label": "Setup",
+        "purpose": "Introduce the people, the place and what each is hiding."
+      },
+      {
+        "act": 2,
+        "label": "Confrontation",
+        "purpose": "The returned book opens the old wound."
+      },
+      {
+        "act": 3,
+        "label": "Resolution",
+        "purpose": "The question is finally asked; the answer stays open."
+      }
+    ]
+  },
+  "sequences": [
+    {
+      "id": "SEQ-1",
+      "title": "The Returned Book",
+      "act": 2,
+      "summary": "One closing hour in the bookshop.",
+      "scene_ids": [
+        "SC-001"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SC-001",
+      "sequence_id": "SEQ-1",
+      "heading": {
+        "int_ext": "INT.",
+        "location": "Page & Candle Bookshop",
+        "time": "Night"
+      },
+      "synopsis": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it.",
+      "objective": "Nila wants to hand back the book and leave without feeling anything. Arjun wants to get through closing without a scene.",
+      "conflict": "Pride and fear. Each is waiting for the other to speak first, and both are hiding behind small talk.",
+      "turning_point": "Arjun makes her open the book: inside is a train ticket to her city that he bought and never used.",
+      "outcome": "She does not answer his question. She takes the ticket, leaves the book, and turns the sign to OPEN on her way out.",
+      "characters": [
+        "C-001",
+        "C-002"
+      ],
+      "props": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry"
+        },
+        {
+          "id": "P-BOOK",
+          "name": "Worn paperback"
+        },
+        {
+          "id": "P-SIGN",
+          "name": "CLOSED / OPEN sign"
+        }
+      ],
+      "elements": [
+        {
+          "id": "SC-001-E01",
+          "type": "action",
+          "character_id": null,
+          "text": "Rain ticks on the window. ARJUN counts the till, alone, one lamp lit."
+        },
+        {
+          "id": "SC-001-E02",
+          "type": "action",
+          "character_id": null,
+          "text": "The door chimes. NILA enters, shaking rain from her coat, a worn paperback in her hand."
+        },
+        {
+          "id": "SC-001-E03",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "We're closed."
+        },
+        {
+          "id": "SC-001-E04",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "I know. I only need a minute."
+        },
+        {
+          "id": "SC-001-E05",
+          "type": "action",
+          "character_id": null,
+          "text": "She sets the paperback on the counter. He doesn't touch it."
+        },
+        {
+          "id": "SC-001-E06",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "It's yours. I kept it two years. Longer than I meant to."
+        },
+        {
+          "id": "SC-001-E07",
+          "type": "parenthetical",
+          "character_id": "C-002",
+          "text": "too lightly"
+        },
+        {
+          "id": "SC-001-E08",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "You could have mailed it."
+        },
+        {
+          "id": "SC-001-E09",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "Then I wouldn't have had to see the shop."
+        },
+        {
+          "id": "SC-001-E10",
+          "type": "action",
+          "character_id": null,
+          "text": "A pause. The rain fills it. Nila's eyes drift to a crooked shelf of poetry."
+        },
+        {
+          "id": "SC-001-E11",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "You never fixed that shelf."
+        },
+        {
+          "id": "SC-001-E12",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "It leans toward the door. Waiting for someone to leave."
+        },
+        {
+          "id": "SC-001-E13",
+          "type": "action",
+          "character_id": null,
+          "text": "Nila laughs, small, then stops herself. She turns to go."
+        },
+        {
+          "id": "SC-001-E14",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "Nila. Open it."
+        },
+        {
+          "id": "SC-001-E15",
+          "type": "action",
+          "character_id": null,
+          "text": "She stops. He nods at the book. She opens it. Inside: a train ticket to her city, two years old, unused."
+        },
+        {
+          "id": "SC-001-E16",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "You bought this."
+        },
+        {
+          "id": "SC-001-E17",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "The day after you left. I stood on the platform until the train pulled away."
+        },
+        {
+          "id": "SC-001-E18",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "Why tell me now?"
+        },
+        {
+          "id": "SC-001-E19",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "Because you leave at dawn, and I'm still counting the till."
+        },
+        {
+          "id": "SC-001-E20",
+          "type": "action",
+          "character_id": null,
+          "text": "Nila folds the ticket along its old crease. Her hand trembles. His does too."
+        },
+        {
+          "id": "SC-001-E21",
+          "type": "dialogue",
+          "character_id": "C-001",
+          "text": "Ask me."
+        },
+        {
+          "id": "SC-001-E22",
+          "type": "dialogue",
+          "character_id": "C-002",
+          "text": "Stay.",
+          "pause_seconds": 1.5
+        },
+        {
+          "id": "SC-001-E23",
+          "type": "action",
+          "character_id": null,
+          "text": "She holds his gaze. Doesn't answer. Pockets the ticket, leaves the book on the counter, and walks to the door."
+        },
+        {
+          "id": "SC-001-E24",
+          "type": "action",
+          "character_id": null,
+          "text": "At the threshold she stops, turns the CLOSED sign to OPEN, and steps out into the rain, leaving the door ajar."
+        }
+      ],
+      "beats": [
+        {
+          "id": "SC-001-B1",
+          "title": "Closing routine",
+          "role": "setup",
+          "act": 1,
+          "intensity": 2,
+          "emotion": "Quiet routine, then alarm",
+          "description": "Arjun's ordinary evening; Nila's arrival breaks it.",
+          "element_ids": [
+            "SC-001-E01",
+            "SC-001-E02"
+          ],
+          "character_states": {
+            "C-001": "Braced",
+            "C-002": "Guarded calm"
+          }
+        },
+        {
+          "id": "SC-001-B2",
+          "title": "The returned book",
+          "role": "inciting",
+          "act": 1,
+          "intensity": 3,
+          "emotion": "Stiff politeness",
+          "description": "She sets the book down and tries to keep it businesslike.",
+          "element_ids": [
+            "SC-001-E03",
+            "SC-001-E04",
+            "SC-001-E05",
+            "SC-001-E06"
+          ],
+          "character_states": {
+            "C-001": "Controlled",
+            "C-002": "Wary"
+          }
+        },
+        {
+          "id": "SC-001-B3",
+          "title": "Small cuts",
+          "role": "rising",
+          "act": 2,
+          "intensity": 5,
+          "emotion": "Sparring, cracks showing",
+          "description": "Light remarks that are really accusations; the leaning shelf says what neither will.",
+          "element_ids": [
+            "SC-001-E07",
+            "SC-001-E08",
+            "SC-001-E09",
+            "SC-001-E10",
+            "SC-001-E11",
+            "SC-001-E12",
+            "SC-001-E13"
+          ],
+          "character_states": {
+            "C-001": "Stung, deflecting",
+            "C-002": "Hiding behind humour"
+          }
+        },
+        {
+          "id": "SC-001-B4",
+          "title": "Open it",
+          "role": "turning_point",
+          "act": 2,
+          "intensity": 7,
+          "emotion": "Surprise",
+          "description": "As she turns to leave he makes her open the book. The ticket reveals what he kept.",
+          "element_ids": [
+            "SC-001-E14",
+            "SC-001-E15"
+          ],
+          "character_states": {
+            "C-001": "Stopped cold",
+            "C-002": "Committed"
+          }
+        },
+        {
+          "id": "SC-001-B5",
+          "title": "What he kept",
+          "role": "rising",
+          "act": 2,
+          "intensity": 8,
+          "emotion": "Confession",
+          "description": "He admits the day on the platform; she asks why now.",
+          "element_ids": [
+            "SC-001-E16",
+            "SC-001-E17",
+            "SC-001-E18",
+            "SC-001-E19"
+          ],
+          "character_states": {
+            "C-001": "Shaken",
+            "C-002": "Raw"
+          }
+        },
+        {
+          "id": "SC-001-B6",
+          "title": "Ask me",
+          "role": "climax",
+          "act": 3,
+          "intensity": 10,
+          "emotion": "Exposed, hopeful and terrified",
+          "description": "She dares him to ask; he does, in one word.",
+          "element_ids": [
+            "SC-001-E20",
+            "SC-001-E21",
+            "SC-001-E22"
+          ],
+          "character_states": {
+            "C-001": "Open",
+            "C-002": "Exposed"
+          }
+        },
+        {
+          "id": "SC-001-B7",
+          "title": "The sign",
+          "role": "resolution",
+          "act": 3,
+          "intensity": 6,
+          "emotion": "Unresolved; an open door",
+          "description": "No answer, but the sign turns and the door stays ajar.",
+          "element_ids": [
+            "SC-001-E23",
+            "SC-001-E24"
+          ],
+          "character_states": {
+            "C-001": "Undecided",
+            "C-002": "Waiting"
+          }
+        }
+      ]
+    }
+  ],
+  "story": {
+    "pillars": {
+      "setting": "A second-hand bookshop after closing, in the rain, on the last night before Nila leaves the city.",
+      "protagonist_id": "C-001",
+      "antagonist_id": "C-002",
+      "antagonist_note": "Arjun is the obstacle only through his silence. The real antagonist is the pride and fear both carry.",
+      "supporting_ids": [],
+      "core_conflict": "She wants to leave unaffected; he wants to say nothing. Each is protecting themselves from the same rejection.",
+      "plot": "She returns the book, so he makes her open it, so she finds the ticket he kept, so she dares him to ask, so he does, and she must decide what to do with the answer she has not given.",
+      "theme": "What we keep instead of asking for what we want."
+    },
+    "minimal_narrative": {
+      "event_1": "Nila returns the borrowed book in person",
+      "juncture": "but when she turns to leave,",
+      "event_2": "Arjun makes her open it and she finds the ticket he kept"
+    },
+    "master_plot": "voyage_and_return",
+    "breach": {
+      "norm": "Ex-lovers return things by post and avoid each other; closing time is for finishing quietly.",
+      "violation": "She walks in after closing, in person, with the book."
+    },
+    "hook": {
+      "text": "A woman arrives after closing, in the rain, carrying a book she was never meant to return in person.",
+      "element_id": "SC-001-E02"
+    },
+    "defamiliarization": {
+      "technique": "unconventional_sensory_detail",
+      "description": "Their history is told through objects (a leaning shelf, a CLOSED sign, an unused ticket) instead of flashback or exposition."
+    },
+    "empathy": {
+      "vulnerability": "Both are shown guarded and quietly funny before they are exposed; neither begs or wallows.",
+      "distress_risk": "low",
+      "consciousness": "behavioural_only",
+      "target": "broadcast"
+    },
+    "agency": {
+      "choices": [
+        {
+          "text": "Nila returns the book in person instead of mailing it",
+          "cost": "She must face him and the place she is leaving"
+        },
+        {
+          "text": "Arjun makes her open the book",
+          "cost": "He exposes two years of silence"
+        },
+        {
+          "text": "Nila takes the ticket, leaves the book and turns the sign to OPEN without answering",
+          "cost": "She leaves the question unresolved"
+        }
+      ],
+      "luck_note": "Nothing rescues them. Every change comes from a choice."
+    },
+    "conflict": {
+      "unity_of_opposites": "The unreturned book and the shop tie them together; she cannot leave until it is back, and he cannot let it go until the ticket is seen.",
+      "expectation_gaps": [
+        {
+          "beat_id": "SC-001-B3",
+          "action": "Nila jokes to keep control",
+          "reaction": "Arjun answers with the leaning shelf, naming the wait",
+          "stakes": "She can no longer pretend this is only a return"
+        },
+        {
+          "beat_id": "SC-001-B4",
+          "action": "She turns to leave",
+          "reaction": "He stops her with 'Open it'",
+          "stakes": "Silence is no longer safe for either of them"
+        }
+      ],
+      "information_gaps": [
+        {
+          "withheld": "What is inside the book",
+          "reveal_beat_id": "SC-001-B4"
+        },
+        {
+          "withheld": "Why he kept it, and the day on the platform",
+          "reveal_beat_id": "SC-001-B5"
+        }
+      ],
+      "subtext": [
+        {
+          "element_id": "SC-001-E12",
+          "surface": "A remark about a crooked shelf",
+          "unspoken": "I have been waiting for you to leave, and to come back"
+        },
+        {
+          "element_id": "SC-001-E19",
+          "surface": "I'm still counting the till",
+          "unspoken": "I have not moved on"
+        },
+        {
+          "element_id": "SC-001-E22",
+          "surface": "One word: Stay",
+          "unspoken": "Two years of everything unsaid"
+        }
+      ]
+    },
+    "labov": {
+      "abstract": {
+        "text": "Two people who loved each other get one closing hour to say what they never said.",
+        "beat_id": "SC-001-B1"
+      },
+      "orientation": {
+        "text": "A bookshop at night, rain at the window; Arjun closing up; Nila on her last night in the city.",
+        "beat_id": "SC-001-B1"
+      },
+      "complicating_action": {
+        "text": "The book, the shelf, the ticket: each small thing forces a bigger truth.",
+        "beat_id": "SC-001-B3"
+      },
+      "evaluation": {
+        "text": "The ticket shows that silence was the choice both made.",
+        "beat_id": "SC-001-B5"
+      },
+      "resolution": {
+        "text": "She does not answer. She keeps the ticket, leaves the book and turns the sign to OPEN.",
+        "beat_id": "SC-001-B7"
+      },
+      "coda": {
+        "text": "The door left ajar: the question outlives the scene.",
+        "beat_id": "SC-001-B7"
+      }
+    },
+    "circle": {
+      "you": {
+        "text": "Nila, controlled and precise, in her last hour in the city",
+        "beat_id": "SC-001-B1"
+      },
+      "need": {
+        "text": "To finish this without feeling it",
+        "beat_id": "SC-001-B2"
+      },
+      "go": {
+        "text": "She crosses the threshold and puts the book down",
+        "beat_id": "SC-001-B2"
+      },
+      "search": {
+        "text": "Small talk that tests how much is left",
+        "beat_id": "SC-001-B3"
+      },
+      "find": {
+        "text": "The ticket inside the book",
+        "beat_id": "SC-001-B4"
+      },
+      "take": {
+        "text": "The price: admitting he waited and she left",
+        "beat_id": "SC-001-B5"
+      },
+      "return": {
+        "text": "She turns back from the door to face the question",
+        "beat_id": "SC-001-B6"
+      },
+      "change": {
+        "text": "She leaves with the ticket and changes the sign to OPEN",
+        "beat_id": "SC-001-B7"
+      }
+    },
+    "revision": {
+      "feedback": [
+        {
+          "from": "Sample peer note",
+          "note": "The shelf line carries the most subtext; consider trimming the platform line.",
+          "status": "open"
+        }
+      ],
+      "polish": {
+        "prose": true,
+        "tone": true,
+        "word_choice": false,
+        "consistency": true
+      },
+      "simulator": {
+        "question": "What would you do if you were the one who kept the ticket?",
+        "moral_choice": "Is it braver to ask, or to wait to be asked?",
+        "verified": false
+      }
+    }
+  }
+}

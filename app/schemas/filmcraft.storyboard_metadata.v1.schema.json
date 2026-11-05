@@ -1,0 +1,16 @@
+{
+  "$id": "filmcraft.storyboard_metadata.v1",
+  "title": "Per-shot set, palette and prop metadata for storyboard and previz tools (no images are generated)",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "treatment_id", "location", "shots"],
+  "properties": {
+    "schema": {"const": "filmcraft.storyboard_metadata.v1"},
+    "project_id": {"type": "string"}, "scene_id": {"type": "string"}, "treatment_id": {"type": "string"},
+    "location": {"type": "object", "required": ["name", "kind"]},
+    "previz_hint": {"type": "object"},
+    "shots": {
+      "type": "array",
+      "items": {"type": "object", "required": ["shot_id", "palette", "props_visible", "set_objects_in_view"], "properties": {"shot_id": {"type": "string"}, "palette": {"type": "array"}, "props_visible": {"type": "array"}, "set_objects_in_view": {"type": "array"}}}
+    }
+  }
+}

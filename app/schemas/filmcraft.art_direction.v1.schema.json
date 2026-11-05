@@ -1,0 +1,117 @@
+{
+  "$id": "filmcraft.art_direction.v1",
+  "title": "Art direction treatment for one scene: location, set layout, props, visual style and shot variations (Art Direction Lab)",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "treatment", "location", "layout", "props", "style"],
+  "properties": {
+    "schema": {"const": "filmcraft.art_direction.v1"},
+    "project_id": {"type": "string", "minLength": 1},
+    "scene_id": {"type": "string", "minLength": 1},
+    "note": {"type": "string"},
+    "treatment": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$", "maxLength": 40},
+        "name": {"type": "string", "minLength": 1, "maxLength": 120},
+        "summary": {"type": "string"}, "intent": {"type": "string"},
+        "preset": {"type": "string"}
+      }
+    },
+    "location": {
+      "type": "object",
+      "required": ["name", "kind", "setting"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["interior", "exterior"]},
+        "setting": {"enum": ["real", "fictional"]},
+        "description": {"type": "string"},
+        "architecture": {"type": "array", "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string", "minLength": 1}, "description": {"type": "string"}}}},
+        "entrances": {"type": "array", "items": {"type": "object", "required": ["object_id"], "properties": {"object_id": {"type": "string"}, "name": {"type": "string"}, "note": {"type": "string"}}}},
+        "exits": {"type": "array", "items": {"type": "object", "required": ["object_id"], "properties": {"object_id": {"type": "string"}, "name": {"type": "string"}, "note": {"type": "string"}}}},
+        "environment": {"type": "object", "properties": {"time_of_day": {"type": "string"}, "weather": {"type": "string"}, "atmosphere": {"type": "string"}, "sounds": {"type": "string"}}},
+        "details": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "layout": {
+      "type": "object",
+      "required": ["objects"],
+      "properties": {
+        "width_m": {"type": "number", "minimum": 1}, "depth_m": {"type": "number", "minimum": 1}, "note": {"type": "string"},
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "kind", "x", "y", "w", "h"],
+            "properties": {
+              "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+              "name": {"type": "string", "minLength": 1},
+              "kind": {"enum": ["architecture", "furniture", "decor"]},
+              "x": {"type": "number", "minimum": 0, "maximum": 1}, "y": {"type": "number", "minimum": 0, "maximum": 1},
+              "w": {"type": "number", "minimum": 0.01, "maximum": 1}, "h": {"type": "number", "minimum": 0.01, "maximum": 1},
+              "solid": {"type": "boolean"},
+              "material_id": {"type": ["string", "null"]}, "texture_id": {"type": ["string", "null"]},
+              "notes": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "props": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "source", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+          "name": {"type": "string", "minLength": 1},
+          "source": {"enum": ["script", "manual"]},
+          "kind": {"enum": ["prop", "personal", "practical"]},
+          "description": {"type": "string"},
+          "position": {"type": ["object", "null"], "properties": {"x": {"type": "number", "minimum": 0, "maximum": 1}, "y": {"type": "number", "minimum": 0, "maximum": 1}}},
+          "mentions": {"type": "array", "items": {"type": "string"}},
+          "scene_ids": {"type": "array", "items": {"type": "string"}},
+          "shot_ids": {"type": "array", "items": {"type": "string"}},
+          "states": {"type": "array", "items": {"type": "object", "required": ["at_kind", "at_id", "where"], "properties": {"at_kind": {"enum": ["beat", "shot"]}, "at_id": {"type": "string"}, "where": {"type": "string", "minLength": 1}, "note": {"type": "string"}}}},
+          "asset_ids": {"type": "array", "items": {"type": "string"}},
+          "status": {"enum": ["proposed", "approved", "needs_review"]},
+          "previous_status": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "properties": {
+        "profile_ref": {"type": ["object", "null"]},
+        "palette": {"type": "array", "items": {"type": "object", "required": ["id", "name", "hex"], "properties": {"id": {"type": "string"}, "name": {"type": "string", "minLength": 1}, "hex": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"}, "role": {"type": "string"}}}},
+        "textures": {"type": "array", "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string", "minLength": 1}, "description": {"type": "string"}, "asset_id": {"type": ["string", "null"]}}}},
+        "materials": {"type": "array", "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string", "minLength": 1}, "finish": {"type": "string"}, "notes": {"type": "string"}}}},
+        "period": {"type": "object", "properties": {"era": {"type": "string"}, "notes": {"type": "string"}}},
+        "themes": {"type": "array", "items": {"type": "string"}},
+        "mood_words": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "variations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "shot_id", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+          "shot_id": {"type": "string", "minLength": 1},
+          "summary": {"type": "string"},
+          "palette": {"type": "array", "items": {"type": "object", "required": ["id", "name", "hex"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "hex": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"}, "role": {"type": "string"}}}},
+          "hide_prop_ids": {"type": "array", "items": {"type": "string"}},
+          "show_prop_ids": {"type": "array", "items": {"type": "string"}},
+          "note": {"type": "string"},
+          "status": {"enum": ["proposed", "approved", "needs_review"]},
+          "previous_status": {"type": "string"}
+        }
+      }
+    },
+    "asset_ids": {"type": "array", "items": {"type": "string"}},
+    "source": {"type": "object"},
+    "analysis": {"type": "object"}
+  }
+}

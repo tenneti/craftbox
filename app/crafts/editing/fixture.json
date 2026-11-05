@@ -1,0 +1,31 @@
+{
+  "shot_plan": {
+    "schema": "filmcraft.shot_plan.v1",
+    "project_id": "romance-pilot",
+    "scene_id": "SC-001",
+    "fps": 24,
+    "shots": [
+      {
+        "shot_id": "SC-001-A",
+        "scene_id": "SC-001",
+        "shot_type": "EWS",
+        "duration_frames": 192,
+        "lens_mm": 28.0,
+        "camera_movement": "static",
+        "subject": "misty platform establishing",
+        "media_asset_id": null
+      },
+      {
+        "shot_id": "SC-001-B",
+        "scene_id": "SC-001",
+        "shot_type": "CU",
+        "duration_frames": 144,
+        "lens_mm": 50.0,
+        "camera_movement": "slow push",
+        "subject": "traveler listens",
+        "media_asset_id": null
+      }
+    ],
+    "total_frames": 336
+  }
+}

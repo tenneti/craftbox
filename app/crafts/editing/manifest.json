@@ -1,0 +1,14 @@
+{
+  "id": "editing",
+  "name": "Editing",
+  "group": "Post-production",
+  "description": "Edit decision list, rough cut timeline and timing QC",
+  "dreambox_target": "Dreambox Editor",
+  "mvp": "Make sequential timeline metadata from approved shots; media remains externally referenced.",
+  "status": "pilot",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false,
+  "input_schema": "filmcraft.input.editing.v1",
+  "output_schema": "filmcraft.edit_plan.v1"
+}

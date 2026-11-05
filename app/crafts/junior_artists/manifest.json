@@ -1,0 +1,12 @@
+{
+  "id": "junior_artists",
+  "name": "Junior Artists",
+  "group": "Story & Direction",
+  "description": "Extras and crowd character registry, group continuity and permissions",
+  "dreambox_target": "Character Library / Scene Maker",
+  "mvp": "Plan background actor identities, appearance and scene placement.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

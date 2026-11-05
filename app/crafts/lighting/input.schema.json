@@ -1,0 +1,18 @@
+{
+  "$id": "filmcraft.input.lighting.v1",
+  "title": "Lighting input: a processed screenplay, the scene, the art treatment it is lit for, optionally the director's plan, and either a starting preset or saved setup (draft a plan) or an edited plan (validate it)",
+  "type": "object",
+  "required": ["screenplay", "scene_id", "art_direction"],
+  "properties": {
+    "screenplay": {"$ref": "filmcraft.screenplay.v1"},
+    "scene_id": {"type": "string", "minLength": 1},
+    "art_direction": {"$ref": "filmcraft.art_direction.v1"},
+    "direction_plan": {"$ref": "filmcraft.direction_plan.v1"},
+    "preset": {"type": "string"},
+    "plan_name": {"type": "string"},
+    "setup": {"$ref": "filmcraft.lighting_setup.v1"},
+    "light": {"$ref": "filmcraft.lighting_plan.v1"},
+    "source_ref": {"type": "object"},
+    "note": {"type": "string"}
+  }
+}

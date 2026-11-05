@@ -1,0 +1,1029 @@
+{
+  "schema": "filmcraft.scene_manifest.v1",
+  "manifest_id": "scm-37d474a1-9d59-46a3-812c-a87eb1771284",
+  "exported_at": "2026-11-01T14:53:22.958Z",
+  "source": {
+    "application": "craftbox",
+    "version": "0.3.0",
+    "run_id": "37d474a1-9d59-46a3-812c-a87eb1771284",
+    "experiment_id": "7b46a1ef-de8d-4789-8966-471f6f0853fd",
+    "source_status": "current"
+  },
+  "approval": {
+    "status": "approved",
+    "reviewer": "Sample Reviewer",
+    "approved_at": "2026-11-01T14:53:22.921Z",
+    "note": "Sample approval"
+  },
+  "hashes": {
+    "scene_hash": "0f26e814d547b86c",
+    "plan_hash": "8eaa26d6f5d6107d",
+    "screenplay_hash": "e9f8a27777254966"
+  },
+  "overrides": [],
+  "provenance": {
+    "ai_used": false,
+    "source": "local-manual"
+  },
+  "import_policy": {
+    "auto_import": false,
+    "requires_user_confirmation": true,
+    "note": "A Dreambox-owned Scene Maker adapter must validate schema, IDs and hashes and stage the import; nothing is imported automatically."
+  },
+  "project": {
+    "fps": 24,
+    "genre": "Romantic drama",
+    "id": "closing-hour",
+    "logline": "On the night before she leaves the city for good, a translator returns a borrowed book to the bookshop owner she once loved, and learns what he kept.",
+    "story_idea": "Two people who loved each other and never said the one thing that mattered get one quiet closing hour.",
+    "theme": "What we keep instead of asking for what we want",
+    "title": "The Closing Hour"
+  },
+  "scene": {
+    "id": "SC-001",
+    "slugline": "INT. PAGE & CANDLE BOOKSHOP - NIGHT",
+    "heading": {
+      "int_ext": "INT.",
+      "location": "Page & Candle Bookshop",
+      "time": "Night"
+    },
+    "synopsis": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it.",
+    "objective": "Nila wants to hand back the book and leave without feeling anything. Arjun wants to get through closing without a scene.",
+    "conflict": "Pride and fear. Each is waiting for the other to speak first, and both are hiding behind small talk.",
+    "turning_point": "Arjun makes her open the book: inside is a train ticket to her city that he bought and never used.",
+    "outcome": "She does not answer his question. She takes the ticket, leaves the book, and turns the sign to OPEN on her way out.",
+    "fps": 24,
+    "duration_frames": 2016,
+    "estimated_seconds": 84.0,
+    "pacing": {
+      "action_share": 0.532,
+      "dialogue_share": 0.468,
+      "dialogue_words": 89,
+      "dialogue_words_per_minute": 63.6,
+      "label": "slow"
+    },
+    "props": [
+      {
+        "id": "P-COUNTER",
+        "name": "Counter with till"
+      },
+      {
+        "id": "P-DOOR",
+        "name": "Shop door"
+      },
+      {
+        "id": "P-SHELF",
+        "name": "Crooked shelf of poetry"
+      },
+      {
+        "id": "P-BOOK",
+        "name": "Worn paperback"
+      },
+      {
+        "id": "P-SIGN",
+        "name": "CLOSED / OPEN sign"
+      }
+    ]
+  },
+  "characters": [
+    {
+      "age_range": "early 30s",
+      "description": "A translator, precise with other people's words and careful with her own. Leaving the city at dawn.",
+      "emotional_arc": {
+        "end": "Open, undecided",
+        "start": "Controlled, brisk"
+      },
+      "flaw": "Pride; she deflects with precision.",
+      "id": "C-001",
+      "motivation": "To close the chapter with dignity and without being seen to need anyone.",
+      "name": "Nila",
+      "need": "To say aloud what she never said.",
+      "relationships": [
+        {
+          "character_id": "C-002",
+          "relation": "Former love; she ended it two years ago",
+          "tension": "Unspoken regret on both sides"
+        }
+      ],
+      "role": "Protagonist",
+      "want": "To return the book and leave unaffected."
+    },
+    {
+      "age_range": "mid 30s",
+      "description": "Runs his late father's bookshop. Hides in routine; keeps things instead of asking for them.",
+      "emotional_arc": {
+        "end": "Exposed, hopeful",
+        "start": "Casual, guarded"
+      },
+      "flaw": "Fear of asking; he waits to be chosen.",
+      "id": "C-002",
+      "motivation": "To keep the evening ordinary so that nothing can be lost in it.",
+      "name": "Arjun",
+      "need": "To ask her to stay.",
+      "relationships": [
+        {
+          "character_id": "C-001",
+          "relation": "The one who did not follow her",
+          "tension": "He has rehearsed this meeting for two years"
+        }
+      ],
+      "role": "Deuteragonist",
+      "want": "To get through closing time without a scene."
+    }
+  ],
+  "elements": [
+    {
+      "character_id": null,
+      "id": "SC-001-E01",
+      "text": "Rain ticks on the window. ARJUN counts the till, alone, one lamp lit.",
+      "type": "action",
+      "start_seconds": 0.0,
+      "duration_seconds": 4.06
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E02",
+      "text": "The door chimes. NILA enters, shaking rain from her coat, a worn paperback in her hand.",
+      "type": "action",
+      "start_seconds": 4.06,
+      "duration_seconds": 5.0
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E03",
+      "text": "We're closed.",
+      "type": "dialogue",
+      "start_seconds": 9.06,
+      "duration_seconds": 1.09
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E04",
+      "text": "I know. I only need a minute.",
+      "type": "dialogue",
+      "start_seconds": 10.15,
+      "duration_seconds": 2.94
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E05",
+      "text": "She sets the paperback on the counter. He doesn't touch it.",
+      "type": "action",
+      "start_seconds": 13.09,
+      "duration_seconds": 3.44
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E06",
+      "text": "It's yours. I kept it two years. Longer than I meant to.",
+      "type": "dialogue",
+      "start_seconds": 16.53,
+      "duration_seconds": 4.79
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E07",
+      "text": "too lightly",
+      "type": "parenthetical",
+      "start_seconds": 21.32,
+      "duration_seconds": 0.6
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E08",
+      "text": "You could have mailed it.",
+      "type": "dialogue",
+      "start_seconds": 21.92,
+      "duration_seconds": 2.2
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E09",
+      "text": "Then I wouldn't have had to see the shop.",
+      "type": "dialogue",
+      "start_seconds": 24.12,
+      "duration_seconds": 3.68
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E10",
+      "text": "A pause. The rain fills it. Nila's eyes drift to a crooked shelf of poetry.",
+      "type": "action",
+      "start_seconds": 27.8,
+      "duration_seconds": 4.69
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E11",
+      "text": "You never fixed that shelf.",
+      "type": "dialogue",
+      "start_seconds": 32.49,
+      "duration_seconds": 2.2
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E12",
+      "text": "It leans toward the door. Waiting for someone to leave.",
+      "type": "dialogue",
+      "start_seconds": 34.69,
+      "duration_seconds": 4.05
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E13",
+      "text": "Nila laughs, small, then stops herself. She turns to go.",
+      "type": "action",
+      "start_seconds": 38.74,
+      "duration_seconds": 3.12
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E14",
+      "text": "Nila. Open it.",
+      "type": "dialogue",
+      "start_seconds": 41.86,
+      "duration_seconds": 1.46
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E15",
+      "text": "She stops. He nods at the book. She opens it. Inside: a train ticket to her city, two years old, unused.",
+      "type": "action",
+      "start_seconds": 43.32,
+      "duration_seconds": 6.56
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E16",
+      "text": "You bought this.",
+      "type": "dialogue",
+      "start_seconds": 49.88,
+      "duration_seconds": 1.46
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E17",
+      "text": "The day after you left. I stood on the platform until the train pulled away.",
+      "type": "dialogue",
+      "start_seconds": 51.34,
+      "duration_seconds": 5.91
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E18",
+      "text": "Why tell me now?",
+      "type": "dialogue",
+      "start_seconds": 57.25,
+      "duration_seconds": 1.83
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E19",
+      "text": "Because you leave at dawn, and I'm still counting the till.",
+      "type": "dialogue",
+      "start_seconds": 59.08,
+      "duration_seconds": 4.42
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E20",
+      "text": "Nila folds the ticket along its old crease. Her hand trembles. His does too.",
+      "type": "action",
+      "start_seconds": 63.5,
+      "duration_seconds": 4.38
+    },
+    {
+      "character_id": "C-001",
+      "id": "SC-001-E21",
+      "text": "Ask me.",
+      "type": "dialogue",
+      "start_seconds": 67.88,
+      "duration_seconds": 1.09
+    },
+    {
+      "character_id": "C-002",
+      "id": "SC-001-E22",
+      "pause_seconds": 1.5,
+      "text": "Stay.",
+      "type": "dialogue",
+      "start_seconds": 68.97,
+      "duration_seconds": 2.22
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E23",
+      "text": "She holds his gaze. Doesn't answer. Pockets the ticket, leaves the book on the counter, and walks to the door.",
+      "type": "action",
+      "start_seconds": 71.19,
+      "duration_seconds": 6.25
+    },
+    {
+      "character_id": null,
+      "id": "SC-001-E24",
+      "text": "At the threshold she stops, turns the CLOSED sign to OPEN, and steps out into the rain, leaving the door ajar.",
+      "type": "action",
+      "start_seconds": 77.44,
+      "duration_seconds": 6.56
+    }
+  ],
+  "beats": [
+    {
+      "act": 1,
+      "character_states": {
+        "C-001": "Braced",
+        "C-002": "Guarded calm"
+      },
+      "description": "Arjun's ordinary evening; Nila's arrival breaks it.",
+      "element_ids": [
+        "SC-001-E01",
+        "SC-001-E02"
+      ],
+      "emotion": "Quiet routine, then alarm",
+      "id": "SC-001-B1",
+      "intensity": 2,
+      "role": "setup",
+      "title": "Closing routine"
+    },
+    {
+      "act": 1,
+      "character_states": {
+        "C-001": "Controlled",
+        "C-002": "Wary"
+      },
+      "description": "She sets the book down and tries to keep it businesslike.",
+      "element_ids": [
+        "SC-001-E03",
+        "SC-001-E04",
+        "SC-001-E05",
+        "SC-001-E06"
+      ],
+      "emotion": "Stiff politeness",
+      "id": "SC-001-B2",
+      "intensity": 3,
+      "role": "inciting",
+      "title": "The returned book"
+    },
+    {
+      "act": 2,
+      "character_states": {
+        "C-001": "Stung, deflecting",
+        "C-002": "Hiding behind humour"
+      },
+      "description": "Light remarks that are really accusations; the leaning shelf says what neither will.",
+      "element_ids": [
+        "SC-001-E07",
+        "SC-001-E08",
+        "SC-001-E09",
+        "SC-001-E10",
+        "SC-001-E11",
+        "SC-001-E12",
+        "SC-001-E13"
+      ],
+      "emotion": "Sparring, cracks showing",
+      "id": "SC-001-B3",
+      "intensity": 5,
+      "role": "rising",
+      "title": "Small cuts"
+    },
+    {
+      "act": 2,
+      "character_states": {
+        "C-001": "Stopped cold",
+        "C-002": "Committed"
+      },
+      "description": "As she turns to leave he makes her open the book. The ticket reveals what he kept.",
+      "element_ids": [
+        "SC-001-E14",
+        "SC-001-E15"
+      ],
+      "emotion": "Surprise",
+      "id": "SC-001-B4",
+      "intensity": 7,
+      "role": "turning_point",
+      "title": "Open it"
+    },
+    {
+      "act": 2,
+      "character_states": {
+        "C-001": "Shaken",
+        "C-002": "Raw"
+      },
+      "description": "He admits the day on the platform; she asks why now.",
+      "element_ids": [
+        "SC-001-E16",
+        "SC-001-E17",
+        "SC-001-E18",
+        "SC-001-E19"
+      ],
+      "emotion": "Confession",
+      "id": "SC-001-B5",
+      "intensity": 8,
+      "role": "rising",
+      "title": "What he kept"
+    },
+    {
+      "act": 3,
+      "character_states": {
+        "C-001": "Open",
+        "C-002": "Exposed"
+      },
+      "description": "She dares him to ask; he does, in one word.",
+      "element_ids": [
+        "SC-001-E20",
+        "SC-001-E21",
+        "SC-001-E22"
+      ],
+      "emotion": "Exposed, hopeful and terrified",
+      "id": "SC-001-B6",
+      "intensity": 10,
+      "role": "climax",
+      "title": "Ask me"
+    },
+    {
+      "act": 3,
+      "character_states": {
+        "C-001": "Undecided",
+        "C-002": "Waiting"
+      },
+      "description": "No answer, but the sign turns and the door stays ajar.",
+      "element_ids": [
+        "SC-001-E23",
+        "SC-001-E24"
+      ],
+      "emotion": "Unresolved; an open door",
+      "id": "SC-001-B7",
+      "intensity": 6,
+      "role": "resolution",
+      "title": "The sign"
+    }
+  ],
+  "blocking": [
+    {
+      "beat_id": "SC-001-B1",
+      "characters": [
+        {
+          "action": "enters through the door",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.272,
+            "y": 0.56
+          },
+          "entrance": {
+            "from": "P-DOOR"
+          },
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "P-COUNTER"
+          },
+          "facing": "object:P-COUNTER",
+          "path": [
+            {
+              "x": 0.1,
+              "y": 0.88
+            },
+            {
+              "x": 0.186,
+              "y": 0.76
+            },
+            {
+              "x": 0.272,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.1,
+            "y": 0.88
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "P-COUNTER"
+          },
+          "facing": "object:P-COUNTER",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 2: distance is kept."
+    },
+    {
+      "beat_id": "SC-001-B2",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.308,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.272,
+              "y": 0.56
+            },
+            {
+              "x": 0.308,
+              "y": 0.61
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.272,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 3: distance is kept."
+    },
+    {
+      "beat_id": "SC-001-B3",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.38,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.308,
+              "y": 0.61
+            },
+            {
+              "x": 0.38,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.308,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 5: distance is kept."
+    },
+    {
+      "beat_id": "SC-001-B4",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.452,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.38,
+              "y": 0.56
+            },
+            {
+              "x": 0.452,
+              "y": 0.61
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.38,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 7: characters close the distance."
+    },
+    {
+      "beat_id": "SC-001-B5",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.448,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.452,
+              "y": 0.61
+            },
+            {
+              "x": 0.448,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.452,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.66,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.66,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 8: characters close the distance."
+    },
+    {
+      "beat_id": "SC-001-B6",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.52,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.448,
+              "y": 0.56
+            },
+            {
+              "x": 0.52,
+              "y": 0.61
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.448,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.66,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.66,
+              "y": 0.56
+            },
+            {
+              "x": 0.66,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.66,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 10: characters close the distance."
+    },
+    {
+      "beat_id": "SC-001-B7",
+      "characters": [
+        {
+          "action": "leaves through the door",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.14,
+            "y": 0.84
+          },
+          "entrance": null,
+          "exit": {
+            "to": "P-DOOR"
+          },
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.52,
+              "y": 0.61
+            },
+            {
+              "x": 0.33,
+              "y": 0.765
+            },
+            {
+              "x": 0.14,
+              "y": 0.84
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.52,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.66,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.66,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 6: characters close the distance."
+    }
+  ],
+  "stage": {
+    "axis": {
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "note": "Line between the two main characters; camera side A is the audience (master) side."
+    },
+    "depth_m": 5.0,
+    "layout_note": "Normalised 0-1 plan: x left to right as the master camera sees it, y back wall to audience.",
+    "objects": [
+      {
+        "id": "P-COUNTER",
+        "name": "Counter with till",
+        "x": 0.74,
+        "y": 0.42
+      },
+      {
+        "id": "P-DOOR",
+        "name": "Shop door",
+        "x": 0.08,
+        "y": 0.88
+      },
+      {
+        "id": "P-SHELF",
+        "name": "Crooked shelf of poetry",
+        "x": 0.5,
+        "y": 0.08
+      },
+      {
+        "id": "P-SIGN",
+        "name": "CLOSED / OPEN sign",
+        "x": 0.14,
+        "y": 0.82
+      },
+      {
+        "id": "P-BOOK",
+        "name": "Worn paperback",
+        "x": 0.5,
+        "y": 0.12
+      }
+    ],
+    "width_m": 6.0
+  },
+  "interpretation": {
+    "directorial_intent": "Nila and Arjun are circling something neither will say. The camera stays close and slightly unsteady so the audience feels the pressure under the small talk, tightening as it rises and finally crossing the line between them when the truth is spoken.",
+    "emotional_arc": [
+      {
+        "beat_id": "SC-001-B1",
+        "emotion": "Quiet routine, then alarm",
+        "intensity": 2
+      },
+      {
+        "beat_id": "SC-001-B2",
+        "emotion": "Stiff politeness",
+        "intensity": 3
+      },
+      {
+        "beat_id": "SC-001-B3",
+        "emotion": "Sparring, cracks showing",
+        "intensity": 5
+      },
+      {
+        "beat_id": "SC-001-B4",
+        "emotion": "Surprise",
+        "intensity": 7
+      },
+      {
+        "beat_id": "SC-001-B5",
+        "emotion": "Confession",
+        "intensity": 8
+      },
+      {
+        "beat_id": "SC-001-B6",
+        "emotion": "Exposed, hopeful and terrified",
+        "intensity": 10
+      },
+      {
+        "beat_id": "SC-001-B7",
+        "emotion": "Unresolved; an open door",
+        "intensity": 6
+      }
+    ],
+    "key_moment_beat_id": "SC-001-B6",
+    "summary": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it. Nila wants to hand back the book and leave without feeling anything. Arjun wants to get through closing without a scene. Pride and fear. Each is waiting for the other to speak first, and both are hiding behind small talk. She does not answer his question. She takes the ticket, leaves the book, and turns the sign to OPEN on her way out.",
+    "tone": "Charged, close, a little unsteady",
+    "visual_motifs": [
+      "Hands and objects as emotional proxies",
+      "Faces held longer than is comfortable",
+      "The door always at the edge of frame"
+    ]
+  },
+  "manifest_sha256": "1025bba3af187972c87c63d149fbba7ba3dc2540d96dc7cabf5757671a2b24bc"
+}

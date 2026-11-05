@@ -1,0 +1,14 @@
+{
+  "$id": "filmcraft.input.direction.v1",
+  "title": "Direction input: a processed screenplay, the scene to direct, and either an approach (draft a plan) or an edited plan (validate it)",
+  "type": "object",
+  "required": ["screenplay", "scene_id"],
+  "properties": {
+    "screenplay": {"$ref": "filmcraft.screenplay.v1"},
+    "scene_id": {"type": "string", "minLength": 1},
+    "approach": {"type": "object"},
+    "plan": {"$ref": "filmcraft.direction_plan.v1"},
+    "source_ref": {"type": "object"},
+    "note": {"type": "string"}
+  }
+}

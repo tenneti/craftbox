@@ -1,0 +1,12 @@
+{
+  "id": "makeup",
+  "name": "Makeup and Hair",
+  "group": "Visual Production",
+  "description": "Character appearance continuity per scene and time of day",
+  "dreambox_target": "Character Library",
+  "mvp": "Maintain makeup look, change events and approval reference images.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

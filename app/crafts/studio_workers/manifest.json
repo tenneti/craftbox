@@ -1,0 +1,12 @@
+{
+  "id": "studio_workers",
+  "name": "Studio Workers / Set Fabrication",
+  "group": "Production Operations",
+  "description": "Digital set-build instructions, fabrication tasks and assets",
+  "dreambox_target": "Asset Library / Scene Maker",
+  "mvp": "Manage virtual set assembly tasks and real-world build references.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

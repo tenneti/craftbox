@@ -1,0 +1,516 @@
+{
+  "analysis": {
+    "art_hash": "18af6484386729fd",
+    "draft_notes": [],
+    "issues": [
+      {
+        "fix": "Add a window if the audience will see it, or ignore this note.",
+        "id": "layout-1",
+        "items": [],
+        "message": "The script mentions a window, which the layout does not have.",
+        "rule": "layout",
+        "severity": "note"
+      },
+      {
+        "fix": "Give it a position on the layout, or add a state saying who holds it.",
+        "id": "props-2",
+        "items": [
+          "PR-TICKET"
+        ],
+        "message": "“Ticket” has no position and no states.",
+        "rule": "props",
+        "severity": "note"
+      },
+      {
+        "fix": "Give it a position on the layout, or add a state saying who holds it.",
+        "id": "props-3",
+        "items": [
+          "PR-COAT"
+        ],
+        "message": "“Coat” has no position and no states.",
+        "rule": "props",
+        "severity": "note"
+      },
+      {
+        "fix": "Give it a position on the layout, or add a state saying who holds it.",
+        "id": "props-4",
+        "items": [
+          "PR-LAMP"
+        ],
+        "message": "“Lamp” has no position and no states.",
+        "rule": "props",
+        "severity": "note"
+      }
+    ],
+    "metrics": {
+      "architecture": 1,
+      "brightness": 0.609,
+      "central_objects": 0,
+      "colours": 5,
+      "contrast": 0.719,
+      "decor": 1,
+      "furniture": 3,
+      "materials": 3,
+      "mean_character_distance": 0.34,
+      "objects": 5,
+      "open_floor": 0.953,
+      "peak_beat": "SC-001-B6",
+      "peak_gap": 0.149,
+      "peak_obstructions": 0,
+      "personal_props": 0,
+      "props": 5,
+      "saturation": 0.125,
+      "script_props": 5,
+      "solid_area": 0.047,
+      "textures": 2,
+      "variations": 0,
+      "warmth": -0.062
+    },
+    "readiness": {
+      "advice": "Advice only: you can save, compare, approve and export with open findings; an export that depends on one asks for an explicit, recorded override.",
+      "attention": 0,
+      "notes": 4
+    },
+    "reading": [
+      {
+        "because": "palette warmth -0.06",
+        "text": "Cool colours: the room reads as detached and quiet."
+      },
+      {
+        "because": "average saturation 0.12",
+        "text": "Muted colour makes the setting feel restrained."
+      },
+      {
+        "because": "0 object(s) in the middle of the stage",
+        "text": "An almost empty playing area: space between people reads as distance or restraint."
+      },
+      {
+        "because": "0 personal props",
+        "text": "No personal objects: nothing shows that anyone has a past here."
+      },
+      {
+        "because": "gap 0.15, clear line",
+        "text": "Nothing stands between the two people at the peak of the scene."
+      }
+    ]
+  },
+  "asset_ids": [],
+  "layout": {
+    "depth_m": 5.0,
+    "note": "Coordinates match the direction plan's stage: x left to right, y back wall to audience.",
+    "objects": [
+      {
+        "h": 0.1,
+        "id": "P-COUNTER",
+        "kind": "furniture",
+        "material_id": null,
+        "name": "Counter with till",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.24,
+        "x": 0.84,
+        "y": 0.42
+      },
+      {
+        "h": 0.09,
+        "id": "P-DOOR",
+        "kind": "architecture",
+        "material_id": null,
+        "name": "Shop door",
+        "notes": "",
+        "solid": false,
+        "texture_id": null,
+        "w": 0.07,
+        "x": 0.08,
+        "y": 0.88
+      },
+      {
+        "h": 0.06,
+        "id": "P-SHELF",
+        "kind": "furniture",
+        "material_id": null,
+        "name": "Crooked shelf of poetry",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.22,
+        "x": 0.5,
+        "y": 0.08
+      },
+      {
+        "h": 0.06,
+        "id": "D-BENCH",
+        "kind": "furniture",
+        "material_id": null,
+        "name": "Single bench",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.16,
+        "x": 0.14,
+        "y": 0.62
+      },
+      {
+        "h": 0.04,
+        "id": "D-FLOORLAMP",
+        "kind": "decor",
+        "material_id": null,
+        "name": "Floor lamp",
+        "notes": "",
+        "solid": false,
+        "texture_id": null,
+        "w": 0.04,
+        "x": 0.92,
+        "y": 0.12
+      }
+    ],
+    "width_m": 6.0
+  },
+  "location": {
+    "architecture": [
+      {
+        "description": "",
+        "id": "P-DOOR",
+        "name": "Shop door"
+      }
+    ],
+    "description": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it.",
+    "details": [],
+    "entrances": [
+      {
+        "name": "Shop door",
+        "note": "",
+        "object_id": "P-DOOR"
+      }
+    ],
+    "environment": {
+      "atmosphere": "Quiet, cool and exposed; the rain is the only movement.",
+      "sounds": "",
+      "time_of_day": "Night",
+      "weather": ""
+    },
+    "exits": [
+      {
+        "name": "Shop door",
+        "note": "",
+        "object_id": "P-DOOR"
+      }
+    ],
+    "kind": "interior",
+    "name": "Page & Candle Bookshop",
+    "setting": "fictional"
+  },
+  "note": "",
+  "project_id": "closing-hour",
+  "props": [
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "P-BOOK",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E02",
+        "SC-001-E05",
+        "SC-001-E15",
+        "SC-001-E23"
+      ],
+      "name": "Worn paperback",
+      "notes": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.12
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S02",
+        "SC-001-S04",
+        "SC-001-S12",
+        "SC-001-S21"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "P-SIGN",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E03",
+        "SC-001-E14",
+        "SC-001-E15",
+        "SC-001-E24"
+      ],
+      "name": "CLOSED / OPEN sign",
+      "notes": "",
+      "position": {
+        "x": 0.14,
+        "y": 0.82
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S03",
+        "SC-001-S11",
+        "SC-001-S12",
+        "SC-001-S22"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-TICKET",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E15",
+        "SC-001-E20",
+        "SC-001-E23"
+      ],
+      "name": "Ticket",
+      "notes": "",
+      "position": null,
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S12",
+        "SC-001-S18",
+        "SC-001-S21"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-COAT",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E02"
+      ],
+      "name": "Coat",
+      "notes": "",
+      "position": null,
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S02"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-LAMP",
+      "kind": "practical",
+      "mentions": [
+        "SC-001-E01"
+      ],
+      "name": "Lamp",
+      "notes": "",
+      "position": null,
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S01"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    }
+  ],
+  "scene_id": "SC-001",
+  "schema": "filmcraft.art_direction.v1",
+  "source": {
+    "beat_hashes": {
+      "SC-001-B1": "b5e9d763eb7ecfa7",
+      "SC-001-B2": "8da88a9ad410042f",
+      "SC-001-B3": "315a23e0578ccd72",
+      "SC-001-B4": "13d1fafbe66ce2f6",
+      "SC-001-B5": "9472e17dad200d3b",
+      "SC-001-B6": "6195da4409a5e2d0",
+      "SC-001-B7": "445f903c1a6e01af"
+    },
+    "element_hashes": {
+      "SC-001-E01": "d35e5984770bbfc4",
+      "SC-001-E02": "65f30aec41c697ab",
+      "SC-001-E03": "d90e37dc05db5ab1",
+      "SC-001-E04": "7dc920c22a1e8476",
+      "SC-001-E05": "5835cf2e0ceaecdf",
+      "SC-001-E06": "e9ac37707ec2e7c5",
+      "SC-001-E07": "8a77f5d3ef703696",
+      "SC-001-E08": "ab1af1893ba2c6a2",
+      "SC-001-E09": "5cd4e04158ace442",
+      "SC-001-E10": "cf76f3bf933860f6",
+      "SC-001-E11": "81d0eb9c4a4057af",
+      "SC-001-E12": "047fd6c65a38b7d5",
+      "SC-001-E13": "00658ef48d04e0d2",
+      "SC-001-E14": "578700cf38360381",
+      "SC-001-E15": "ccd4fc3f72ff4126",
+      "SC-001-E16": "a4cf9f3d7b8bf6e4",
+      "SC-001-E17": "d64ebf34950d25f5",
+      "SC-001-E18": "d1ace5d04a1fcdf6",
+      "SC-001-E19": "1908c803a091223f",
+      "SC-001-E20": "49d78e79fa960a7c",
+      "SC-001-E21": "58ec2fa7b494b8ff",
+      "SC-001-E22": "a7c7652250c1d3f8",
+      "SC-001-E23": "6e5091064d2e7d46",
+      "SC-001-E24": "3ba9e6fc64607963"
+    },
+    "plan": {
+      "blocking_hashes": {
+        "SC-001-B1": "9305240d06ebf82b",
+        "SC-001-B2": "90bf16007407210e",
+        "SC-001-B3": "3dfe12fc91cfef72",
+        "SC-001-B4": "23ebf84d72e5044f",
+        "SC-001-B5": "be865cb421420fe6",
+        "SC-001-B6": "47a0fb25a747a9d0",
+        "SC-001-B7": "3d388e5ec9b867e9"
+      },
+      "plan_hash": "24f29470233f5bf7",
+      "shot_ids": [
+        "SC-001-S01",
+        "SC-001-S02",
+        "SC-001-S03",
+        "SC-001-S04",
+        "SC-001-S05",
+        "SC-001-S06",
+        "SC-001-S07",
+        "SC-001-S08",
+        "SC-001-S09",
+        "SC-001-S10",
+        "SC-001-S11",
+        "SC-001-S12",
+        "SC-001-S13",
+        "SC-001-S14",
+        "SC-001-S15",
+        "SC-001-S16",
+        "SC-001-S17",
+        "SC-001-S18",
+        "SC-001-S19",
+        "SC-001-S20",
+        "SC-001-S21",
+        "SC-001-S22"
+      ],
+      "stage_object_ids": [
+        "P-COUNTER",
+        "P-DOOR",
+        "P-SHELF",
+        "P-SIGN",
+        "P-BOOK"
+      ]
+    },
+    "project_id": "closing-hour",
+    "ref": {
+      "plan_experiment_id": "d50a11a5-a9ff-45bc-9b49-aebcd7d1b8db",
+      "screenplay_experiment_id": "d47c5ecc-747e-4544-8cb0-1c2ad2d209dd"
+    },
+    "scene_hash": "0f26e814d547b86c",
+    "scene_id": "SC-001",
+    "screenplay_revision": 1
+  },
+  "style": {
+    "materials": [
+      {
+        "finish": "sealed, light",
+        "id": "M1",
+        "name": "Pale oak",
+        "notes": ""
+      },
+      {
+        "finish": "smooth floor",
+        "id": "M2",
+        "name": "Concrete",
+        "notes": ""
+      },
+      {
+        "finish": "clear",
+        "id": "M3",
+        "name": "Glass",
+        "notes": ""
+      }
+    ],
+    "mood_words": [
+      "detached",
+      "quiet",
+      "exposed"
+    ],
+    "palette": [
+      {
+        "hex": "#CFD6D9",
+        "id": "C1",
+        "name": "Pale ash",
+        "role": "dominant"
+      },
+      {
+        "hex": "#5C6F80",
+        "id": "C2",
+        "name": "Slate blue",
+        "role": "accent"
+      },
+      {
+        "hex": "#F4F7F8",
+        "id": "C3",
+        "name": "Cold white",
+        "role": "light"
+      },
+      {
+        "hex": "#3A4046",
+        "id": "C4",
+        "name": "Graphite",
+        "role": "support"
+      },
+      {
+        "hex": "#8A949B",
+        "id": "C5",
+        "name": "Steel grey",
+        "role": "support"
+      }
+    ],
+    "period": {
+      "era": "Contemporary, stripped back",
+      "notes": "Almost no decoration; nothing personal on show."
+    },
+    "profile_ref": null,
+    "textures": [
+      {
+        "asset_id": null,
+        "description": "Matte, unmarked walls",
+        "id": "T1",
+        "name": "Smooth plaster"
+      },
+      {
+        "asset_id": null,
+        "description": "Cool, even sheen",
+        "id": "T2",
+        "name": "Brushed metal"
+      }
+    ],
+    "themes": [
+      "distance",
+      "restraint",
+      "absence"
+    ]
+  },
+  "treatment": {
+    "id": "TR-EMOTIONAL-DISTANCE",
+    "intent": "Leave room around the characters so the space itself says how far apart they have grown.",
+    "name": "Emotional distance",
+    "preset": "emotional_distance",
+    "summary": "A restrained, almost empty shop: cool light, pale surfaces, space between the people."
+  },
+  "variations": []
+}

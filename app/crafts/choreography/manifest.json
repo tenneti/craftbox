@@ -1,0 +1,12 @@
+{
+  "id": "choreography",
+  "name": "Choreography",
+  "group": "Visual Production",
+  "description": "Movement beats and timed blocking for songs and scenes",
+  "dreambox_target": "Scene Maker / Music Lab",
+  "mvp": "Map choreography and blocking to frame ranges, tempos and music cues.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

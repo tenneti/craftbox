@@ -1,0 +1,12 @@
+{
+  "id": "dubbing",
+  "name": "Dubbing / ADR",
+  "group": "Post-production",
+  "description": "Dialogue replacement cue sheets, takes and sync review",
+  "dreambox_target": "Comedy / Lip-sync / Scene Maker",
+  "mvp": "Produce ADR markers and verify dialogue timing without cloning voices by default.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

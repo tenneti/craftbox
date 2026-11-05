@@ -1,0 +1,39 @@
+{
+  "schema": "filmcraft.asset_reference_manifest.v1",
+  "manifest_id": "arm-5d3798fa-ad0a-4c00-8944-d7bf0d642203",
+  "exported_at": "2026-11-01T16:10:32.318Z",
+  "source": {
+    "application": "craftbox",
+    "version": "0.3.0",
+    "run_id": "5d3798fa-ad0a-4c00-8944-d7bf0d642203",
+    "experiment_id": "bde474c8-adbc-453b-a862-02a638142ea2",
+    "source_status": "current"
+  },
+  "approval": {
+    "status": "approved",
+    "reviewer": "Sample Art Director",
+    "approved_at": "2026-11-01T16:10:32.298Z",
+    "note": "Sample approval"
+  },
+  "overrides": [],
+  "provenance": {
+    "ai_used": false,
+    "source": "local-manual"
+  },
+  "import_policy": {
+    "auto_import": false,
+    "requires_user_confirmation": true,
+    "note": "A Dreambox-owned adapter must validate schema, IDs, hashes and asset rights and stage the import; nothing is imported automatically."
+  },
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "treatment_id": "TR-EMOTIONAL-DISTANCE",
+  "assets": [],
+  "summary": {
+    "assets": 0,
+    "rights_cleared": 0,
+    "rights_open": 0,
+    "missing_from_register": []
+  },
+  "manifest_sha256": "2ba75c74f58d1f7675c67ce9bd4880a9320b6bbb048951a255b5756d43528ba7"
+}

@@ -1,0 +1,18 @@
+{
+  "$id": "filmcraft.input.art_direction.v1",
+  "title": "Art direction input: a processed screenplay, the scene, and either a starting preset (draft a treatment) or an edited treatment (validate it); optionally the director's plan, a style profile and the asset register",
+  "type": "object",
+  "required": ["screenplay", "scene_id"],
+  "properties": {
+    "screenplay": {"$ref": "filmcraft.screenplay.v1"},
+    "scene_id": {"type": "string", "minLength": 1},
+    "direction_plan": {"$ref": "filmcraft.direction_plan.v1"},
+    "preset": {"type": "string"},
+    "treatment_name": {"type": "string"},
+    "style_profile": {"$ref": "filmcraft.style_profile.v1"},
+    "asset_register": {"$ref": "filmcraft.asset_register.v1"},
+    "art": {"$ref": "filmcraft.art_direction.v1"},
+    "source_ref": {"type": "object"},
+    "note": {"type": "string"}
+  }
+}

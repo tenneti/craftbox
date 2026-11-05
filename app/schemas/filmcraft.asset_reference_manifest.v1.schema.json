@@ -1,0 +1,23 @@
+{
+  "$id": "filmcraft.asset_reference_manifest.v1",
+  "title": "Assets referenced by an approved treatment, with source, rights and checksums, mapped as hints for a future Dreambox asset library import",
+  "type": "object",
+  "required": ["schema", "manifest_id", "exported_at", "source", "project_id", "scene_id", "treatment_id", "assets", "summary", "approval", "provenance", "import_policy", "manifest_sha256"],
+  "properties": {
+    "schema": {"const": "filmcraft.asset_reference_manifest.v1"},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string"},
+    "source": {"type": "object", "required": ["application", "version", "run_id", "experiment_id"]},
+    "project_id": {"type": "string"}, "scene_id": {"type": "string"}, "treatment_id": {"type": "string"},
+    "assets": {
+      "type": "array",
+      "items": {"type": "object", "required": ["id", "name", "kind", "sha256", "source", "rights", "used_by", "dreambox_hint"], "properties": {"sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+    },
+    "summary": {"type": "object", "required": ["assets", "rights_cleared", "rights_open"]},
+    "approval": {"type": "object", "required": ["status", "reviewer", "approved_at"]},
+    "overrides": {"type": "array", "items": {"type": "string"}},
+    "provenance": {"type": "object"},
+    "import_policy": {"type": "object", "required": ["auto_import"]},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

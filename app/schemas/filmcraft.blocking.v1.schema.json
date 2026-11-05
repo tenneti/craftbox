@@ -1,0 +1,12 @@
+{
+  "$id": "filmcraft.blocking.v1",
+  "title": "Blocking export: stage layout plus per-beat character positions, paths, facing and eyelines",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "stage", "beats"],
+  "properties": {
+    "schema": {"const": "filmcraft.blocking.v1"},
+    "project_id": {"type": "string"}, "scene_id": {"type": "string"},
+    "stage": {"type": "object", "required": ["objects"]},
+    "beats": {"type": "array", "items": {"type": "object", "required": ["beat_id", "characters"]}}
+  }
+}

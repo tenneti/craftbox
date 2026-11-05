@@ -1,0 +1,12 @@
+{
+  "id": "production_assistants",
+  "name": "Production Assistants",
+  "group": "Production Operations",
+  "description": "Shot checklists, call sheets and continuity handoffs",
+  "dreambox_target": "Production Board",
+  "mvp": "Track shoot readiness, dependencies and shot status.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

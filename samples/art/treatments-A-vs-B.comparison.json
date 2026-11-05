@@ -1,0 +1,271 @@
+{
+  "a": {
+    "run_id": "6aca96d6-1090-4b89-9761-3f64abac4b68",
+    "treatment": {
+      "id": "TR-WARM-NOSTALGIA",
+      "intent": "Make the room feel lived in and remembered, so the characters' silence reads as history held close rather than distance.",
+      "name": "Warm nostalgia",
+      "preset": "warm_nostalgia",
+      "summary": "An intimate shop that has kept everything: aged wood, amber light, objects that belong to someone."
+    }
+  },
+  "b": {
+    "run_id": "5d3798fa-ad0a-4c00-8944-d7bf0d642203",
+    "treatment": {
+      "id": "TR-EMOTIONAL-DISTANCE",
+      "intent": "Leave room around the characters so the space itself says how far apart they have grown.",
+      "name": "Emotional distance",
+      "preset": "emotional_distance",
+      "summary": "A restrained, almost empty shop: cool light, pale surfaces, space between the people."
+    }
+  },
+  "metrics": [
+    {
+      "metric": "Objects in the middle of the stage",
+      "key": "central_objects",
+      "a": 5,
+      "b": 0,
+      "differs": true
+    },
+    {
+      "metric": "Furniture",
+      "key": "furniture",
+      "a": 3,
+      "b": 3,
+      "differs": false
+    },
+    {
+      "metric": "Decor",
+      "key": "decor",
+      "a": 4,
+      "b": 1,
+      "differs": true
+    },
+    {
+      "metric": "Props",
+      "key": "props",
+      "a": 8,
+      "b": 5,
+      "differs": true
+    },
+    {
+      "metric": "Personal props",
+      "key": "personal_props",
+      "a": 3,
+      "b": 0,
+      "differs": true
+    },
+    {
+      "metric": "Open floor",
+      "key": "open_floor",
+      "a": 0.938,
+      "b": 0.953,
+      "differs": true
+    },
+    {
+      "metric": "Palette warmth (−1 cool, +1 warm)",
+      "key": "warmth",
+      "a": 0.264,
+      "b": -0.062,
+      "differs": true
+    },
+    {
+      "metric": "Palette brightness",
+      "key": "brightness",
+      "a": 0.52,
+      "b": 0.609,
+      "differs": true
+    },
+    {
+      "metric": "Palette saturation",
+      "key": "saturation",
+      "a": 0.445,
+      "b": 0.125,
+      "differs": true
+    },
+    {
+      "metric": "Palette contrast",
+      "key": "contrast",
+      "a": 0.666,
+      "b": 0.719,
+      "differs": true
+    },
+    {
+      "metric": "Textures",
+      "key": "textures",
+      "a": 3,
+      "b": 2,
+      "differs": true
+    },
+    {
+      "metric": "Materials",
+      "key": "materials",
+      "a": 4,
+      "b": 3,
+      "differs": true
+    },
+    {
+      "metric": "Shot variations",
+      "key": "variations",
+      "a": 0,
+      "b": 0,
+      "differs": false
+    },
+    {
+      "metric": "Distance between the two people at the peak",
+      "key": "peak_gap",
+      "a": 0.149,
+      "b": 0.149,
+      "differs": false
+    },
+    {
+      "metric": "Objects between them at the peak",
+      "key": "peak_obstructions",
+      "a": 0,
+      "b": 0,
+      "differs": false
+    }
+  ],
+  "readings": {
+    "a": [
+      {
+        "because": "palette warmth +0.26",
+        "text": "Warm colours: the room reads as intimate and remembered."
+      },
+      {
+        "because": "average brightness 0.52",
+        "text": "A darker palette gives low-key, enclosed light."
+      },
+      {
+        "because": "average saturation 0.45",
+        "text": "Rich colour makes the setting feel full and lived in."
+      },
+      {
+        "because": "5 objects in the middle of the stage",
+        "text": "A furnished playing area keeps people close to objects and to each other."
+      },
+      {
+        "because": "3 personal prop(s)",
+        "text": "Personal objects suggest a shared history."
+      },
+      {
+        "because": "gap 0.15, clear line",
+        "text": "Nothing stands between the two people at the peak of the scene."
+      }
+    ],
+    "b": [
+      {
+        "because": "palette warmth -0.06",
+        "text": "Cool colours: the room reads as detached and quiet."
+      },
+      {
+        "because": "average saturation 0.12",
+        "text": "Muted colour makes the setting feel restrained."
+      },
+      {
+        "because": "0 object(s) in the middle of the stage",
+        "text": "An almost empty playing area: space between people reads as distance or restraint."
+      },
+      {
+        "because": "0 personal props",
+        "text": "No personal objects: nothing shows that anyone has a past here."
+      },
+      {
+        "because": "gap 0.15, clear line",
+        "text": "Nothing stands between the two people at the peak of the scene."
+      }
+    ]
+  },
+  "palettes": {
+    "a": [
+      {
+        "hex": "#8B5E3C",
+        "id": "C1",
+        "name": "Aged oak",
+        "role": "dominant"
+      },
+      {
+        "hex": "#E0A85A",
+        "id": "C2",
+        "name": "Candlelight amber",
+        "role": "accent"
+      },
+      {
+        "hex": "#F1E3C8",
+        "id": "C3",
+        "name": "Faded cream",
+        "role": "light"
+      },
+      {
+        "hex": "#6B2D2D",
+        "id": "C4",
+        "name": "Oxblood leather",
+        "role": "accent"
+      },
+      {
+        "hex": "#5E6B4A",
+        "id": "C5",
+        "name": "Moss green",
+        "role": "support"
+      }
+    ],
+    "b": [
+      {
+        "hex": "#CFD6D9",
+        "id": "C1",
+        "name": "Pale ash",
+        "role": "dominant"
+      },
+      {
+        "hex": "#5C6F80",
+        "id": "C2",
+        "name": "Slate blue",
+        "role": "accent"
+      },
+      {
+        "hex": "#F4F7F8",
+        "id": "C3",
+        "name": "Cold white",
+        "role": "light"
+      },
+      {
+        "hex": "#3A4046",
+        "id": "C4",
+        "name": "Graphite",
+        "role": "support"
+      },
+      {
+        "hex": "#8A949B",
+        "id": "C5",
+        "name": "Steel grey",
+        "role": "support"
+      }
+    ]
+  },
+  "differences": {
+    "objects_only_a": [
+      "Framed photographs",
+      "Reading armchair",
+      "Stacked books",
+      "Table lamp",
+      "Worn rug"
+    ],
+    "objects_only_b": [
+      "Floor lamp",
+      "Single bench"
+    ],
+    "moved": [
+      "Counter with till"
+    ],
+    "props_only_a": [
+      "Framed photograph",
+      "Reading glasses",
+      "Tea cup"
+    ],
+    "props_only_b": []
+  },
+  "intent": {
+    "a": "Make the room feel lived in and remembered, so the characters' silence reads as history held close rather than distance.",
+    "b": "Leave room around the characters so the space itself says how far apart they have grown."
+  }
+}

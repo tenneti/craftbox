@@ -1,0 +1,7 @@
+{
+  "$id": "filmcraft.input.editing.v1",
+  "title": "Editing input: a shot plan",
+  "type": "object",
+  "required": ["shot_plan"],
+  "properties": {"shot_plan": {"$ref": "filmcraft.shot_plan.v1"}}
+}

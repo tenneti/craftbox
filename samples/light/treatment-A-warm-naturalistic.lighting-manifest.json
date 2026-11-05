@@ -1,0 +1,1385 @@
+{
+  "schema": "filmcraft.lighting_manifest.v1",
+  "manifest_id": "lgm-68e24b33-5630-4e9d-85f8-14fddeefc221",
+  "exported_at": "2026-11-02T17:04:54.966Z",
+  "source": {
+    "application": "craftbox",
+    "version": "0.3.0",
+    "run_id": "68e24b33-5630-4e9d-85f8-14fddeefc221",
+    "experiment_id": "671d5f36-9c76-41b1-a117-70e2bd5ddd8f",
+    "source_status": "current"
+  },
+  "approval": {
+    "status": "approved",
+    "reviewer": "Sample Gaffer",
+    "approved_at": "2026-11-02T17:04:54.948Z",
+    "note": "Sample approval"
+  },
+  "overrides": [],
+  "provenance": {
+    "ai_used": false,
+    "source": "local-manual"
+  },
+  "import_policy": {
+    "auto_import": false,
+    "requires_user_confirmation": true,
+    "note": "A Dreambox-owned adapter must validate schema, IDs and hashes and stage the import; nothing is imported automatically."
+  },
+  "project": {
+    "id": "closing-hour",
+    "title": "The Closing Hour"
+  },
+  "scene": {
+    "id": "SC-001",
+    "slugline": "INT. PAGE & CANDLE BOOKSHOP - NIGHT",
+    "fps": 24
+  },
+  "plan": {
+    "id": "LP-WARM-NATURALISTIC",
+    "intent": "Make the shop feel lived in and safe, so the tension between the two people is the only thing that is not comfortable.",
+    "name": "Warm, naturalistic, intimate",
+    "preset": "warm_naturalistic",
+    "summary": "Soft, low, warm light that seems to come from the lamps in the room and the street outside. People stay close together in one pool of light."
+  },
+  "conditions": {
+    "mood_words": [
+      "intimate",
+      "nostalgic",
+      "sheltered"
+    ],
+    "narrative_purpose": "Warmth that comes from the room itself, so the audience believes in the place before it believes in the argument.",
+    "time_of_day": "night",
+    "weather": "rain"
+  },
+  "lights": [
+    {
+      "id": "L-KEY",
+      "name": "Soft key, motivated by the lamp",
+      "role": "key",
+      "source": "artificial",
+      "kind": "softbox",
+      "enabled": true,
+      "stage": {
+        "x": 0.74,
+        "y": 0.66,
+        "height_m": 2.1
+      },
+      "metres": {
+        "x": 4.44,
+        "y": 3.3,
+        "z": 2.1
+      },
+      "rotation_deg": 255.0,
+      "tilt_deg": -20,
+      "intensity": 0.75,
+      "color_temp_k": 2900,
+      "beam_angle_deg": 80,
+      "softness": 0.8,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "D-LAMP",
+      "practical_object_id": "",
+      "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-LAMP",
+      "name": "Table lamp (visible in the room)",
+      "role": "practical",
+      "source": "artificial",
+      "kind": "practical_lamp",
+      "enabled": true,
+      "stage": {
+        "x": 0.8,
+        "y": 0.36,
+        "height_m": 1.1
+      },
+      "metres": {
+        "x": 4.8,
+        "y": 1.8,
+        "z": 1.1
+      },
+      "rotation_deg": 304.9,
+      "tilt_deg": 0,
+      "intensity": 0.5,
+      "color_temp_k": 2700,
+      "beam_angle_deg": 120,
+      "softness": 0.9,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 6.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "D-LAMP",
+      "narrative_purpose": "The visible reason for the warmth.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-FILL",
+      "name": "Soft fill from the audience side",
+      "role": "fill",
+      "source": "artificial",
+      "kind": "bounce",
+      "enabled": true,
+      "stage": {
+        "x": 0.22,
+        "y": 0.95,
+        "height_m": 1.6
+      },
+      "metres": {
+        "x": 1.32,
+        "y": 4.75,
+        "z": 1.6
+      },
+      "rotation_deg": 134.5,
+      "tilt_deg": -20,
+      "intensity": 0.32,
+      "color_temp_k": 3000,
+      "beam_angle_deg": 110,
+      "softness": 1.0,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-RIM",
+      "name": "Warm backlight from the shelves",
+      "role": "backlight",
+      "source": "artificial",
+      "kind": "fresnel",
+      "enabled": true,
+      "stage": {
+        "x": 0.18,
+        "y": 0.2,
+        "height_m": 2.4
+      },
+      "metres": {
+        "x": 1.08,
+        "y": 1.0,
+        "z": 2.4
+      },
+      "rotation_deg": 46.6,
+      "tilt_deg": -20,
+      "intensity": 0.35,
+      "color_temp_k": 2800,
+      "beam_angle_deg": 50,
+      "softness": 0.5,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-DOOR",
+      "name": "Street light through the door",
+      "role": "motivated",
+      "source": "natural",
+      "kind": "street",
+      "enabled": true,
+      "stage": {
+        "x": 0.1,
+        "y": 0.82,
+        "height_m": 1.8
+      },
+      "metres": {
+        "x": 0.6,
+        "y": 4.1,
+        "z": 1.8
+      },
+      "rotation_deg": 114.2,
+      "tilt_deg": -20,
+      "intensity": 0.25,
+      "color_temp_k": 2800,
+      "beam_angle_deg": 70,
+      "softness": 0.6,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 7.0
+      },
+      "positional": true,
+      "motivated_by": "P-DOOR",
+      "practical_object_id": "",
+      "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-AMB",
+      "name": "Warm room glow",
+      "role": "ambient",
+      "source": "artificial",
+      "kind": "ambient",
+      "enabled": true,
+      "stage": {
+        "x": 0.5,
+        "y": 0.5,
+        "height_m": 2.0
+      },
+      "metres": {
+        "x": 3.0,
+        "y": 2.5,
+        "z": 2.0
+      },
+      "rotation_deg": 17.8,
+      "tilt_deg": -20,
+      "intensity": 0.18,
+      "color_temp_k": 2900,
+      "beam_angle_deg": 180,
+      "softness": 1.0,
+      "falloff": {
+        "mode": "none",
+        "range_m": 10.0
+      },
+      "positional": false,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "A low base level so shadows never go fully black.",
+      "adjusted_for_shot": false
+    }
+  ],
+  "adjustments": [
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 3.2,
+          "light_id": "L-KEY"
+        }
+      ],
+      "id": "ADJ-S01",
+      "reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S01",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 2.1,
+          "light_id": "L-FILL"
+        }
+      ],
+      "id": "ADJ-S02",
+      "reason": "L-FILL is raised to 2.1 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S02",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 3.2,
+          "light_id": "L-KEY"
+        }
+      ],
+      "id": "ADJ-S04",
+      "reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S04",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S07",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S07",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S10",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S10",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S11",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S11",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S12",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S12",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S13",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S13",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S15",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S15",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S16",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S16",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 2.6,
+          "light_id": "L-KEY"
+        }
+      ],
+      "id": "ADJ-S18",
+      "reason": "The peak of the scene: a little brighter and warmer, as if the lamp had been turned up. L-KEY is raised to 2.6 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S18",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S19",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S19",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S20",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S20",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 3.5,
+          "light_id": "L-KEY"
+        },
+        {
+          "height_m": 2.9,
+          "light_id": "L-FILL"
+        }
+      ],
+      "id": "ADJ-S22",
+      "reason": "L-KEY is raised to 3.5 m so it stays above this wide frame. L-FILL is raised to 2.9 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S22",
+      "status": "proposed"
+    }
+  ],
+  "art_reference": {
+    "treatment_id": "TR-WARM-NOSTALGIA",
+    "treatment_name": "Warm nostalgia",
+    "art_hash": "dfaaebdf695328b0",
+    "art_approval_status": "approved"
+  },
+  "continuity": {
+    "readiness": {
+      "advice": "Ready for review.",
+      "attention": 0,
+      "notes": 0,
+      "pending_review": 0
+    },
+    "metrics": {
+      "adjusted_shots": 14,
+      "by_role": {
+        "ambient": 1,
+        "backlight": 1,
+        "fill": 1,
+        "key": 1,
+        "motivated": 1,
+        "practical": 1
+      },
+      "contrast": 5.0,
+      "key_fill_ratio": 2.0,
+      "key_kelvin": 2850,
+      "key_softness": 0.7,
+      "lights": 6,
+      "lights_on": 6,
+      "mean_kelvin": 2842,
+      "mean_level": 0.55,
+      "motivated_fraction": 0.6,
+      "natural_sources": 1,
+      "peak_key_fill_ratio": 2.6,
+      "separation_lights": 1,
+      "shadow_fraction": 0.0,
+      "shots": 22
+    },
+    "open_findings": []
+  },
+  "integration": {
+    "cinematography": {
+      "per_shot": [
+        {
+          "shot_id": "SC-001-S01",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.486,
+              "y": 1.36
+            },
+            "target": {
+              "x": 0.486,
+              "y": 0.56
+            },
+            "fov_deg": 61.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S02",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.272,
+              "y": 1.11
+            },
+            "target": {
+              "x": 0.272,
+              "y": 0.56
+            },
+            "fov_deg": 48.5
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S03",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.504,
+              "y": 1.035
+            },
+            "target": {
+              "x": 0.504,
+              "y": 0.585
+            },
+            "fov_deg": 39.6
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S04",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.504,
+              "y": 1.385
+            },
+            "target": {
+              "x": 0.504,
+              "y": 0.585
+            },
+            "fov_deg": 61.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S05",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.308,
+              "y": 1.16
+            },
+            "target": {
+              "x": 0.308,
+              "y": 0.61
+            },
+            "fov_deg": 48.5
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S06",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.7,
+              "y": 0.91
+            },
+            "target": {
+              "x": 0.7,
+              "y": 0.56
+            },
+            "fov_deg": 31.0
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S07",
+          "camera": {
+            "position": {
+              "height_m": 0.8,
+              "x": 0.38,
+              "y": 0.81
+            },
+            "target": {
+              "x": 0.38,
+              "y": 0.56
+            },
+            "fov_deg": 23.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S08",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.38,
+              "y": 1.01
+            },
+            "target": {
+              "x": 0.38,
+              "y": 0.56
+            },
+            "fov_deg": 39.6
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S09",
+          "camera": {
+            "position": {
+              "height_m": 0.8,
+              "x": 0.7,
+              "y": 0.91
+            },
+            "target": {
+              "x": 0.7,
+              "y": 0.56
+            },
+            "fov_deg": 31.0
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S10",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.38,
+              "y": 0.81
+            },
+            "target": {
+              "x": 0.38,
+              "y": 0.56
+            },
+            "fov_deg": 23.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S11",
+          "camera": {
+            "position": {
+              "height_m": 2.4,
+              "x": 0.7,
+              "y": 0.71
+            },
+            "target": {
+              "x": 0.7,
+              "y": 0.56
+            },
+            "fov_deg": 20.4
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S12",
+          "camera": {
+            "position": {
+              "height_m": 2.4,
+              "x": 0.576,
+              "y": 0.735
+            },
+            "target": {
+              "x": 0.576,
+              "y": 0.585
+            },
+            "fov_deg": 20.4
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S13",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.452,
+              "y": 0.86
+            },
+            "target": {
+              "x": 0.452,
+              "y": 0.61
+            },
+            "fov_deg": 23.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S14",
+          "camera": {
+            "position": {
+              "height_m": 2.4,
+              "x": 0.448,
+              "y": 0.91
+            },
+            "target": {
+              "x": 0.448,
+              "y": 0.56
+            },
+            "fov_deg": 31.0
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S15",
+          "camera": {
+            "position": {
+              "height_m": 2.4,
+              "x": 0.66,
+              "y": 0.81
+            },
+            "target": {
+              "x": 0.66,
+              "y": 0.56
+            },
+            "fov_deg": 23.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S16",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.448,
+              "y": 0.71
+            },
+            "target": {
+              "x": 0.448,
+              "y": 0.56
+            },
+            "fov_deg": 20.4
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S17",
+          "camera": {
+            "position": {
+              "height_m": 2.4,
+              "x": 0.66,
+              "y": 0.91
+            },
+            "target": {
+              "x": 0.66,
+              "y": 0.56
+            },
+            "fov_deg": 31.0
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S18",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.14,
+              "y": 0.585
+            },
+            "target": {
+              "x": 0.59,
+              "y": 0.585
+            },
+            "fov_deg": 39.6
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S19",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.52,
+              "y": 0.36
+            },
+            "target": {
+              "x": 0.52,
+              "y": 0.61
+            },
+            "fov_deg": 23.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "left",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S20",
+          "camera": {
+            "position": {
+              "height_m": 2.4,
+              "x": 0.66,
+              "y": 0.41
+            },
+            "target": {
+              "x": 0.66,
+              "y": 0.56
+            },
+            "fov_deg": 20.4
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "left",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S21",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": -0.13,
+              "y": 0.7
+            },
+            "target": {
+              "x": 0.42,
+              "y": 0.7
+            },
+            "fov_deg": 48.5
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "left",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        },
+        {
+          "shot_id": "SC-001-S22",
+          "camera": {
+            "position": {
+              "height_m": 1.6,
+              "x": 0.42,
+              "y": 1.5
+            },
+            "target": {
+              "x": 0.42,
+              "y": 0.7
+            },
+            "fov_deg": 61.9
+          },
+          "key_light_id": "L-KEY",
+          "key_side_of_camera": "right",
+          "lights_on": [
+            "L-KEY",
+            "L-LAMP",
+            "L-FILL",
+            "L-RIM",
+            "L-DOOR",
+            "L-AMB"
+          ],
+          "fixtures_in_frame": []
+        }
+      ],
+      "note": "Camera data is copied for reference from the director's plan; the Cinematography craft owns it."
+    },
+    "previz": {
+      "stage": {
+        "width_m": 6.0,
+        "depth_m": 5.0
+      },
+      "conventions": {
+        "stage_xy": "0..1; x left to right, y from the back wall (0) to the audience (1)",
+        "rotation_deg": "0 faces the audience, 90 faces right, 180 faces the back wall, 270 faces left",
+        "intensity": "0 to 1, relative",
+        "tilt_deg": "negative aims downward"
+      },
+      "scene_setup": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "note": "Stage coordinates match the director's blocking, so lights can be placed in a previz scene without conversion."
+    },
+    "scene_maker": {
+      "time_of_day": "night",
+      "weather": "rain",
+      "mood": [
+        "intimate",
+        "nostalgic",
+        "sheltered"
+      ],
+      "lights": [
+        {
+          "id": "L-KEY",
+          "role": "key",
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80
+        },
+        {
+          "id": "L-LAMP",
+          "role": "practical",
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120
+        },
+        {
+          "id": "L-FILL",
+          "role": "fill",
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110
+        },
+        {
+          "id": "L-RIM",
+          "role": "backlight",
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50
+        },
+        {
+          "id": "L-DOOR",
+          "role": "motivated",
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70
+        },
+        {
+          "id": "L-AMB",
+          "role": "ambient",
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180
+        }
+      ],
+      "verify": "Scene Maker's own lighting fields were not read closely; a Dreambox-owned adapter must map these."
+    }
+  },
+  "hashes": {
+    "scene_hash": "0f26e814d547b86c",
+    "plan_hash": "2cf50498d26ebead",
+    "art_hash": "dfaaebdf695328b0"
+  },
+  "model_note": "Positions and levels are planning estimates on the director's stage plan, not a physical lighting simulation.",
+  "manifest_sha256": "fda17e4b38e81bffca020d0d25cdf9aeda2c3afc1197f6d9eabf88c39e86b5c7"
+}

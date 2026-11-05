@@ -1,0 +1,12 @@
+{
+  "id": "technical_unit",
+  "name": "Technical Unit",
+  "group": "Production Operations",
+  "description": "Transcoding, rendering, media inspection, proxy and technical QC",
+  "dreambox_target": "Render Pipeline / QC",
+  "mvp": "Manage media profiles, render jobs and deterministic validation.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

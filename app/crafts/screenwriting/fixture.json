@@ -1,0 +1,21 @@
+{
+  "project_id": "romance-pilot",
+  "scene_id": "SC-001",
+  "slugline": "EXT. RAILWAY PLATFORM - DAWN",
+  "synopsis": "A solitary traveler is surprised by a familiar melody.",
+  "action": "Mist lifts as Karthik watches the first train pull in.",
+  "characters": [
+    {
+      "id": "C-001",
+      "name": "Karthik"
+    }
+  ],
+  "dialogue": [
+    {
+      "speaker_id": "C-001",
+      "text": "Maybe every journey begins before we notice."
+    }
+  ],
+  "fps": 24,
+  "estimated_seconds": 36
+}

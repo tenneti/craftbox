@@ -1,0 +1,14 @@
+{
+  "id": "direction",
+  "name": "Direction",
+  "group": "Story & Direction",
+  "description": "Scene intention, blocking decisions, director notes and approvals",
+  "dreambox_target": "Scene Maker",
+  "mvp": "Turn a processed screenplay scene into an editable director's plan: interpretation, blocking, coverage and a shot list with continuity checks.",
+  "status": "pilot",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false,
+  "input_schema": "filmcraft.input.direction.v1",
+  "output_schema": "filmcraft.direction_plan.v1"
+}

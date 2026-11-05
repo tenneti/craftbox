@@ -1,0 +1,12 @@
+{
+  "id": "publicity",
+  "name": "Publicity Design",
+  "group": "Post-production",
+  "description": "Poster, trailer, teaser and deliverable specifications",
+  "dreambox_target": "Social Features / Creative Multiplier",
+  "mvp": "Build reusable campaign templates from approved film assets.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

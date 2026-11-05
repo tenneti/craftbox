@@ -1,0 +1,19 @@
+{
+  "$id": "filmcraft.lighting_setup.v1",
+  "title": "A reusable project-level lighting setup (a set of lights) that can start a lighting plan in another scene",
+  "type": "object",
+  "required": ["schema", "project_id", "setup"],
+  "properties": {
+    "schema": {"const": "filmcraft.lighting_setup.v1"},
+    "project_id": {"type": "string", "minLength": 1},
+    "note": {"type": "string"},
+    "setup": {"type": "object", "required": ["id", "name", "lights"], "properties": {
+      "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$", "maxLength": 40},
+      "name": {"type": "string", "minLength": 1, "maxLength": 120},
+      "summary": {"type": "string"},
+      "from_scene_id": {"type": "string"},
+      "from_plan_id": {"type": "string"},
+      "lights": {"type": "array", "minItems": 1, "items": {"$ref": "filmcraft.light.v1"}}}},
+    "analysis": {"type": "object"}
+  }
+}

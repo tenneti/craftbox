@@ -1,0 +1,723 @@
+{
+  "schema": "filmcraft.art_direction_manifest.v1",
+  "manifest_id": "adm-6aca96d6-1090-4b89-9761-3f64abac4b68",
+  "exported_at": "2026-11-01T16:10:32.263Z",
+  "source": {
+    "application": "craftbox",
+    "version": "0.3.0",
+    "run_id": "6aca96d6-1090-4b89-9761-3f64abac4b68",
+    "experiment_id": "2bec72e1-cd65-4b9c-9ec3-00519800cdf7",
+    "source_status": "current"
+  },
+  "approval": {
+    "status": "approved",
+    "reviewer": "Sample Art Director",
+    "approved_at": "2026-11-01T16:10:32.236Z",
+    "note": "Sample approval"
+  },
+  "overrides": [],
+  "provenance": {
+    "ai_used": false,
+    "source": "local-manual"
+  },
+  "import_policy": {
+    "auto_import": false,
+    "requires_user_confirmation": true,
+    "note": "A Dreambox-owned adapter must validate schema, IDs, hashes and asset rights and stage the import; nothing is imported automatically."
+  },
+  "project": {
+    "id": "closing-hour",
+    "title": "The Closing Hour"
+  },
+  "scene": {
+    "id": "SC-001",
+    "slugline": "INT. PAGE & CANDLE BOOKSHOP - NIGHT",
+    "fps": 24
+  },
+  "treatment": {
+    "id": "TR-WARM-NOSTALGIA",
+    "intent": "Make the room feel lived in and remembered, so the characters' silence reads as history held close rather than distance.",
+    "name": "Warm nostalgia",
+    "preset": "warm_nostalgia",
+    "summary": "An intimate shop that has kept everything: aged wood, amber light, objects that belong to someone."
+  },
+  "location": {
+    "architecture": [
+      {
+        "description": "",
+        "id": "P-DOOR",
+        "name": "Shop door"
+      }
+    ],
+    "description": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it.",
+    "details": [],
+    "entrances": [
+      {
+        "name": "Shop door",
+        "note": "",
+        "object_id": "P-DOOR"
+      }
+    ],
+    "environment": {
+      "atmosphere": "Close, warm and a little dusty; the rain makes it feel sheltered.",
+      "sounds": "",
+      "time_of_day": "Night",
+      "weather": ""
+    },
+    "exits": [
+      {
+        "name": "Shop door",
+        "note": "",
+        "object_id": "P-DOOR"
+      }
+    ],
+    "kind": "interior",
+    "name": "Page & Candle Bookshop",
+    "setting": "fictional"
+  },
+  "layout": {
+    "depth_m": 5.0,
+    "note": "Coordinates match the direction plan's stage: x left to right, y back wall to audience.",
+    "objects": [
+      {
+        "h": 0.1,
+        "id": "P-COUNTER",
+        "kind": "furniture",
+        "material_id": null,
+        "name": "Counter with till",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.24,
+        "x": 0.74,
+        "y": 0.42
+      },
+      {
+        "h": 0.09,
+        "id": "P-DOOR",
+        "kind": "architecture",
+        "material_id": null,
+        "name": "Shop door",
+        "notes": "",
+        "solid": false,
+        "texture_id": null,
+        "w": 0.07,
+        "x": 0.08,
+        "y": 0.88
+      },
+      {
+        "h": 0.06,
+        "id": "P-SHELF",
+        "kind": "furniture",
+        "material_id": null,
+        "name": "Crooked shelf of poetry",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.4,
+        "x": 0.5,
+        "y": 0.08
+      },
+      {
+        "h": 0.1,
+        "id": "D-ARMCHAIR",
+        "kind": "furniture",
+        "material_id": null,
+        "name": "Reading armchair",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.1,
+        "x": 0.9,
+        "y": 0.22
+      },
+      {
+        "h": 0.18,
+        "id": "D-RUG",
+        "kind": "decor",
+        "material_id": null,
+        "name": "Worn rug",
+        "notes": "",
+        "solid": false,
+        "texture_id": null,
+        "w": 0.3,
+        "x": 0.5,
+        "y": 0.55
+      },
+      {
+        "h": 0.04,
+        "id": "D-LAMP",
+        "kind": "decor",
+        "material_id": null,
+        "name": "Table lamp",
+        "notes": "",
+        "solid": false,
+        "texture_id": null,
+        "w": 0.04,
+        "x": 0.8,
+        "y": 0.36
+      },
+      {
+        "h": 0.03,
+        "id": "D-PHOTOS",
+        "kind": "decor",
+        "material_id": null,
+        "name": "Framed photographs",
+        "notes": "",
+        "solid": false,
+        "texture_id": null,
+        "w": 0.14,
+        "x": 0.28,
+        "y": 0.04
+      },
+      {
+        "h": 0.06,
+        "id": "D-STACKS",
+        "kind": "decor",
+        "material_id": null,
+        "name": "Stacked books",
+        "notes": "",
+        "solid": true,
+        "texture_id": null,
+        "w": 0.07,
+        "x": 0.6,
+        "y": 0.28
+      }
+    ],
+    "width_m": 6.0
+  },
+  "props": [
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "P-BOOK",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E02",
+        "SC-001-E05",
+        "SC-001-E15",
+        "SC-001-E23"
+      ],
+      "name": "Worn paperback",
+      "notes": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.12
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S02",
+        "SC-001-S04",
+        "SC-001-S12",
+        "SC-001-S21"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "P-SIGN",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E03",
+        "SC-001-E14",
+        "SC-001-E15",
+        "SC-001-E24"
+      ],
+      "name": "CLOSED / OPEN sign",
+      "notes": "",
+      "position": {
+        "x": 0.14,
+        "y": 0.82
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S03",
+        "SC-001-S11",
+        "SC-001-S12",
+        "SC-001-S22"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-TICKET",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E15",
+        "SC-001-E20",
+        "SC-001-E23"
+      ],
+      "name": "Ticket",
+      "notes": "",
+      "position": null,
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S12",
+        "SC-001-S18",
+        "SC-001-S21"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-COAT",
+      "kind": "prop",
+      "mentions": [
+        "SC-001-E02"
+      ],
+      "name": "Coat",
+      "notes": "",
+      "position": null,
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S02"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-LAMP",
+      "kind": "practical",
+      "mentions": [
+        "SC-001-E01"
+      ],
+      "name": "Lamp",
+      "notes": "",
+      "position": null,
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [
+        "SC-001-S01"
+      ],
+      "source": "script",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-TEA-CUP",
+      "kind": "personal",
+      "mentions": [],
+      "name": "Tea cup",
+      "notes": "",
+      "position": {
+        "x": 0.72,
+        "y": 0.43
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [],
+      "source": "manual",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-READING-GLASSES",
+      "kind": "personal",
+      "mentions": [],
+      "name": "Reading glasses",
+      "notes": "",
+      "position": {
+        "x": 0.88,
+        "y": 0.2
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [],
+      "source": "manual",
+      "states": [],
+      "status": "proposed"
+    },
+    {
+      "asset_ids": [],
+      "description": "",
+      "id": "PR-FRAMED-PHOTOGRAPH",
+      "kind": "personal",
+      "mentions": [],
+      "name": "Framed photograph",
+      "notes": "",
+      "position": {
+        "x": 0.28,
+        "y": 0.06
+      },
+      "scene_ids": [
+        "SC-001"
+      ],
+      "shot_ids": [],
+      "source": "manual",
+      "states": [],
+      "status": "proposed"
+    }
+  ],
+  "style": {
+    "materials": [
+      {
+        "finish": "matte, waxed",
+        "id": "M1",
+        "name": "Aged oak",
+        "notes": ""
+      },
+      {
+        "finish": "tarnished",
+        "id": "M2",
+        "name": "Brass",
+        "notes": ""
+      },
+      {
+        "finish": "creased",
+        "id": "M3",
+        "name": "Worn leather",
+        "notes": ""
+      },
+      {
+        "finish": "faded pattern",
+        "id": "M4",
+        "name": "Wool rug",
+        "notes": ""
+      }
+    ],
+    "mood_words": [
+      "intimate",
+      "nostalgic",
+      "sheltered"
+    ],
+    "palette": [
+      {
+        "hex": "#8B5E3C",
+        "id": "C1",
+        "name": "Aged oak",
+        "role": "dominant"
+      },
+      {
+        "hex": "#E0A85A",
+        "id": "C2",
+        "name": "Candlelight amber",
+        "role": "accent"
+      },
+      {
+        "hex": "#F1E3C8",
+        "id": "C3",
+        "name": "Faded cream",
+        "role": "light"
+      },
+      {
+        "hex": "#6B2D2D",
+        "id": "C4",
+        "name": "Oxblood leather",
+        "role": "accent"
+      },
+      {
+        "hex": "#5E6B4A",
+        "id": "C5",
+        "name": "Moss green",
+        "role": "support"
+      }
+    ],
+    "period": {
+      "era": "1980s, a shop that never modernised",
+      "notes": "Hand-lettered signs, mismatched lamps, no screens."
+    },
+    "profile_ref": null,
+    "textures": [
+      {
+        "asset_id": null,
+        "description": "Scratched, polished by hands",
+        "id": "T1",
+        "name": "Worn wood grain"
+      },
+      {
+        "asset_id": null,
+        "description": "Faded fabric covers, cracked gilt",
+        "id": "T2",
+        "name": "Cloth book spines"
+      },
+      {
+        "asset_id": null,
+        "description": "Yellowed pages, dog-eared corners",
+        "id": "T3",
+        "name": "Soft paper"
+      }
+    ],
+    "themes": [
+      "memory",
+      "warmth",
+      "accumulation"
+    ]
+  },
+  "variations": [],
+  "integration": {
+    "lighting": {
+      "palette": [
+        {
+          "hex": "#8B5E3C",
+          "id": "C1",
+          "name": "Aged oak",
+          "role": "dominant"
+        },
+        {
+          "hex": "#E0A85A",
+          "id": "C2",
+          "name": "Candlelight amber",
+          "role": "accent"
+        },
+        {
+          "hex": "#F1E3C8",
+          "id": "C3",
+          "name": "Faded cream",
+          "role": "light"
+        },
+        {
+          "hex": "#6B2D2D",
+          "id": "C4",
+          "name": "Oxblood leather",
+          "role": "accent"
+        },
+        {
+          "hex": "#5E6B4A",
+          "id": "C5",
+          "name": "Moss green",
+          "role": "support"
+        }
+      ],
+      "time_of_day": "Night",
+      "weather": "",
+      "atmosphere": "Close, warm and a little dusty; the rain makes it feel sheltered.",
+      "practical_lights": [
+        {
+          "id": "D-LAMP",
+          "name": "Table lamp",
+          "x": 0.8,
+          "y": 0.36,
+          "source": "layout"
+        },
+        {
+          "id": "PR-LAMP",
+          "name": "Lamp",
+          "x": null,
+          "y": null,
+          "source": "prop"
+        }
+      ],
+      "windows": []
+    },
+    "costume": {
+      "palette": [
+        {
+          "hex": "#8B5E3C",
+          "id": "C1",
+          "name": "Aged oak",
+          "role": "dominant"
+        },
+        {
+          "hex": "#E0A85A",
+          "id": "C2",
+          "name": "Candlelight amber",
+          "role": "accent"
+        },
+        {
+          "hex": "#F1E3C8",
+          "id": "C3",
+          "name": "Faded cream",
+          "role": "light"
+        },
+        {
+          "hex": "#6B2D2D",
+          "id": "C4",
+          "name": "Oxblood leather",
+          "role": "accent"
+        },
+        {
+          "hex": "#5E6B4A",
+          "id": "C5",
+          "name": "Moss green",
+          "role": "support"
+        }
+      ],
+      "period": {
+        "era": "1980s, a shop that never modernised",
+        "notes": "Hand-lettered signs, mismatched lamps, no screens."
+      },
+      "materials": [
+        {
+          "finish": "matte, waxed",
+          "id": "M1",
+          "name": "Aged oak",
+          "notes": ""
+        },
+        {
+          "finish": "tarnished",
+          "id": "M2",
+          "name": "Brass",
+          "notes": ""
+        },
+        {
+          "finish": "creased",
+          "id": "M3",
+          "name": "Worn leather",
+          "notes": ""
+        },
+        {
+          "finish": "faded pattern",
+          "id": "M4",
+          "name": "Wool rug",
+          "notes": ""
+        }
+      ],
+      "textures": [
+        "Worn wood grain",
+        "Cloth book spines",
+        "Soft paper"
+      ],
+      "note": "Wardrobe should be checked against this palette; the Costume craft is not built yet."
+    },
+    "cinematography": {
+      "layout": {
+        "width_m": 6.0,
+        "depth_m": 5.0,
+        "objects": [
+          {
+            "id": "P-COUNTER",
+            "x": 0.74,
+            "y": 0.42,
+            "w": 0.24,
+            "h": 0.1,
+            "solid": true
+          },
+          {
+            "id": "P-DOOR",
+            "x": 0.08,
+            "y": 0.88,
+            "w": 0.07,
+            "h": 0.09,
+            "solid": false
+          },
+          {
+            "id": "P-SHELF",
+            "x": 0.5,
+            "y": 0.08,
+            "w": 0.4,
+            "h": 0.06,
+            "solid": true
+          },
+          {
+            "id": "D-ARMCHAIR",
+            "x": 0.9,
+            "y": 0.22,
+            "w": 0.1,
+            "h": 0.1,
+            "solid": true
+          },
+          {
+            "id": "D-RUG",
+            "x": 0.5,
+            "y": 0.55,
+            "w": 0.3,
+            "h": 0.18,
+            "solid": false
+          },
+          {
+            "id": "D-LAMP",
+            "x": 0.8,
+            "y": 0.36,
+            "w": 0.04,
+            "h": 0.04,
+            "solid": false
+          },
+          {
+            "id": "D-PHOTOS",
+            "x": 0.28,
+            "y": 0.04,
+            "w": 0.14,
+            "h": 0.03,
+            "solid": false
+          },
+          {
+            "id": "D-STACKS",
+            "x": 0.6,
+            "y": 0.28,
+            "w": 0.07,
+            "h": 0.06,
+            "solid": true
+          }
+        ]
+      },
+      "variations": []
+    },
+    "scene_maker": {
+      "location": {
+        "name": "Page & Candle Bookshop",
+        "description": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it.",
+        "lighting": "Close, warm and a little dusty; the rain makes it feel sheltered.",
+        "time": "Night",
+        "weather": ""
+      },
+      "props": [
+        {
+          "name": "Worn paperback",
+          "description": ""
+        },
+        {
+          "name": "CLOSED / OPEN sign",
+          "description": ""
+        },
+        {
+          "name": "Ticket",
+          "description": ""
+        },
+        {
+          "name": "Coat",
+          "description": ""
+        },
+        {
+          "name": "Lamp",
+          "description": ""
+        },
+        {
+          "name": "Tea cup",
+          "description": ""
+        },
+        {
+          "name": "Reading glasses",
+          "description": ""
+        },
+        {
+          "name": "Framed photograph",
+          "description": ""
+        }
+      ],
+      "continuity_facts": [],
+      "verify": "Scene Maker prop and location shapes were not read closely; see docs/dreambox-overlap-audit.md section 7"
+    }
+  },
+  "hashes": {
+    "scene_hash": "0f26e814d547b86c",
+    "art_hash": "c49200c0ef231aef"
+  },
+  "manifest_sha256": "a5aaa046e6383482324213805143bebead69a1861f1447978f95da0922a37cd8"
+}

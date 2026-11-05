@@ -1,0 +1,28 @@
+{
+  "$id": "filmcraft.export_manifest.v1",
+  "title": "Craftbox export manifest for future Dreambox import adapters",
+  "type": "object",
+  "required": ["schema", "manifest_id", "exported_at", "source", "craft_id", "experiment_id", "run_id", "engine_version", "approval", "input_hash", "output_sha256", "artifact_type", "artifact_schema", "artifact", "media_references", "provenance", "warnings", "manifest_sha256"],
+  "properties": {
+    "schema": {"const": "filmcraft.export_manifest.v1"},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string"},
+    "source": {"type": "object", "required": ["application", "version"]},
+    "craft_id": {"type": "string", "minLength": 1},
+    "experiment_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "engine_version": {"type": "string"},
+    "input_schema": {"type": ["string", "null"]},
+    "input_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "output_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "artifact_type": {"type": "string"},
+    "artifact_schema": {"type": "string"},
+    "artifact": {"type": "object"},
+    "approval": {"type": "object", "required": ["status", "reviewer", "approved_at"], "properties": {"status": {"enum": ["approved", "exported"]}, "reviewer": {"type": "string", "minLength": 1}, "approved_at": {"type": "string"}, "note": {"type": ["string", "null"]}}},
+    "media_references": {"type": "object", "required": ["referenced", "unresolved_count"]},
+    "provenance": {"type": "object"},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "signature": {"type": ["string", "null"]}
+  }
+}

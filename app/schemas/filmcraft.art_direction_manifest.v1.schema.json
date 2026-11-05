@@ -1,0 +1,23 @@
+{
+  "$id": "filmcraft.art_direction_manifest.v1",
+  "title": "Approved art direction for one scene, prepared for future Lighting, Costume, Cinematography and Dreambox Scene Maker adapters",
+  "type": "object",
+  "required": ["schema", "manifest_id", "exported_at", "source", "project", "scene", "treatment", "location", "layout", "props", "style", "variations", "integration", "approval", "hashes", "provenance", "import_policy", "manifest_sha256"],
+  "properties": {
+    "schema": {"const": "filmcraft.art_direction_manifest.v1"},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string"},
+    "source": {"type": "object", "required": ["application", "version", "run_id", "experiment_id"]},
+    "project": {"type": "object", "required": ["id", "title"]},
+    "scene": {"type": "object", "required": ["id", "slugline"]},
+    "treatment": {"type": "object", "required": ["id", "name"]},
+    "location": {"type": "object"}, "layout": {"type": "object"}, "props": {"type": "array"}, "style": {"type": "object"}, "variations": {"type": "array"},
+    "integration": {"type": "object", "required": ["lighting", "costume", "cinematography", "scene_maker"]},
+    "approval": {"type": "object", "required": ["status", "reviewer", "approved_at"]},
+    "hashes": {"type": "object", "required": ["scene_hash", "art_hash"]},
+    "overrides": {"type": "array", "items": {"type": "string"}},
+    "provenance": {"type": "object"},
+    "import_policy": {"type": "object", "required": ["auto_import"]},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

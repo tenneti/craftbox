@@ -1,0 +1,12 @@
+{
+  "id": "stunts",
+  "name": "Stunt Direction",
+  "group": "Visual Production",
+  "description": "Action beats, safe previsualization and specialist review gates",
+  "dreambox_target": "Previz / Scene Maker",
+  "mvp": "Create non-executable action blocking and review checklists; real stunts require qualified supervision.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

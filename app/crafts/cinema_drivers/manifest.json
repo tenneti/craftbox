@@ -1,0 +1,12 @@
+{
+  "id": "cinema_drivers",
+  "name": "Transport / Cinema Drivers",
+  "group": "Production Operations",
+  "description": "Travel logistics and equipment movement plans",
+  "dreambox_target": "Production Board",
+  "mvp": "Optional logistics for physical shoots; deprioritize for wholly virtual films.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

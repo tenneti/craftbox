@@ -1,0 +1,44 @@
+{
+  "scene": {
+    "schema": "filmcraft.scene.v1",
+    "project_id": "romance-pilot",
+    "scene_id": "SC-001",
+    "slugline": "EXT. RAILWAY PLATFORM - DAWN",
+    "action": "Mist lifts as Karthik watches the first train pull in.",
+    "characters": [
+      {
+        "id": "C-001",
+        "name": "Karthik"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker_id": "C-001",
+        "text": "Maybe every journey begins before we notice."
+      }
+    ],
+    "synopsis": "A solitary traveler is surprised by a familiar melody.",
+    "fps": 24,
+    "duration_frames": 864
+  },
+  "shots": [
+    {
+      "shot_id": "SC-001-A",
+      "shot_type": "EWS",
+      "duration_frames": 192,
+      "lens_mm": 28,
+      "camera_movement": "static",
+      "subject": "misty platform establishing",
+      "media_asset_id": null
+    },
+    {
+      "shot_id": "SC-001-B",
+      "shot_type": "CU",
+      "duration_frames": 144,
+      "lens_mm": 50,
+      "camera_movement": "slow push",
+      "subject": "traveler listens",
+      "media_asset_id": null
+    }
+  ]
+}

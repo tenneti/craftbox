@@ -1,0 +1,14 @@
+{
+  "id": "cinematography",
+  "name": "Cinematography",
+  "group": "Visual Production",
+  "description": "Shot composition, lens and camera movement plan",
+  "dreambox_target": "Previz / Scene Maker",
+  "mvp": "Accept a scene and manually specified shots; output a validated shot plan.",
+  "status": "pilot",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false,
+  "input_schema": "filmcraft.input.cinematography.v1",
+  "output_schema": "filmcraft.shot_plan.v1"
+}

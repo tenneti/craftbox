@@ -1,0 +1,4785 @@
+{
+  "schema": "filmcraft.lighting_instructions.v1",
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "plan_id": "LP-COOL-DRAMATIC",
+  "plan_name": "Cool, restrained, dramatic",
+  "stage": {
+    "width_m": 6.0,
+    "depth_m": 5.0
+  },
+  "conventions": {
+    "stage_xy": "0..1; x left to right, y from the back wall (0) to the audience (1)",
+    "rotation_deg": "0 faces the audience, 90 faces right, 180 faces the back wall, 270 faces left",
+    "intensity": "0 to 1, relative",
+    "tilt_deg": "negative aims downward"
+  },
+  "conditions": {
+    "mood_words": [
+      "detached",
+      "quiet",
+      "exposed"
+    ],
+    "narrative_purpose": "Restraint: say less with the light, and let shadow carry the distance.",
+    "time_of_day": "night",
+    "weather": "rain"
+  },
+  "scene_setup": [
+    {
+      "id": "L-KEY",
+      "name": "Hard cool key from the street",
+      "role": "key",
+      "source": "natural",
+      "kind": "street",
+      "enabled": true,
+      "stage": {
+        "x": 0.04,
+        "y": 0.78,
+        "height_m": 2.0
+      },
+      "metres": {
+        "x": 0.24,
+        "y": 3.9,
+        "z": 2.0
+      },
+      "rotation_deg": 108.0,
+      "tilt_deg": -20,
+      "intensity": 1.0,
+      "color_temp_k": 5200,
+      "beam_angle_deg": 50,
+      "softness": 0.25,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 9.0
+      },
+      "positional": true,
+      "motivated_by": "P-DOOR",
+      "practical_object_id": "",
+      "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-FILL",
+      "name": "Barely-there fill",
+      "role": "fill",
+      "source": "artificial",
+      "kind": "bounce",
+      "enabled": true,
+      "stage": {
+        "x": 0.5,
+        "y": 0.97,
+        "height_m": 1.6
+      },
+      "metres": {
+        "x": 3.0,
+        "y": 4.85,
+        "z": 1.6
+      },
+      "rotation_deg": 175.6,
+      "tilt_deg": -20,
+      "intensity": 0.05,
+      "color_temp_k": 6000,
+      "beam_angle_deg": 140,
+      "softness": 1.0,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "Only enough to keep the shadow side from going black.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-RIM",
+      "name": "Cold backlight",
+      "role": "backlight",
+      "source": "artificial",
+      "kind": "fresnel",
+      "enabled": true,
+      "stage": {
+        "x": 0.8,
+        "y": 0.08,
+        "height_m": 2.5
+      },
+      "metres": {
+        "x": 4.8,
+        "y": 0.4,
+        "z": 2.5
+      },
+      "rotation_deg": 327.1,
+      "tilt_deg": -20,
+      "intensity": 0.45,
+      "color_temp_k": 7000,
+      "beam_angle_deg": 35,
+      "softness": 0.2,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-LAMP",
+      "name": "Floor lamp, the only warm light",
+      "role": "practical",
+      "source": "artificial",
+      "kind": "practical_lamp",
+      "enabled": true,
+      "stage": {
+        "x": 0.92,
+        "y": 0.12,
+        "height_m": 1.5
+      },
+      "metres": {
+        "x": 5.52,
+        "y": 0.6,
+        "z": 1.5
+      },
+      "rotation_deg": 314.7,
+      "tilt_deg": 0,
+      "intensity": 0.18,
+      "color_temp_k": 3200,
+      "beam_angle_deg": 70,
+      "softness": 0.8,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 4.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "D-FLOORLAMP",
+      "narrative_purpose": "One small warm pool that belongs to the past.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-AMB",
+      "name": "Cold room level",
+      "role": "ambient",
+      "source": "natural",
+      "kind": "ambient",
+      "enabled": true,
+      "stage": {
+        "x": 0.5,
+        "y": 0.5,
+        "height_m": 2.0
+      },
+      "metres": {
+        "x": 3.0,
+        "y": 2.5,
+        "z": 2.0
+      },
+      "rotation_deg": 17.8,
+      "tilt_deg": -20,
+      "intensity": 0.03,
+      "color_temp_k": 6200,
+      "beam_angle_deg": 180,
+      "softness": 1.0,
+      "falloff": {
+        "mode": "none",
+        "range_m": 10.0
+      },
+      "positional": false,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "Very low, so the room stays dark.",
+      "adjusted_for_shot": false
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC-001-S01",
+      "beat_id": "SC-001-B1",
+      "size": "WS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.486,
+          "y": 1.36
+        },
+        "target": {
+          "x": 0.486,
+          "y": 0.56
+        },
+        "fov_deg": 61.9
+      },
+      "adjustment_id": "ADJ-S01",
+      "adjustment_reason": "L-FILL is raised to 2.6 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 2.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 2.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-KEY"
+          ],
+          "character_id": "C-001",
+          "kelvin": 5326,
+          "key_fill_ratio": 3.1,
+          "level_end": 0.109,
+          "level_start": 0.059,
+          "shadow_deg": 128.0
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 2.3,
+          "level_end": 0.099,
+          "level_start": 0.099,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S02",
+      "beat_id": "SC-001-B1",
+      "size": "MWS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 40,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.272,
+          "y": 1.11
+        },
+        "target": {
+          "x": 0.272,
+          "y": 0.56
+        },
+        "fov_deg": 48.5
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-KEY"
+          ],
+          "character_id": "C-001",
+          "kelvin": 5326,
+          "key_fill_ratio": 3.1,
+          "level_end": 0.109,
+          "level_start": 0.059,
+          "shadow_deg": 128.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S03",
+      "beat_id": "SC-001-B2",
+      "size": "MS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 50,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.504,
+          "y": 1.035
+        },
+        "target": {
+          "x": 0.504,
+          "y": 0.585
+        },
+        "fov_deg": 39.6
+      },
+      "adjustment_id": "ADJ-S03",
+      "adjustment_reason": "L-FILL is raised to 2.0 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 2.0
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5328,
+          "key_fill_ratio": 7.4,
+          "level_end": 0.317,
+          "level_start": 0.11,
+          "shadow_deg": 118.0
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 4.3,
+          "level_end": 0.178,
+          "level_start": 0.178,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S04",
+      "beat_id": "SC-001-B2",
+      "size": "WS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.504,
+          "y": 1.385
+        },
+        "target": {
+          "x": 0.504,
+          "y": 0.585
+        },
+        "fov_deg": 61.9
+      },
+      "adjustment_id": "ADJ-S04",
+      "adjustment_reason": "L-FILL is raised to 2.6 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 2.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 2.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5328,
+          "key_fill_ratio": 7.4,
+          "level_end": 0.317,
+          "level_start": 0.11,
+          "shadow_deg": 118.0
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 4.3,
+          "level_end": 0.178,
+          "level_start": 0.178,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S05",
+      "beat_id": "SC-001-B2",
+      "size": "MWS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 40,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.308,
+          "y": 1.16
+        },
+        "target": {
+          "x": 0.308,
+          "y": 0.61
+        },
+        "fov_deg": 48.5
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5328,
+          "key_fill_ratio": 7.4,
+          "level_end": 0.317,
+          "level_start": 0.11,
+          "shadow_deg": 118.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S06",
+      "beat_id": "SC-001-B3",
+      "size": "MCU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.7,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 4.3,
+          "level_end": 0.176,
+          "level_start": 0.176,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S07",
+      "beat_id": "SC-001-B3",
+      "size": "CU",
+      "angle": "low",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 0.8,
+          "x": 0.38,
+          "y": 0.81
+        },
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S07",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5334,
+          "key_fill_ratio": 4.1,
+          "level_end": 0.256,
+          "level_start": 0.281,
+          "shadow_deg": 118.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S08",
+      "beat_id": "SC-001-B3",
+      "size": "MS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 50,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.38,
+          "y": 1.01
+        },
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        },
+        "fov_deg": 39.6
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5319,
+          "key_fill_ratio": 4.7,
+          "level_end": 0.278,
+          "level_start": 0.317,
+          "shadow_deg": 118.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S09",
+      "beat_id": "SC-001-B3",
+      "size": "MCU",
+      "angle": "low",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 0.8,
+          "x": 0.7,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 4.3,
+          "level_end": 0.176,
+          "level_start": 0.176,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S10",
+      "beat_id": "SC-001-B3",
+      "size": "CU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.38,
+          "y": 0.81
+        },
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S10",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5334,
+          "key_fill_ratio": 4.1,
+          "level_end": 0.256,
+          "level_start": 0.281,
+          "shadow_deg": 118.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S11",
+      "beat_id": "SC-001-B4",
+      "size": "ECU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.7,
+          "y": 0.71
+        },
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S11",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5070,
+          "key_fill_ratio": 3.8,
+          "level_end": 0.16,
+          "level_start": 0.16,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S12",
+      "beat_id": "SC-001-B4",
+      "size": "ECU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.576,
+          "y": 0.735
+        },
+        "target": {
+          "x": 0.576,
+          "y": 0.585
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S12",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5358,
+          "key_fill_ratio": 3.4,
+          "level_end": 0.239,
+          "level_start": 0.256,
+          "shadow_deg": 109.0
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5070,
+          "key_fill_ratio": 3.8,
+          "level_end": 0.16,
+          "level_start": 0.16,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S13",
+      "beat_id": "SC-001-B4",
+      "size": "CU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.452,
+          "y": 0.86
+        },
+        "target": {
+          "x": 0.452,
+          "y": 0.61
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S13",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5358,
+          "key_fill_ratio": 3.4,
+          "level_end": 0.239,
+          "level_start": 0.256,
+          "shadow_deg": 109.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S14",
+      "beat_id": "SC-001-B5",
+      "size": "MCU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.448,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.448,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5349,
+          "key_fill_ratio": 3.7,
+          "level_end": 0.254,
+          "level_start": 0.258,
+          "shadow_deg": 114.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S15",
+      "beat_id": "SC-001-B5",
+      "size": "CU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.81
+        },
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S15",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5789,
+          "key_fill_ratio": 4.0,
+          "level_end": 0.226,
+          "level_start": 0.156,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S16",
+      "beat_id": "SC-001-B5",
+      "size": "ECU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.448,
+          "y": 0.71
+        },
+        "target": {
+          "x": 0.448,
+          "y": 0.56
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S16",
+      "adjustment_reason": "Close-up: the key eases off so the eyes stay readable.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 0.85,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5365,
+          "key_fill_ratio": 3.3,
+          "level_end": 0.238,
+          "level_start": 0.24,
+          "shadow_deg": 114.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S17",
+      "beat_id": "SC-001-B5",
+      "size": "MCU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5750,
+          "key_fill_ratio": 4.6,
+          "level_end": 0.248,
+          "level_start": 0.176,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S18",
+      "beat_id": "SC-001-B6",
+      "size": "MS",
+      "angle": "eye",
+      "camera_side": "axis",
+      "lens_mm": 50,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.14,
+          "y": 0.585
+        },
+        "target": {
+          "x": 0.59,
+          "y": 0.585
+        },
+        "fov_deg": 39.6
+      },
+      "adjustment_id": "ADJ-S18",
+      "adjustment_reason": "The peak of the scene: the shadow side goes deeper.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.02,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5344,
+          "key_fill_ratio": 3.5,
+          "level_end": 0.24,
+          "level_start": 0.248,
+          "shadow_deg": 106.0
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5743,
+          "key_fill_ratio": 5.2,
+          "level_end": 0.246,
+          "level_start": 0.246,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S19",
+      "beat_id": "SC-001-B6",
+      "size": "CU",
+      "angle": "eye",
+      "camera_side": "B",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.52,
+          "y": 0.36
+        },
+        "target": {
+          "x": 0.52,
+          "y": 0.61
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S19",
+      "adjustment_reason": "The peak of the scene: the shadow side goes deeper.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.02,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 5344,
+          "key_fill_ratio": 3.5,
+          "level_end": 0.24,
+          "level_start": 0.248,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S20",
+      "beat_id": "SC-001-B6",
+      "size": "ECU",
+      "angle": "high",
+      "camera_side": "B",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.41
+        },
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S20",
+      "adjustment_reason": "The peak of the scene: the shadow side goes deeper.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 1.6
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.02,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5743,
+          "key_fill_ratio": 5.2,
+          "level_end": 0.246,
+          "level_start": 0.246,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S21",
+      "beat_id": "SC-001-B7",
+      "size": "MWS",
+      "angle": "eye",
+      "camera_side": "axis",
+      "lens_mm": 40,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": -0.13,
+          "y": 0.7
+        },
+        "target": {
+          "x": 0.42,
+          "y": 0.7
+        },
+        "fov_deg": 48.5
+      },
+      "adjustment_id": "ADJ-S21",
+      "adjustment_reason": "L-FILL is raised to 2.9 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 2.9
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 2.9
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 6598,
+          "key_fill_ratio": null,
+          "level_end": 0.062,
+          "level_start": 0.244,
+          "shadow_deg": null
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 4.2,
+          "level_end": 0.181,
+          "level_start": 0.255,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S22",
+      "beat_id": "SC-001-B7",
+      "size": "WS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.42,
+          "y": 1.5
+        },
+        "target": {
+          "x": 0.42,
+          "y": 0.7
+        },
+        "fov_deg": 61.9
+      },
+      "adjustment_id": "ADJ-S22",
+      "adjustment_reason": "L-FILL is raised to 2.8 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Hard cool key from the street",
+          "role": "key",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.04,
+            "y": 0.78,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 0.24,
+            "y": 3.9,
+            "z": 2.0
+          },
+          "rotation_deg": 108.0,
+          "tilt_deg": -20,
+          "intensity": 1.0,
+          "color_temp_k": 5200,
+          "beam_angle_deg": 50,
+          "softness": 0.25,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Barely-there fill",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.97,
+            "height_m": 2.8
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 4.85,
+            "z": 2.8
+          },
+          "rotation_deg": 175.6,
+          "tilt_deg": -20,
+          "intensity": 0.05,
+          "color_temp_k": 6000,
+          "beam_angle_deg": 140,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Cold backlight",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.08,
+            "height_m": 2.5
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 0.4,
+            "z": 2.5
+          },
+          "rotation_deg": 327.1,
+          "tilt_deg": -20,
+          "intensity": 0.45,
+          "color_temp_k": 7000,
+          "beam_angle_deg": 35,
+          "softness": 0.2,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Floor lamp, the only warm light",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.92,
+            "y": 0.12,
+            "height_m": 1.5
+          },
+          "metres": {
+            "x": 5.52,
+            "y": 0.6,
+            "z": 1.5
+          },
+          "rotation_deg": 314.7,
+          "tilt_deg": 0,
+          "intensity": 0.18,
+          "color_temp_k": 3200,
+          "beam_angle_deg": 70,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-FLOORLAMP",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Cold room level",
+          "role": "ambient",
+          "source": "natural",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.03,
+          "color_temp_k": 6200,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 6598,
+          "key_fill_ratio": null,
+          "level_end": 0.062,
+          "level_start": 0.244,
+          "shadow_deg": null
+        },
+        {
+          "blocked_lights": [
+            "L-LAMP"
+          ],
+          "character_id": "C-002",
+          "kelvin": 5083,
+          "key_fill_ratio": 4.2,
+          "level_end": 0.181,
+          "level_start": 0.255,
+          "shadow_deg": 106.0
+        }
+      ],
+      "fixtures_in_frame": []
+    }
+  ],
+  "art_reference": {
+    "treatment_id": "TR-EMOTIONAL-DISTANCE",
+    "treatment_name": "Emotional distance",
+    "art_hash": "18af6484386729fd"
+  },
+  "model_note": "Positions and levels are planning estimates on the director's stage plan, not a physical lighting simulation.",
+  "plan_hash": "7350c092be401460",
+  "generated_at": "2026-11-02T17:04:55.021Z"
+}

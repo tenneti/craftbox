@@ -1,0 +1,12 @@
+{
+  "id": "casting",
+  "name": "Casting",
+  "group": "Story & Direction",
+  "description": "Character bible, performer references, permissions and look tests",
+  "dreambox_target": "Character Library",
+  "mvp": "Maintain a versioned character casting bible and approved performance/likeness assets.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

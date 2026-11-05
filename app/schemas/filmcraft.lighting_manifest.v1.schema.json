@@ -1,0 +1,28 @@
+{
+  "$id": "filmcraft.lighting_manifest.v1",
+  "title": "Approved lighting plan for one scene, prepared for Cinematography, previz and a future Dreambox Scene Maker adapter; art-direction data is referenced, not copied",
+  "type": "object",
+  "required": ["schema", "manifest_id", "exported_at", "source", "project", "scene", "plan", "conditions", "lights", "adjustments", "art_reference", "continuity", "integration", "approval", "hashes", "provenance", "import_policy", "manifest_sha256"],
+  "properties": {
+    "schema": {"const": "filmcraft.lighting_manifest.v1"},
+    "manifest_id": {"type": "string", "minLength": 1},
+    "exported_at": {"type": "string"},
+    "source": {"type": "object", "required": ["application", "version", "run_id", "experiment_id"]},
+    "project": {"type": "object", "required": ["id", "title"]},
+    "scene": {"type": "object", "required": ["id", "slugline"]},
+    "plan": {"type": "object", "required": ["id", "name"]},
+    "conditions": {"type": "object"},
+    "lights": {"type": "array", "items": {"type": "object", "required": ["id", "role", "metres"]}},
+    "adjustments": {"type": "array"},
+    "art_reference": {"type": "object", "required": ["treatment_id", "art_hash"]},
+    "continuity": {"type": "object", "required": ["readiness", "metrics", "open_findings"]},
+    "integration": {"type": "object", "required": ["cinematography", "previz", "scene_maker"]},
+    "approval": {"type": "object", "required": ["status", "reviewer"]},
+    "overrides": {"type": "array", "items": {"type": "string"}},
+    "hashes": {"type": "object", "required": ["scene_hash", "plan_hash", "art_hash"]},
+    "provenance": {"type": "object"},
+    "import_policy": {"type": "object", "required": ["auto_import"]},
+    "model_note": {"type": "string"},
+    "manifest_sha256": {"type": "string", "minLength": 64}
+  }
+}

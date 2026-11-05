@@ -1,0 +1,54 @@
+{
+  "stale": true,
+  "scene_removed": false,
+  "changed_beats": [
+    "SC-001-B5"
+  ],
+  "removed_beats": [],
+  "added_beats": [],
+  "changed_elements": [
+    "SC-001-E17"
+  ],
+  "removed_elements": [],
+  "added_elements": [],
+  "affected_shots": [
+    "SC-001-S14",
+    "SC-001-S15",
+    "SC-001-S16",
+    "SC-001-S17"
+  ],
+  "approved_affected": [
+    "SC-001-S14",
+    "SC-001-S15",
+    "SC-001-S16",
+    "SC-001-S17"
+  ],
+  "reasons": {
+    "SC-001-S14": [
+      "its beat changed"
+    ],
+    "SC-001-S15": [
+      "its beat changed",
+      "script line(s) changed: SC-001-E17"
+    ],
+    "SC-001-S16": [
+      "its beat changed"
+    ],
+    "SC-001-S17": [
+      "its beat changed"
+    ]
+  },
+  "unplanned_beats": [],
+  "unplanned_elements": [],
+  "summary": "1 beat(s) changed, 0 removed, 0 added; 1 script line(s) changed, 0 removed, 0 added; 4 shot(s) depend on changed material",
+  "against": {
+    "experiment_id": "a33fb96b-e0f7-47b1-ba05-88b294dd0e62",
+    "run_id": "41723ad8-4ceb-4996-b174-0327e2821039",
+    "revision": 2
+  },
+  "plan": {
+    "experiment_id": "7b46a1ef-de8d-4789-8966-471f6f0853fd",
+    "run_id": "37d474a1-9d59-46a3-812c-a87eb1771284",
+    "source_revision": 1
+  }
+}

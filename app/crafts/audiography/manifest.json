@@ -1,0 +1,12 @@
+{
+  "id": "audiography",
+  "name": "Audiography / Sound Design",
+  "group": "Post-production",
+  "description": "Ambience, Foley, dialogue, effects and mix plans",
+  "dreambox_target": "Music Lab / Audio Engine",
+  "mvp": "Design per-scene soundscape stems distinct from BGM and songs.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

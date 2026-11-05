@@ -1,0 +1,1128 @@
+{
+  "a": {
+    "run_id": "68e24b33-5630-4e9d-85f8-14fddeefc221",
+    "plan": {
+      "id": "LP-WARM-NATURALISTIC",
+      "intent": "Make the shop feel lived in and safe, so the tension between the two people is the only thing that is not comfortable.",
+      "name": "Warm, naturalistic, intimate",
+      "preset": "warm_naturalistic",
+      "summary": "Soft, low, warm light that seems to come from the lamps in the room and the street outside. People stay close together in one pool of light."
+    },
+    "art_treatment": "Warm nostalgia",
+    "key": {
+      "id": "L-KEY",
+      "name": "Soft key, motivated by the lamp",
+      "source": "artificial",
+      "x": 0.74,
+      "y": 0.66,
+      "rotation_deg": 255.0,
+      "intensity": 0.75,
+      "color_temp_k": 2900,
+      "beam_angle_deg": 80,
+      "softness": 0.8
+    }
+  },
+  "b": {
+    "run_id": "b8293eb7-60e1-4dfa-9777-add725f51570",
+    "plan": {
+      "id": "LP-COOL-DRAMATIC",
+      "intent": "Keep the room cold and the people apart; the single warm lamp is the only place that feels like the past.",
+      "name": "Cool, restrained, dramatic",
+      "preset": "cool_dramatic",
+      "summary": "One hard, cool light from the street cuts into a dark room. Very little fill, so faces are half in shadow and there is space between people."
+    },
+    "art_treatment": "Emotional distance",
+    "key": {
+      "id": "L-KEY",
+      "name": "Hard cool key from the street",
+      "source": "natural",
+      "x": 0.04,
+      "y": 0.78,
+      "rotation_deg": 108.0,
+      "intensity": 1.0,
+      "color_temp_k": 5200,
+      "beam_angle_deg": 50,
+      "softness": 0.25
+    }
+  },
+  "metrics": [
+    {
+      "metric": "Lights switched on",
+      "key": "lights_on",
+      "a": 6,
+      "b": 5,
+      "differs": true
+    },
+    {
+      "metric": "Natural sources",
+      "key": "natural_sources",
+      "a": 1,
+      "b": 2,
+      "differs": true
+    },
+    {
+      "metric": "Backlights and rims",
+      "key": "separation_lights",
+      "a": 1,
+      "b": 1,
+      "differs": false
+    },
+    {
+      "metric": "Average colour temperature (K)",
+      "key": "mean_kelvin",
+      "a": 2842,
+      "b": 5245,
+      "differs": true
+    },
+    {
+      "metric": "Key light colour temperature (K)",
+      "key": "key_kelvin",
+      "a": 2850,
+      "b": 5200,
+      "differs": true
+    },
+    {
+      "metric": "Key light softness (0 hard, 1 soft)",
+      "key": "key_softness",
+      "a": 0.7,
+      "b": 0.25,
+      "differs": true
+    },
+    {
+      "metric": "Key to fill ratio on the people",
+      "key": "key_fill_ratio",
+      "a": 2.0,
+      "b": 4.3,
+      "differs": true
+    },
+    {
+      "metric": "Key to fill ratio at the peak of the scene",
+      "key": "peak_key_fill_ratio",
+      "a": 2.6,
+      "b": 4.3,
+      "differs": true
+    },
+    {
+      "metric": "Contrast across the playing area",
+      "key": "contrast",
+      "a": 5.0,
+      "b": 16.9,
+      "differs": true
+    },
+    {
+      "metric": "Share of the playing area in shadow",
+      "key": "shadow_fraction",
+      "a": 0.0,
+      "b": 0.42,
+      "differs": true
+    },
+    {
+      "metric": "Average level on the playing area (0-1)",
+      "key": "mean_level",
+      "a": 0.55,
+      "b": 0.25,
+      "differs": true
+    },
+    {
+      "metric": "Share of lights with a visible reason",
+      "key": "motivated_fraction",
+      "a": 0.6,
+      "b": 0.5,
+      "differs": true
+    },
+    {
+      "metric": "Shots with their own adjustment",
+      "key": "adjusted_shots",
+      "a": 14,
+      "b": 15,
+      "differs": true
+    }
+  ],
+  "readings": {
+    "a": [
+      {
+        "because": "average colour 2842 K",
+        "text": "Warm light: the room reads as intimate and safe."
+      },
+      {
+        "because": "key to fill ratio 2.0:1",
+        "text": "Low contrast: gentle, even light that keeps faces open."
+      },
+      {
+        "because": "average key softness 0.7",
+        "text": "Soft key: skin looks kind and edges are quiet."
+      },
+      {
+        "because": "0% of the playing area is dark",
+        "text": "The playing area is evenly lit; the whole room is visible."
+      },
+      {
+        "because": "60% of the lights are tied to a source in the room or outside it",
+        "text": "Most light has a visible reason (lamps, doors, windows): naturalistic."
+      },
+      {
+        "because": "ratio 2.6:1 at the peak against 2.0:1 on average",
+        "text": "The light changes at the peak of the scene, so the key moment is marked by the lighting."
+      }
+    ],
+    "b": [
+      {
+        "because": "average colour 5245 K",
+        "text": "Cool light: the room reads as detached and restrained."
+      },
+      {
+        "because": "key to fill ratio 4.3:1",
+        "text": "High contrast: deep shadows on one side of each face, a dramatic and guarded feeling."
+      },
+      {
+        "because": "average key softness 0.25",
+        "text": "Hard key: crisp edges and clear shadows, more tension."
+      },
+      {
+        "because": "42% of the playing area is dark",
+        "text": "Much of the playing area is in shadow, which leaves space and mystery around the people."
+      },
+      {
+        "because": "50% of the lights are tied to a source in the room or outside it",
+        "text": "Much of the light has no visible reason: stylised."
+      }
+    ]
+  },
+  "differences": {
+    "lights_only_a": [
+      "Street light through the door"
+    ],
+    "lights_only_b": [],
+    "moved": [
+      "Soft fill from the audience side",
+      "Soft key, motivated by the lamp",
+      "Table lamp (visible in the room)",
+      "Warm backlight from the shelves"
+    ]
+  },
+  "intent": {
+    "a": "Make the shop feel lived in and safe, so the tension between the two people is the only thing that is not comfortable.",
+    "b": "Keep the room cold and the people apart; the single warm lamp is the only place that feels like the past."
+  },
+  "conditions": {
+    "a": {
+      "mood_words": [
+        "intimate",
+        "nostalgic",
+        "sheltered"
+      ],
+      "narrative_purpose": "Warmth that comes from the room itself, so the audience believes in the place before it believes in the argument.",
+      "time_of_day": "night",
+      "weather": "rain"
+    },
+    "b": {
+      "mood_words": [
+        "detached",
+        "quiet",
+        "exposed"
+      ],
+      "narrative_purpose": "Restraint: say less with the light, and let shadow carry the distance.",
+      "time_of_day": "night",
+      "weather": "rain"
+    }
+  },
+  "docs": {
+    "a": {
+      "lights": [
+        {
+          "beam_angle_deg": 80,
+          "color_temp_k": 2900,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "height_m": 2.1,
+          "id": "L-KEY",
+          "intensity": 0.75,
+          "kind": "softbox",
+          "motivated_by": "D-LAMP",
+          "name": "Soft key, motivated by the lamp",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "key",
+          "rotation_deg": 255.0,
+          "softness": 0.8,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.74,
+          "y": 0.66
+        },
+        {
+          "beam_angle_deg": 120,
+          "color_temp_k": 2700,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "height_m": 1.1,
+          "id": "L-LAMP",
+          "intensity": 0.5,
+          "kind": "practical_lamp",
+          "motivated_by": "",
+          "name": "Table lamp (visible in the room)",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "D-LAMP",
+          "role": "practical",
+          "rotation_deg": 304.9,
+          "softness": 0.9,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": 0,
+          "x": 0.8,
+          "y": 0.36
+        },
+        {
+          "beam_angle_deg": 110,
+          "color_temp_k": 3000,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "height_m": 1.6,
+          "id": "L-FILL",
+          "intensity": 0.32,
+          "kind": "bounce",
+          "motivated_by": "",
+          "name": "Soft fill from the audience side",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "fill",
+          "rotation_deg": 134.5,
+          "softness": 1.0,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.22,
+          "y": 0.95
+        },
+        {
+          "beam_angle_deg": 50,
+          "color_temp_k": 2800,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "height_m": 2.4,
+          "id": "L-RIM",
+          "intensity": 0.35,
+          "kind": "fresnel",
+          "motivated_by": "",
+          "name": "Warm backlight from the shelves",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "backlight",
+          "rotation_deg": 46.6,
+          "softness": 0.5,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.18,
+          "y": 0.2
+        },
+        {
+          "beam_angle_deg": 70,
+          "color_temp_k": 2800,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "height_m": 1.8,
+          "id": "L-DOOR",
+          "intensity": 0.25,
+          "kind": "street",
+          "motivated_by": "P-DOOR",
+          "name": "Street light through the door",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "motivated",
+          "rotation_deg": 114.2,
+          "softness": 0.6,
+          "source": "natural",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.1,
+          "y": 0.82
+        },
+        {
+          "beam_angle_deg": 180,
+          "color_temp_k": 2900,
+          "enabled": true,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "height_m": 2.0,
+          "id": "L-AMB",
+          "intensity": 0.18,
+          "kind": "ambient",
+          "motivated_by": "",
+          "name": "Warm room glow",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "notes": "",
+          "positional": false,
+          "practical_object_id": "",
+          "role": "ambient",
+          "rotation_deg": 17.8,
+          "softness": 1.0,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "stage": {
+        "width_m": 6.0,
+        "depth_m": 5.0
+      },
+      "art": {
+        "layout": {
+          "depth_m": 5.0,
+          "note": "Coordinates match the direction plan's stage: x left to right, y back wall to audience.",
+          "objects": [
+            {
+              "h": 0.1,
+              "id": "P-COUNTER",
+              "kind": "furniture",
+              "material_id": null,
+              "name": "Counter with till",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.24,
+              "x": 0.74,
+              "y": 0.42
+            },
+            {
+              "h": 0.09,
+              "id": "P-DOOR",
+              "kind": "architecture",
+              "material_id": null,
+              "name": "Shop door",
+              "notes": "",
+              "solid": false,
+              "texture_id": null,
+              "w": 0.07,
+              "x": 0.08,
+              "y": 0.88
+            },
+            {
+              "h": 0.06,
+              "id": "P-SHELF",
+              "kind": "furniture",
+              "material_id": null,
+              "name": "Crooked shelf of poetry",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.4,
+              "x": 0.5,
+              "y": 0.08
+            },
+            {
+              "h": 0.1,
+              "id": "D-ARMCHAIR",
+              "kind": "furniture",
+              "material_id": null,
+              "name": "Reading armchair",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.1,
+              "x": 0.9,
+              "y": 0.22
+            },
+            {
+              "h": 0.18,
+              "id": "D-RUG",
+              "kind": "decor",
+              "material_id": null,
+              "name": "Worn rug",
+              "notes": "",
+              "solid": false,
+              "texture_id": null,
+              "w": 0.3,
+              "x": 0.5,
+              "y": 0.55
+            },
+            {
+              "h": 0.04,
+              "id": "D-LAMP",
+              "kind": "decor",
+              "material_id": null,
+              "name": "Table lamp",
+              "notes": "",
+              "solid": false,
+              "texture_id": null,
+              "w": 0.04,
+              "x": 0.8,
+              "y": 0.36
+            },
+            {
+              "h": 0.03,
+              "id": "D-PHOTOS",
+              "kind": "decor",
+              "material_id": null,
+              "name": "Framed photographs",
+              "notes": "",
+              "solid": false,
+              "texture_id": null,
+              "w": 0.14,
+              "x": 0.28,
+              "y": 0.04
+            },
+            {
+              "h": 0.06,
+              "id": "D-STACKS",
+              "kind": "decor",
+              "material_id": null,
+              "name": "Stacked books",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.07,
+              "x": 0.6,
+              "y": 0.28
+            }
+          ],
+          "width_m": 6.0
+        },
+        "props": [
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "P-BOOK",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E02",
+              "SC-001-E05",
+              "SC-001-E15",
+              "SC-001-E23"
+            ],
+            "name": "Worn paperback",
+            "notes": "",
+            "position": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S02",
+              "SC-001-S04",
+              "SC-001-S12",
+              "SC-001-S21"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "P-SIGN",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E03",
+              "SC-001-E14",
+              "SC-001-E15",
+              "SC-001-E24"
+            ],
+            "name": "CLOSED / OPEN sign",
+            "notes": "",
+            "position": {
+              "x": 0.14,
+              "y": 0.82
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S03",
+              "SC-001-S11",
+              "SC-001-S12",
+              "SC-001-S22"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-TICKET",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E15",
+              "SC-001-E20",
+              "SC-001-E23"
+            ],
+            "name": "Ticket",
+            "notes": "",
+            "position": null,
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S12",
+              "SC-001-S18",
+              "SC-001-S21"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-COAT",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E02"
+            ],
+            "name": "Coat",
+            "notes": "",
+            "position": null,
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S02"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-LAMP",
+            "kind": "practical",
+            "mentions": [
+              "SC-001-E01"
+            ],
+            "name": "Lamp",
+            "notes": "",
+            "position": null,
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S01"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-TEA-CUP",
+            "kind": "personal",
+            "mentions": [],
+            "name": "Tea cup",
+            "notes": "",
+            "position": {
+              "x": 0.72,
+              "y": 0.43
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [],
+            "source": "manual",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-READING-GLASSES",
+            "kind": "personal",
+            "mentions": [],
+            "name": "Reading glasses",
+            "notes": "",
+            "position": {
+              "x": 0.88,
+              "y": 0.2
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [],
+            "source": "manual",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-FRAMED-PHOTOGRAPH",
+            "kind": "personal",
+            "mentions": [],
+            "name": "Framed photograph",
+            "notes": "",
+            "position": {
+              "x": 0.28,
+              "y": 0.06
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [],
+            "source": "manual",
+            "states": [],
+            "status": "proposed"
+          }
+        ],
+        "palette": [
+          {
+            "hex": "#8B5E3C",
+            "id": "C1",
+            "name": "Aged oak",
+            "role": "dominant"
+          },
+          {
+            "hex": "#E0A85A",
+            "id": "C2",
+            "name": "Candlelight amber",
+            "role": "accent"
+          },
+          {
+            "hex": "#F1E3C8",
+            "id": "C3",
+            "name": "Faded cream",
+            "role": "light"
+          },
+          {
+            "hex": "#6B2D2D",
+            "id": "C4",
+            "name": "Oxblood leather",
+            "role": "accent"
+          },
+          {
+            "hex": "#5E6B4A",
+            "id": "C5",
+            "name": "Moss green",
+            "role": "support"
+          }
+        ],
+        "treatment": {
+          "id": "TR-WARM-NOSTALGIA",
+          "intent": "Make the room feel lived in and remembered, so the characters' silence reads as history held close rather than distance.",
+          "name": "Warm nostalgia",
+          "preset": "warm_nostalgia",
+          "summary": "An intimate shop that has kept everything: aged wood, amber light, objects that belong to someone."
+        }
+      }
+    },
+    "b": {
+      "lights": [
+        {
+          "beam_angle_deg": 50,
+          "color_temp_k": 5200,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 9.0
+          },
+          "height_m": 2.0,
+          "id": "L-KEY",
+          "intensity": 1.0,
+          "kind": "street",
+          "motivated_by": "P-DOOR",
+          "name": "Hard cool key from the street",
+          "narrative_purpose": "A single hard light from outside: half of each face stays dark.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "key",
+          "rotation_deg": 108.0,
+          "softness": 0.25,
+          "source": "natural",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.04,
+          "y": 0.78
+        },
+        {
+          "beam_angle_deg": 140,
+          "color_temp_k": 6000,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "height_m": 1.6,
+          "id": "L-FILL",
+          "intensity": 0.05,
+          "kind": "bounce",
+          "motivated_by": "",
+          "name": "Barely-there fill",
+          "narrative_purpose": "Only enough to keep the shadow side from going black.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "fill",
+          "rotation_deg": 175.6,
+          "softness": 1.0,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.5,
+          "y": 0.97
+        },
+        {
+          "beam_angle_deg": 35,
+          "color_temp_k": 7000,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "height_m": 2.5,
+          "id": "L-RIM",
+          "intensity": 0.45,
+          "kind": "fresnel",
+          "motivated_by": "",
+          "name": "Cold backlight",
+          "narrative_purpose": "A thin cold edge that cuts each person out of the dark.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "",
+          "role": "backlight",
+          "rotation_deg": 327.1,
+          "softness": 0.2,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.8,
+          "y": 0.08
+        },
+        {
+          "beam_angle_deg": 70,
+          "color_temp_k": 3200,
+          "enabled": true,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 4.0
+          },
+          "height_m": 1.5,
+          "id": "L-LAMP",
+          "intensity": 0.18,
+          "kind": "practical_lamp",
+          "motivated_by": "",
+          "name": "Floor lamp, the only warm light",
+          "narrative_purpose": "One small warm pool that belongs to the past.",
+          "notes": "",
+          "positional": true,
+          "practical_object_id": "D-FLOORLAMP",
+          "role": "practical",
+          "rotation_deg": 314.7,
+          "softness": 0.8,
+          "source": "artificial",
+          "status": "proposed",
+          "tilt_deg": 0,
+          "x": 0.92,
+          "y": 0.12
+        },
+        {
+          "beam_angle_deg": 180,
+          "color_temp_k": 6200,
+          "enabled": true,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "height_m": 2.0,
+          "id": "L-AMB",
+          "intensity": 0.03,
+          "kind": "ambient",
+          "motivated_by": "",
+          "name": "Cold room level",
+          "narrative_purpose": "Very low, so the room stays dark.",
+          "notes": "",
+          "positional": false,
+          "practical_object_id": "",
+          "role": "ambient",
+          "rotation_deg": 17.8,
+          "softness": 1.0,
+          "source": "natural",
+          "status": "proposed",
+          "tilt_deg": -20,
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "stage": {
+        "width_m": 6.0,
+        "depth_m": 5.0
+      },
+      "art": {
+        "layout": {
+          "depth_m": 5.0,
+          "note": "Coordinates match the direction plan's stage: x left to right, y back wall to audience.",
+          "objects": [
+            {
+              "h": 0.1,
+              "id": "P-COUNTER",
+              "kind": "furniture",
+              "material_id": null,
+              "name": "Counter with till",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.24,
+              "x": 0.84,
+              "y": 0.42
+            },
+            {
+              "h": 0.09,
+              "id": "P-DOOR",
+              "kind": "architecture",
+              "material_id": null,
+              "name": "Shop door",
+              "notes": "",
+              "solid": false,
+              "texture_id": null,
+              "w": 0.07,
+              "x": 0.08,
+              "y": 0.88
+            },
+            {
+              "h": 0.06,
+              "id": "P-SHELF",
+              "kind": "furniture",
+              "material_id": null,
+              "name": "Crooked shelf of poetry",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.22,
+              "x": 0.5,
+              "y": 0.08
+            },
+            {
+              "h": 0.06,
+              "id": "D-BENCH",
+              "kind": "furniture",
+              "material_id": null,
+              "name": "Single bench",
+              "notes": "",
+              "solid": true,
+              "texture_id": null,
+              "w": 0.16,
+              "x": 0.14,
+              "y": 0.62
+            },
+            {
+              "h": 0.04,
+              "id": "D-FLOORLAMP",
+              "kind": "decor",
+              "material_id": null,
+              "name": "Floor lamp",
+              "notes": "",
+              "solid": false,
+              "texture_id": null,
+              "w": 0.04,
+              "x": 0.92,
+              "y": 0.12
+            }
+          ],
+          "width_m": 6.0
+        },
+        "props": [
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "P-BOOK",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E02",
+              "SC-001-E05",
+              "SC-001-E15",
+              "SC-001-E23"
+            ],
+            "name": "Worn paperback",
+            "notes": "",
+            "position": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S02",
+              "SC-001-S04",
+              "SC-001-S12",
+              "SC-001-S21"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "P-SIGN",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E03",
+              "SC-001-E14",
+              "SC-001-E15",
+              "SC-001-E24"
+            ],
+            "name": "CLOSED / OPEN sign",
+            "notes": "",
+            "position": {
+              "x": 0.14,
+              "y": 0.82
+            },
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S03",
+              "SC-001-S11",
+              "SC-001-S12",
+              "SC-001-S22"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-TICKET",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E15",
+              "SC-001-E20",
+              "SC-001-E23"
+            ],
+            "name": "Ticket",
+            "notes": "",
+            "position": null,
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S12",
+              "SC-001-S18",
+              "SC-001-S21"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-COAT",
+            "kind": "prop",
+            "mentions": [
+              "SC-001-E02"
+            ],
+            "name": "Coat",
+            "notes": "",
+            "position": null,
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S02"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          },
+          {
+            "asset_ids": [],
+            "description": "",
+            "id": "PR-LAMP",
+            "kind": "practical",
+            "mentions": [
+              "SC-001-E01"
+            ],
+            "name": "Lamp",
+            "notes": "",
+            "position": null,
+            "scene_ids": [
+              "SC-001"
+            ],
+            "shot_ids": [
+              "SC-001-S01"
+            ],
+            "source": "script",
+            "states": [],
+            "status": "proposed"
+          }
+        ],
+        "palette": [
+          {
+            "hex": "#CFD6D9",
+            "id": "C1",
+            "name": "Pale ash",
+            "role": "dominant"
+          },
+          {
+            "hex": "#5C6F80",
+            "id": "C2",
+            "name": "Slate blue",
+            "role": "accent"
+          },
+          {
+            "hex": "#F4F7F8",
+            "id": "C3",
+            "name": "Cold white",
+            "role": "light"
+          },
+          {
+            "hex": "#3A4046",
+            "id": "C4",
+            "name": "Graphite",
+            "role": "support"
+          },
+          {
+            "hex": "#8A949B",
+            "id": "C5",
+            "name": "Steel grey",
+            "role": "support"
+          }
+        ],
+        "treatment": {
+          "id": "TR-EMOTIONAL-DISTANCE",
+          "intent": "Leave room around the characters so the space itself says how far apart they have grown.",
+          "name": "Emotional distance",
+          "preset": "emotional_distance",
+          "summary": "A restrained, almost empty shop: cool light, pale surfaces, space between the people."
+        }
+      }
+    }
+  },
+  "model_note": "Levels are relative planning estimates (0 is dark, 1 is full), not measured light or a physical simulation."
+}

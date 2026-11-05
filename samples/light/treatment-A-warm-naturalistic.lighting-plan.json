@@ -1,0 +1,1340 @@
+{
+  "adjustments": [
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 3.2,
+          "light_id": "L-KEY"
+        }
+      ],
+      "id": "ADJ-S01",
+      "reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S01",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 2.1,
+          "light_id": "L-FILL"
+        }
+      ],
+      "id": "ADJ-S02",
+      "reason": "L-FILL is raised to 2.1 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S02",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 3.2,
+          "light_id": "L-KEY"
+        }
+      ],
+      "id": "ADJ-S04",
+      "reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S04",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S07",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S07",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S10",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S10",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S11",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S11",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S12",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S12",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S13",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S13",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S15",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S15",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S16",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S16",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 2.6,
+          "light_id": "L-KEY"
+        }
+      ],
+      "id": "ADJ-S18",
+      "reason": "The peak of the scene: a little brighter and warmer, as if the lamp had been turned up. L-KEY is raised to 2.6 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S18",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S19",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S19",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "light_id": "L-KEY",
+          "softness": 1.0
+        }
+      ],
+      "id": "ADJ-S20",
+      "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "shot_id": "SC-001-S20",
+      "status": "proposed"
+    },
+    {
+      "accepted_findings": [],
+      "added_lights": [],
+      "changes": [
+        {
+          "height_m": 3.5,
+          "light_id": "L-KEY"
+        },
+        {
+          "height_m": 2.9,
+          "light_id": "L-FILL"
+        }
+      ],
+      "id": "ADJ-S22",
+      "reason": "L-KEY is raised to 3.5 m so it stays above this wide frame. L-FILL is raised to 2.9 m so it stays above this wide frame.",
+      "shot_id": "SC-001-S22",
+      "status": "proposed"
+    }
+  ],
+  "analysis": {
+    "draft_notes": [],
+    "issues": [],
+    "metrics": {
+      "adjusted_shots": 14,
+      "by_role": {
+        "ambient": 1,
+        "backlight": 1,
+        "fill": 1,
+        "key": 1,
+        "motivated": 1,
+        "practical": 1
+      },
+      "contrast": 5.0,
+      "key_fill_ratio": 2.0,
+      "key_kelvin": 2850,
+      "key_softness": 0.7,
+      "lights": 6,
+      "lights_on": 6,
+      "mean_kelvin": 2842,
+      "mean_level": 0.55,
+      "motivated_fraction": 0.6,
+      "natural_sources": 1,
+      "peak_key_fill_ratio": 2.6,
+      "separation_lights": 1,
+      "shadow_fraction": 0.0,
+      "shots": 22
+    },
+    "model_note": "Levels are relative planning estimates (0 is dark, 1 is full), not measured light or a physical simulation.",
+    "plan_hash": "2cf50498d26ebead",
+    "readiness": {
+      "advice": "Ready for review.",
+      "attention": 0,
+      "notes": 0,
+      "pending_review": 0
+    },
+    "reading": [
+      {
+        "because": "average colour 2842 K",
+        "text": "Warm light: the room reads as intimate and safe."
+      },
+      {
+        "because": "key to fill ratio 2.0:1",
+        "text": "Low contrast: gentle, even light that keeps faces open."
+      },
+      {
+        "because": "average key softness 0.7",
+        "text": "Soft key: skin looks kind and edges are quiet."
+      },
+      {
+        "because": "0% of the playing area is dark",
+        "text": "The playing area is evenly lit; the whole room is visible."
+      },
+      {
+        "because": "60% of the lights are tied to a source in the room or outside it",
+        "text": "Most light has a visible reason (lamps, doors, windows): naturalistic."
+      },
+      {
+        "because": "ratio 2.6:1 at the peak against 2.0:1 on average",
+        "text": "The light changes at the peak of the scene, so the key moment is marked by the lighting."
+      }
+    ],
+    "shots": [
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B1",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 252.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+        "shot_id": "SC-001-S01",
+        "size": "WS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2865,
+            "key_fill_ratio": 2.0,
+            "level_end": 0.505,
+            "level_start": 0.246,
+            "shadow_deg": 260.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": null,
+            "level_end": 0.604,
+            "level_start": 0.604,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B1",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 260.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "L-FILL is raised to 2.1 m so it stays above this wide frame.",
+        "shot_id": "SC-001-S02",
+        "size": "MWS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2865,
+            "key_fill_ratio": 2.0,
+            "level_end": 0.505,
+            "level_start": 0.246,
+            "shadow_deg": 260.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B2",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 255.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S03",
+        "size": "MS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2861,
+            "key_fill_ratio": 2.1,
+            "level_end": 0.637,
+            "level_start": 0.512,
+            "shadow_deg": 264.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.449,
+            "level_start": 0.449,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B2",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 255.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+        "shot_id": "SC-001-S04",
+        "size": "WS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2861,
+            "key_fill_ratio": 2.1,
+            "level_end": 0.637,
+            "level_start": 0.512,
+            "shadow_deg": 264.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.449,
+            "level_start": 0.449,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B2",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 264.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S05",
+        "size": "MWS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2861,
+            "key_fill_ratio": 2.1,
+            "level_end": 0.637,
+            "level_start": 0.512,
+            "shadow_deg": 264.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B3",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 206.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S06",
+        "size": "MCU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.448,
+            "level_start": 0.448,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B3",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 257.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S07",
+        "size": "CU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2853,
+            "key_fill_ratio": 2.5,
+            "level_end": 0.795,
+            "level_start": 0.604,
+            "shadow_deg": 257.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B3",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 257.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S08",
+        "size": "MS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2853,
+            "key_fill_ratio": 2.5,
+            "level_end": 0.797,
+            "level_start": 0.637,
+            "shadow_deg": 257.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B3",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 206.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S09",
+        "size": "MCU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.448,
+            "level_start": 0.448,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B3",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 257.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S10",
+        "size": "CU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2853,
+            "key_fill_ratio": 2.5,
+            "level_end": 0.795,
+            "level_start": 0.604,
+            "shadow_deg": 257.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B4",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 206.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S11",
+        "size": "ECU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.449,
+            "level_start": 0.449,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B4",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 249.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S12",
+        "size": "ECU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2861,
+            "key_fill_ratio": 3.2,
+            "level_end": 0.983,
+            "level_start": 0.795,
+            "shadow_deg": 262.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.449,
+            "level_start": 0.449,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B4",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 262.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S13",
+        "size": "CU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2861,
+            "key_fill_ratio": 3.2,
+            "level_end": 0.983,
+            "level_start": 0.795,
+            "shadow_deg": 262.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B5",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 254.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S14",
+        "size": "MCU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2855,
+            "key_fill_ratio": 3.3,
+            "level_end": 0.986,
+            "level_start": 1.022,
+            "shadow_deg": 254.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B5",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 224.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S15",
+        "size": "CU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2789,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.533,
+            "level_start": 0.448,
+            "shadow_deg": 111.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B5",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 254.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S16",
+        "size": "ECU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2855,
+            "key_fill_ratio": 3.2,
+            "level_end": 0.986,
+            "level_start": 0.981,
+            "shadow_deg": 254.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B5",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 224.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S17",
+        "size": "MCU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2794,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.549,
+            "level_start": 0.448,
+            "shadow_deg": 224.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B6",
+        "camera_side": "axis",
+        "fixtures_in_frame": [],
+        "key_bearing": 247.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "The peak of the scene: a little brighter and warmer, as if the lamp had been turned up. L-KEY is raised to 2.6 m so it stays above this wide frame.",
+        "shot_id": "SC-001-S18",
+        "size": "MS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2859,
+            "key_fill_ratio": 4.1,
+            "level_end": 1.223,
+            "level_start": 0.986,
+            "shadow_deg": 259.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2794,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.548,
+            "level_start": 0.548,
+            "shadow_deg": 224.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B6",
+        "camera_side": "B",
+        "fixtures_in_frame": [],
+        "key_bearing": 259.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "left",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S19",
+        "size": "CU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2858,
+            "key_fill_ratio": 4.0,
+            "level_end": 1.2,
+            "level_start": 0.986,
+            "shadow_deg": 259.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B6",
+        "camera_side": "B",
+        "fixtures_in_frame": [],
+        "key_bearing": 224.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "left",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "Close-up: the key goes fully soft so skin looks gentle.",
+        "shot_id": "SC-001-S20",
+        "size": "ECU",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2789,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.532,
+            "level_start": 0.532,
+            "shadow_deg": 111.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": false,
+        "beat_id": "SC-001-B7",
+        "camera_side": "axis",
+        "fixtures_in_frame": [],
+        "key_bearing": 276.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "left",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "",
+        "shot_id": "SC-001-S21",
+        "size": "MWS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2858,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.265,
+            "level_start": 1.232,
+            "shadow_deg": 284.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.445,
+            "level_start": 0.545,
+            "shadow_deg": 110.0
+          }
+        ]
+      },
+      {
+        "accepted": [],
+        "adjusted": true,
+        "beat_id": "SC-001-B7",
+        "camera_side": "A",
+        "fixtures_in_frame": [],
+        "key_bearing": 276.0,
+        "key_id": "L-KEY",
+        "key_intensity": 0.75,
+        "key_kelvin": 2900,
+        "key_side": "right",
+        "lights_on": [
+          "L-KEY",
+          "L-LAMP",
+          "L-FILL",
+          "L-RIM",
+          "L-DOOR",
+          "L-AMB"
+        ],
+        "reason": "L-KEY is raised to 3.5 m so it stays above this wide frame. L-FILL is raised to 2.9 m so it stays above this wide frame.",
+        "shot_id": "SC-001-S22",
+        "size": "WS",
+        "subjects": [
+          {
+            "blocked_lights": [],
+            "character_id": "C-001",
+            "kelvin": 2858,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.265,
+            "level_start": 1.232,
+            "shadow_deg": 284.0
+          },
+          {
+            "blocked_lights": [],
+            "character_id": "C-002",
+            "kelvin": 2785,
+            "key_fill_ratio": 1.2,
+            "level_end": 0.445,
+            "level_start": 0.545,
+            "shadow_deg": 110.0
+          }
+        ]
+      }
+    ]
+  },
+  "conditions": {
+    "mood_words": [
+      "intimate",
+      "nostalgic",
+      "sheltered"
+    ],
+    "narrative_purpose": "Warmth that comes from the room itself, so the audience believes in the place before it believes in the argument.",
+    "time_of_day": "night",
+    "weather": "rain"
+  },
+  "lights": [
+    {
+      "beam_angle_deg": 80,
+      "color_temp_k": 2900,
+      "enabled": true,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "height_m": 2.1,
+      "id": "L-KEY",
+      "intensity": 0.75,
+      "kind": "softbox",
+      "motivated_by": "D-LAMP",
+      "name": "Soft key, motivated by the lamp",
+      "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+      "notes": "",
+      "positional": true,
+      "practical_object_id": "",
+      "role": "key",
+      "rotation_deg": 255.0,
+      "softness": 0.8,
+      "source": "artificial",
+      "status": "proposed",
+      "tilt_deg": -20,
+      "x": 0.74,
+      "y": 0.66
+    },
+    {
+      "beam_angle_deg": 120,
+      "color_temp_k": 2700,
+      "enabled": true,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 6.0
+      },
+      "height_m": 1.1,
+      "id": "L-LAMP",
+      "intensity": 0.5,
+      "kind": "practical_lamp",
+      "motivated_by": "",
+      "name": "Table lamp (visible in the room)",
+      "narrative_purpose": "The visible reason for the warmth.",
+      "notes": "",
+      "positional": true,
+      "practical_object_id": "D-LAMP",
+      "role": "practical",
+      "rotation_deg": 304.9,
+      "softness": 0.9,
+      "source": "artificial",
+      "status": "proposed",
+      "tilt_deg": 0,
+      "x": 0.8,
+      "y": 0.36
+    },
+    {
+      "beam_angle_deg": 110,
+      "color_temp_k": 3000,
+      "enabled": true,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "height_m": 1.6,
+      "id": "L-FILL",
+      "intensity": 0.32,
+      "kind": "bounce",
+      "motivated_by": "",
+      "name": "Soft fill from the audience side",
+      "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+      "notes": "",
+      "positional": true,
+      "practical_object_id": "",
+      "role": "fill",
+      "rotation_deg": 134.5,
+      "softness": 1.0,
+      "source": "artificial",
+      "status": "proposed",
+      "tilt_deg": -20,
+      "x": 0.22,
+      "y": 0.95
+    },
+    {
+      "beam_angle_deg": 50,
+      "color_temp_k": 2800,
+      "enabled": true,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "height_m": 2.4,
+      "id": "L-RIM",
+      "intensity": 0.35,
+      "kind": "fresnel",
+      "motivated_by": "",
+      "name": "Warm backlight from the shelves",
+      "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+      "notes": "",
+      "positional": true,
+      "practical_object_id": "",
+      "role": "backlight",
+      "rotation_deg": 46.6,
+      "softness": 0.5,
+      "source": "artificial",
+      "status": "proposed",
+      "tilt_deg": -20,
+      "x": 0.18,
+      "y": 0.2
+    },
+    {
+      "beam_angle_deg": 70,
+      "color_temp_k": 2800,
+      "enabled": true,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 7.0
+      },
+      "height_m": 1.8,
+      "id": "L-DOOR",
+      "intensity": 0.25,
+      "kind": "street",
+      "motivated_by": "P-DOOR",
+      "name": "Street light through the door",
+      "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+      "notes": "",
+      "positional": true,
+      "practical_object_id": "",
+      "role": "motivated",
+      "rotation_deg": 114.2,
+      "softness": 0.6,
+      "source": "natural",
+      "status": "proposed",
+      "tilt_deg": -20,
+      "x": 0.1,
+      "y": 0.82
+    },
+    {
+      "beam_angle_deg": 180,
+      "color_temp_k": 2900,
+      "enabled": true,
+      "falloff": {
+        "mode": "none",
+        "range_m": 10.0
+      },
+      "height_m": 2.0,
+      "id": "L-AMB",
+      "intensity": 0.18,
+      "kind": "ambient",
+      "motivated_by": "",
+      "name": "Warm room glow",
+      "narrative_purpose": "A low base level so shadows never go fully black.",
+      "notes": "",
+      "positional": false,
+      "practical_object_id": "",
+      "role": "ambient",
+      "rotation_deg": 17.8,
+      "softness": 1.0,
+      "source": "artificial",
+      "status": "proposed",
+      "tilt_deg": -20,
+      "x": 0.5,
+      "y": 0.5
+    }
+  ],
+  "plan": {
+    "id": "LP-WARM-NATURALISTIC",
+    "intent": "Make the shop feel lived in and safe, so the tension between the two people is the only thing that is not comfortable.",
+    "name": "Warm, naturalistic, intimate",
+    "preset": "warm_naturalistic",
+    "summary": "Soft, low, warm light that seems to come from the lamps in the room and the street outside. People stay close together in one pool of light."
+  },
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "schema": "filmcraft.lighting_plan.v1",
+  "source": {
+    "art": {
+      "art_hash": "dfaaebdf695328b0",
+      "object_hashes": {
+        "D-ARMCHAIR": "4dd600bbfb81",
+        "D-LAMP": "3bda48a039ae",
+        "D-PHOTOS": "b2611dbc47dc",
+        "D-RUG": "8849bfaa881a",
+        "D-STACKS": "35a5a052229a",
+        "P-COUNTER": "a5433f48edc7",
+        "P-DOOR": "47a2956b5f0e",
+        "P-SHELF": "ad12d4583a31"
+      },
+      "stage": {
+        "depth_m": 5.0,
+        "width_m": 6.0
+      },
+      "time_of_day": "Night",
+      "treatment_id": "TR-WARM-NOSTALGIA",
+      "treatment_name": "Warm nostalgia"
+    },
+    "beat_hashes": {
+      "SC-001-B1": "b5e9d763eb7ecfa7",
+      "SC-001-B2": "8da88a9ad410042f",
+      "SC-001-B3": "315a23e0578ccd72",
+      "SC-001-B4": "13d1fafbe66ce2f6",
+      "SC-001-B5": "9472e17dad200d3b",
+      "SC-001-B6": "6195da4409a5e2d0",
+      "SC-001-B7": "445f903c1a6e01af"
+    },
+    "plan": {
+      "blocking_hashes": {
+        "SC-001-B1": "583df605337c",
+        "SC-001-B2": "e73e0d80d680",
+        "SC-001-B3": "898bbc610f96",
+        "SC-001-B4": "f7b2621645e8",
+        "SC-001-B5": "fdae25553722",
+        "SC-001-B6": "3155aaa82aa5",
+        "SC-001-B7": "55f7fdb21300"
+      },
+      "camera_hashes": {
+        "SC-001-S01": "66f7cbac6cc3",
+        "SC-001-S02": "f6e424efc4cf",
+        "SC-001-S03": "386c0c93a1af",
+        "SC-001-S04": "f65afc3eee8c",
+        "SC-001-S05": "f4b915de857f",
+        "SC-001-S06": "c2526011869b",
+        "SC-001-S07": "638b20422e2d",
+        "SC-001-S08": "40bc46ed9e96",
+        "SC-001-S09": "97fb4e2642cc",
+        "SC-001-S10": "8c67dbe2e7c3",
+        "SC-001-S11": "65771c1dd97b",
+        "SC-001-S12": "46a0841a3345",
+        "SC-001-S13": "a023640a93d8",
+        "SC-001-S14": "45fe34045cbb",
+        "SC-001-S15": "e0fff553f0d4",
+        "SC-001-S16": "331214f966bc",
+        "SC-001-S17": "d8e81f850246",
+        "SC-001-S18": "e7709474e341",
+        "SC-001-S19": "1ca3230422ac",
+        "SC-001-S20": "47da1be17aa5",
+        "SC-001-S21": "7f3ed520e8c7",
+        "SC-001-S22": "e392e2d97433"
+      },
+      "plan_hash": "24f29470233f5bf7"
+    },
+    "project_id": "closing-hour",
+    "ref": {
+      "art_experiment_id": "414696d1-19a8-41cb-881b-a08058439d0f",
+      "plan_experiment_id": "35a1f419-4fd4-4a77-9efe-836ccc40c436",
+      "screenplay_experiment_id": "d7d36084-03cf-4383-8598-df08a34f1769"
+    },
+    "scene_hash": "0f26e814d547b86c",
+    "scene_id": "SC-001",
+    "screenplay_revision": 1
+  }
+}

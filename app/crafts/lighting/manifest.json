@@ -1,0 +1,22 @@
+{
+  "id": "lighting",
+  "name": "Lighting / Light Technicians",
+  "group": "Visual Production",
+  "description": "Lighting map, sources, intensity and mood references",
+  "dreambox_target": "Previz / Scene Maker",
+  "mvp": "Design one scene's lighting on the art treatment's set layout and the director's blocking and cameras: scene setup, shot adjustments, continuity checks, treatment comparison and approved lighting exports.",
+  "status": "pilot",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false,
+  "input_schema": "filmcraft.input.lighting.v1",
+  "output_schema": "filmcraft.lighting_plan.v1",
+  "modes": [
+    {
+      "id": "setup",
+      "match_schema": "filmcraft.lighting_setup.v1",
+      "input_schema": "filmcraft.lighting_setup.v1",
+      "output_schema": "filmcraft.lighting_setup.v1"
+    }
+  ]
+}

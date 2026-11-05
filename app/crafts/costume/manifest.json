@@ -1,0 +1,12 @@
+{
+  "id": "costume",
+  "name": "Costume Design",
+  "group": "Visual Production",
+  "description": "Wardrobe looks and changes across chronology",
+  "dreambox_target": "Character Library / Asset Library",
+  "mvp": "Track outfits, scenes, time and asset reference consistency.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

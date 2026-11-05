@@ -1,0 +1,12 @@
+{
+  "id": "still_photography",
+  "name": "Still Photography",
+  "group": "Production Operations",
+  "description": "Continuity stills, frame grabs and production look book",
+  "dreambox_target": "Asset Library / Image Extractor",
+  "mvp": "Capture approved visual references and record scene/shot provenance.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

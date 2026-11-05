@@ -1,0 +1,156 @@
+{
+  "a": {
+    "run_id": "37d474a1-9d59-46a3-812c-a87eb1771284"
+  },
+  "b": {
+    "run_id": "31542037-0af6-43ee-90ae-24913220229d"
+  },
+  "metrics": [
+    {
+      "metric": "Approach",
+      "a": "A — Intimate: close, handheld, reactive",
+      "b": "B — Observational: wide, still, restrained",
+      "differs": true
+    },
+    {
+      "metric": "Shots",
+      "a": 21,
+      "b": 13,
+      "differs": true
+    },
+    {
+      "metric": "Total seconds",
+      "a": 80.5,
+      "b": 82.5,
+      "differs": true
+    },
+    {
+      "metric": "Average shot (s)",
+      "a": 3.83,
+      "b": 6.35,
+      "differs": true
+    },
+    {
+      "metric": "Close-ups (ECU/CU)",
+      "a": 9,
+      "b": 3,
+      "differs": true
+    },
+    {
+      "metric": "Wide (WS/EWS)",
+      "a": 2,
+      "b": 4,
+      "differs": true
+    },
+    {
+      "metric": "Distinct setups",
+      "a": 20,
+      "b": 12,
+      "differs": true
+    },
+    {
+      "metric": "Variety score",
+      "a": 0.95,
+      "b": 0.92,
+      "differs": true
+    },
+    {
+      "metric": "Camera moves (not static)",
+      "a": 16,
+      "b": 4,
+      "differs": true
+    },
+    {
+      "metric": "Distinct purposes",
+      "a": 8,
+      "b": 7,
+      "differs": true
+    },
+    {
+      "metric": "Continuity errors",
+      "a": 0,
+      "b": 0,
+      "differs": false
+    },
+    {
+      "metric": "Continuity warnings",
+      "a": 0,
+      "b": 0,
+      "differs": false
+    },
+    {
+      "metric": "Camera sides used",
+      "a": "A, B, axis",
+      "b": "A",
+      "differs": true
+    },
+    {
+      "metric": "Approved shots",
+      "a": 21,
+      "b": 13,
+      "differs": true
+    }
+  ],
+  "beats": [
+    {
+      "beat_id": "SC-001-B1",
+      "intensity": 2,
+      "a_shots": 2,
+      "a_avg_seconds": 4.5,
+      "b_shots": 1,
+      "b_avg_seconds": 9.0
+    },
+    {
+      "beat_id": "SC-001-B2",
+      "intensity": 3,
+      "a_shots": 2,
+      "a_avg_seconds": 4.5,
+      "b_shots": 1,
+      "b_avg_seconds": 12.5
+    },
+    {
+      "beat_id": "SC-001-B3",
+      "intensity": 5,
+      "a_shots": 5,
+      "a_avg_seconds": 4.1,
+      "b_shots": 2,
+      "b_avg_seconds": 10.25
+    },
+    {
+      "beat_id": "SC-001-B4",
+      "intensity": 7,
+      "a_shots": 3,
+      "a_avg_seconds": 2.67,
+      "b_shots": 3,
+      "b_avg_seconds": 2.67
+    },
+    {
+      "beat_id": "SC-001-B5",
+      "intensity": 8,
+      "a_shots": 4,
+      "a_avg_seconds": 3.5,
+      "b_shots": 2,
+      "b_avg_seconds": 6.75
+    },
+    {
+      "beat_id": "SC-001-B6",
+      "intensity": 10,
+      "a_shots": 3,
+      "a_avg_seconds": 2.5,
+      "b_shots": 3,
+      "b_avg_seconds": 2.0
+    },
+    {
+      "beat_id": "SC-001-B7",
+      "intensity": 6,
+      "a_shots": 2,
+      "a_avg_seconds": 6.25,
+      "b_shots": 1,
+      "b_avg_seconds": 13.0
+    }
+  ],
+  "interpretation": {
+    "a": "Nila and Arjun are circling something neither will say. The camera stays close and slightly unsteady so the audience feels the pressure under the small talk, tightening as it rises and finally crossing the line between them when the truth is spoken.",
+    "b": "Nila and Arjun are two people in a room that remembers them. The camera keeps its distance and lets the space and the silences do the work, closing in only when something finally changes hands."
+  }
+}

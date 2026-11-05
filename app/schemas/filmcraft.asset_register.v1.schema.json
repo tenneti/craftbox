@@ -1,0 +1,31 @@
+{
+  "$id": "filmcraft.asset_register.v1",
+  "title": "Register of locally stored design assets with source, ownership, licence and usage metadata",
+  "type": "object",
+  "required": ["schema", "project_id", "assets"],
+  "properties": {
+    "schema": {"const": "filmcraft.asset_register.v1"},
+    "project_id": {"type": "string", "minLength": 1},
+    "note": {"type": "string"},
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "kind", "sha256", "source", "rights"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"},
+          "name": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["image", "texture", "background", "design", "reference"]},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "filename": {"type": "string"}, "size_bytes": {"type": "integer", "minimum": 0}, "mime": {"type": "string"},
+          "origin_path": {"type": "string"},
+          "tags": {"type": "array", "items": {"type": "string"}},
+          "source": {"type": "object", "required": ["type"], "properties": {"type": {"enum": ["own", "licensed", "public_domain", "commissioned", "unknown"]}, "creator": {"type": "string"}, "url": {"type": "string"}, "note": {"type": "string"}}},
+          "rights": {"type": "object", "required": ["status"], "properties": {"status": {"enum": ["cleared", "pending", "restricted", "unknown"]}, "owner": {"type": "string"}, "licence": {"type": "string"}, "expires": {"type": "string"}, "note": {"type": "string"}}},
+          "usage": {"type": "object", "properties": {"allowed": {"type": "array", "items": {"type": "string"}}, "note": {"type": "string"}}}
+        }
+      }
+    },
+    "analysis": {"type": "object"}
+  }
+}

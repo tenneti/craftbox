@@ -1,0 +1,5514 @@
+{
+  "schema": "filmcraft.lighting_instructions.v1",
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "plan_id": "LP-WARM-NATURALISTIC",
+  "plan_name": "Warm, naturalistic, intimate",
+  "stage": {
+    "width_m": 6.0,
+    "depth_m": 5.0
+  },
+  "conventions": {
+    "stage_xy": "0..1; x left to right, y from the back wall (0) to the audience (1)",
+    "rotation_deg": "0 faces the audience, 90 faces right, 180 faces the back wall, 270 faces left",
+    "intensity": "0 to 1, relative",
+    "tilt_deg": "negative aims downward"
+  },
+  "conditions": {
+    "mood_words": [
+      "intimate",
+      "nostalgic",
+      "sheltered"
+    ],
+    "narrative_purpose": "Warmth that comes from the room itself, so the audience believes in the place before it believes in the argument.",
+    "time_of_day": "night",
+    "weather": "rain"
+  },
+  "scene_setup": [
+    {
+      "id": "L-KEY",
+      "name": "Soft key, motivated by the lamp",
+      "role": "key",
+      "source": "artificial",
+      "kind": "softbox",
+      "enabled": true,
+      "stage": {
+        "x": 0.74,
+        "y": 0.66,
+        "height_m": 2.1
+      },
+      "metres": {
+        "x": 4.44,
+        "y": 3.3,
+        "z": 2.1
+      },
+      "rotation_deg": 255.0,
+      "tilt_deg": -20,
+      "intensity": 0.75,
+      "color_temp_k": 2900,
+      "beam_angle_deg": 80,
+      "softness": 0.8,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "D-LAMP",
+      "practical_object_id": "",
+      "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-LAMP",
+      "name": "Table lamp (visible in the room)",
+      "role": "practical",
+      "source": "artificial",
+      "kind": "practical_lamp",
+      "enabled": true,
+      "stage": {
+        "x": 0.8,
+        "y": 0.36,
+        "height_m": 1.1
+      },
+      "metres": {
+        "x": 4.8,
+        "y": 1.8,
+        "z": 1.1
+      },
+      "rotation_deg": 304.9,
+      "tilt_deg": 0,
+      "intensity": 0.5,
+      "color_temp_k": 2700,
+      "beam_angle_deg": 120,
+      "softness": 0.9,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 6.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "D-LAMP",
+      "narrative_purpose": "The visible reason for the warmth.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-FILL",
+      "name": "Soft fill from the audience side",
+      "role": "fill",
+      "source": "artificial",
+      "kind": "bounce",
+      "enabled": true,
+      "stage": {
+        "x": 0.22,
+        "y": 0.95,
+        "height_m": 1.6
+      },
+      "metres": {
+        "x": 1.32,
+        "y": 4.75,
+        "z": 1.6
+      },
+      "rotation_deg": 134.5,
+      "tilt_deg": -20,
+      "intensity": 0.32,
+      "color_temp_k": 3000,
+      "beam_angle_deg": 110,
+      "softness": 1.0,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-RIM",
+      "name": "Warm backlight from the shelves",
+      "role": "backlight",
+      "source": "artificial",
+      "kind": "fresnel",
+      "enabled": true,
+      "stage": {
+        "x": 0.18,
+        "y": 0.2,
+        "height_m": 2.4
+      },
+      "metres": {
+        "x": 1.08,
+        "y": 1.0,
+        "z": 2.4
+      },
+      "rotation_deg": 46.6,
+      "tilt_deg": -20,
+      "intensity": 0.35,
+      "color_temp_k": 2800,
+      "beam_angle_deg": 50,
+      "softness": 0.5,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 8.0
+      },
+      "positional": true,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-DOOR",
+      "name": "Street light through the door",
+      "role": "motivated",
+      "source": "natural",
+      "kind": "street",
+      "enabled": true,
+      "stage": {
+        "x": 0.1,
+        "y": 0.82,
+        "height_m": 1.8
+      },
+      "metres": {
+        "x": 0.6,
+        "y": 4.1,
+        "z": 1.8
+      },
+      "rotation_deg": 114.2,
+      "tilt_deg": -20,
+      "intensity": 0.25,
+      "color_temp_k": 2800,
+      "beam_angle_deg": 70,
+      "softness": 0.6,
+      "falloff": {
+        "mode": "inverse_square",
+        "range_m": 7.0
+      },
+      "positional": true,
+      "motivated_by": "P-DOOR",
+      "practical_object_id": "",
+      "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+      "adjusted_for_shot": false
+    },
+    {
+      "id": "L-AMB",
+      "name": "Warm room glow",
+      "role": "ambient",
+      "source": "artificial",
+      "kind": "ambient",
+      "enabled": true,
+      "stage": {
+        "x": 0.5,
+        "y": 0.5,
+        "height_m": 2.0
+      },
+      "metres": {
+        "x": 3.0,
+        "y": 2.5,
+        "z": 2.0
+      },
+      "rotation_deg": 17.8,
+      "tilt_deg": -20,
+      "intensity": 0.18,
+      "color_temp_k": 2900,
+      "beam_angle_deg": 180,
+      "softness": 1.0,
+      "falloff": {
+        "mode": "none",
+        "range_m": 10.0
+      },
+      "positional": false,
+      "motivated_by": "",
+      "practical_object_id": "",
+      "narrative_purpose": "A low base level so shadows never go fully black.",
+      "adjusted_for_shot": false
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SC-001-S01",
+      "beat_id": "SC-001-B1",
+      "size": "WS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.486,
+          "y": 1.36
+        },
+        "target": {
+          "x": 0.486,
+          "y": 0.56
+        },
+        "fov_deg": 61.9
+      },
+      "adjustment_id": "ADJ-S01",
+      "adjustment_reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 3.2
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 3.2
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2865,
+          "key_fill_ratio": 2.0,
+          "level_end": 0.505,
+          "level_start": 0.246,
+          "shadow_deg": 260.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": null,
+          "level_end": 0.604,
+          "level_start": 0.604,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S02",
+      "beat_id": "SC-001-B1",
+      "size": "MWS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 40,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.272,
+          "y": 1.11
+        },
+        "target": {
+          "x": 0.272,
+          "y": 0.56
+        },
+        "fov_deg": 48.5
+      },
+      "adjustment_id": "ADJ-S02",
+      "adjustment_reason": "L-FILL is raised to 2.1 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 2.1
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2865,
+          "key_fill_ratio": 2.0,
+          "level_end": 0.505,
+          "level_start": 0.246,
+          "shadow_deg": 260.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S03",
+      "beat_id": "SC-001-B2",
+      "size": "MS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 50,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.504,
+          "y": 1.035
+        },
+        "target": {
+          "x": 0.504,
+          "y": 0.585
+        },
+        "fov_deg": 39.6
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2861,
+          "key_fill_ratio": 2.1,
+          "level_end": 0.637,
+          "level_start": 0.512,
+          "shadow_deg": 264.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.449,
+          "level_start": 0.449,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S04",
+      "beat_id": "SC-001-B2",
+      "size": "WS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.504,
+          "y": 1.385
+        },
+        "target": {
+          "x": 0.504,
+          "y": 0.585
+        },
+        "fov_deg": 61.9
+      },
+      "adjustment_id": "ADJ-S04",
+      "adjustment_reason": "L-KEY is raised to 3.2 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 3.2
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 3.2
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2861,
+          "key_fill_ratio": 2.1,
+          "level_end": 0.637,
+          "level_start": 0.512,
+          "shadow_deg": 264.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.449,
+          "level_start": 0.449,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S05",
+      "beat_id": "SC-001-B2",
+      "size": "MWS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 40,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.308,
+          "y": 1.16
+        },
+        "target": {
+          "x": 0.308,
+          "y": 0.61
+        },
+        "fov_deg": 48.5
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2861,
+          "key_fill_ratio": 2.1,
+          "level_end": 0.637,
+          "level_start": 0.512,
+          "shadow_deg": 264.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S06",
+      "beat_id": "SC-001-B3",
+      "size": "MCU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.7,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.448,
+          "level_start": 0.448,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S07",
+      "beat_id": "SC-001-B3",
+      "size": "CU",
+      "angle": "low",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 0.8,
+          "x": 0.38,
+          "y": 0.81
+        },
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S07",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2853,
+          "key_fill_ratio": 2.5,
+          "level_end": 0.795,
+          "level_start": 0.604,
+          "shadow_deg": 257.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S08",
+      "beat_id": "SC-001-B3",
+      "size": "MS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 50,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.38,
+          "y": 1.01
+        },
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        },
+        "fov_deg": 39.6
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2853,
+          "key_fill_ratio": 2.5,
+          "level_end": 0.797,
+          "level_start": 0.637,
+          "shadow_deg": 257.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S09",
+      "beat_id": "SC-001-B3",
+      "size": "MCU",
+      "angle": "low",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 0.8,
+          "x": 0.7,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.448,
+          "level_start": 0.448,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S10",
+      "beat_id": "SC-001-B3",
+      "size": "CU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.38,
+          "y": 0.81
+        },
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S10",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2853,
+          "key_fill_ratio": 2.5,
+          "level_end": 0.795,
+          "level_start": 0.604,
+          "shadow_deg": 257.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S11",
+      "beat_id": "SC-001-B4",
+      "size": "ECU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.7,
+          "y": 0.71
+        },
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S11",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.449,
+          "level_start": 0.449,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S12",
+      "beat_id": "SC-001-B4",
+      "size": "ECU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.576,
+          "y": 0.735
+        },
+        "target": {
+          "x": 0.576,
+          "y": 0.585
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S12",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2861,
+          "key_fill_ratio": 3.2,
+          "level_end": 0.983,
+          "level_start": 0.795,
+          "shadow_deg": 262.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.449,
+          "level_start": 0.449,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S13",
+      "beat_id": "SC-001-B4",
+      "size": "CU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.452,
+          "y": 0.86
+        },
+        "target": {
+          "x": 0.452,
+          "y": 0.61
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S13",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2861,
+          "key_fill_ratio": 3.2,
+          "level_end": 0.983,
+          "level_start": 0.795,
+          "shadow_deg": 262.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S14",
+      "beat_id": "SC-001-B5",
+      "size": "MCU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.448,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.448,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2855,
+          "key_fill_ratio": 3.3,
+          "level_end": 0.986,
+          "level_start": 1.022,
+          "shadow_deg": 254.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S15",
+      "beat_id": "SC-001-B5",
+      "size": "CU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.81
+        },
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S15",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2789,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.533,
+          "level_start": 0.448,
+          "shadow_deg": 111.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S16",
+      "beat_id": "SC-001-B5",
+      "size": "ECU",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.448,
+          "y": 0.71
+        },
+        "target": {
+          "x": 0.448,
+          "y": 0.56
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S16",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2855,
+          "key_fill_ratio": 3.2,
+          "level_end": 0.986,
+          "level_start": 0.981,
+          "shadow_deg": 254.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S17",
+      "beat_id": "SC-001-B5",
+      "size": "MCU",
+      "angle": "high",
+      "camera_side": "A",
+      "lens_mm": 65,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.91
+        },
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        },
+        "fov_deg": 31.0
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2794,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.549,
+          "level_start": 0.448,
+          "shadow_deg": 224.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S18",
+      "beat_id": "SC-001-B6",
+      "size": "MS",
+      "angle": "eye",
+      "camera_side": "axis",
+      "lens_mm": 50,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.14,
+          "y": 0.585
+        },
+        "target": {
+          "x": 0.59,
+          "y": 0.585
+        },
+        "fov_deg": 39.6
+      },
+      "adjustment_id": "ADJ-S18",
+      "adjustment_reason": "The peak of the scene: a little brighter and warmer, as if the lamp had been turned up. L-KEY is raised to 2.6 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.6
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.6
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2859,
+          "key_fill_ratio": 4.1,
+          "level_end": 1.223,
+          "level_start": 0.986,
+          "shadow_deg": 259.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2794,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.548,
+          "level_start": 0.548,
+          "shadow_deg": 224.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S19",
+      "beat_id": "SC-001-B6",
+      "size": "CU",
+      "angle": "eye",
+      "camera_side": "B",
+      "lens_mm": 85,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.52,
+          "y": 0.36
+        },
+        "target": {
+          "x": 0.52,
+          "y": 0.61
+        },
+        "fov_deg": 23.9
+      },
+      "adjustment_id": "ADJ-S19",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2858,
+          "key_fill_ratio": 4.0,
+          "level_end": 1.2,
+          "level_start": 0.986,
+          "shadow_deg": 259.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S20",
+      "beat_id": "SC-001-B6",
+      "size": "ECU",
+      "angle": "high",
+      "camera_side": "B",
+      "lens_mm": 100,
+      "camera": {
+        "position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.41
+        },
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        },
+        "fov_deg": 20.4
+      },
+      "adjustment_id": "ADJ-S20",
+      "adjustment_reason": "Close-up: the key goes fully soft so skin looks gentle.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2789,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.532,
+          "level_start": 0.532,
+          "shadow_deg": 111.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S21",
+      "beat_id": "SC-001-B7",
+      "size": "MWS",
+      "angle": "eye",
+      "camera_side": "axis",
+      "lens_mm": 40,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": -0.13,
+          "y": 0.7
+        },
+        "target": {
+          "x": 0.42,
+          "y": 0.7
+        },
+        "fov_deg": 48.5
+      },
+      "adjustment_id": null,
+      "adjustment_reason": "",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 2.1
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 2.1
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 1.6
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 1.6
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "left",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2858,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.265,
+          "level_start": 1.232,
+          "shadow_deg": 284.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.445,
+          "level_start": 0.545,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    },
+    {
+      "shot_id": "SC-001-S22",
+      "beat_id": "SC-001-B7",
+      "size": "WS",
+      "angle": "eye",
+      "camera_side": "A",
+      "lens_mm": 30,
+      "camera": {
+        "position": {
+          "height_m": 1.6,
+          "x": 0.42,
+          "y": 1.5
+        },
+        "target": {
+          "x": 0.42,
+          "y": 0.7
+        },
+        "fov_deg": 61.9
+      },
+      "adjustment_id": "ADJ-S22",
+      "adjustment_reason": "L-KEY is raised to 3.5 m so it stays above this wide frame. L-FILL is raised to 2.9 m so it stays above this wide frame.",
+      "lights": [
+        {
+          "id": "L-KEY",
+          "name": "Soft key, motivated by the lamp",
+          "role": "key",
+          "source": "artificial",
+          "kind": "softbox",
+          "enabled": true,
+          "stage": {
+            "x": 0.74,
+            "y": 0.66,
+            "height_m": 3.5
+          },
+          "metres": {
+            "x": 4.44,
+            "y": 3.3,
+            "z": 3.5
+          },
+          "rotation_deg": 255.0,
+          "tilt_deg": -20,
+          "intensity": 0.75,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 80,
+          "softness": 0.8,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "D-LAMP",
+          "practical_object_id": "",
+          "narrative_purpose": "Shapes both faces as if the lamp were doing the work.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-LAMP",
+          "name": "Table lamp (visible in the room)",
+          "role": "practical",
+          "source": "artificial",
+          "kind": "practical_lamp",
+          "enabled": true,
+          "stage": {
+            "x": 0.8,
+            "y": 0.36,
+            "height_m": 1.1
+          },
+          "metres": {
+            "x": 4.8,
+            "y": 1.8,
+            "z": 1.1
+          },
+          "rotation_deg": 304.9,
+          "tilt_deg": 0,
+          "intensity": 0.5,
+          "color_temp_k": 2700,
+          "beam_angle_deg": 120,
+          "softness": 0.9,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 6.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "D-LAMP",
+          "narrative_purpose": "The visible reason for the warmth.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-FILL",
+          "name": "Soft fill from the audience side",
+          "role": "fill",
+          "source": "artificial",
+          "kind": "bounce",
+          "enabled": true,
+          "stage": {
+            "x": 0.22,
+            "y": 0.95,
+            "height_m": 2.9
+          },
+          "metres": {
+            "x": 1.32,
+            "y": 4.75,
+            "z": 2.9
+          },
+          "rotation_deg": 134.5,
+          "tilt_deg": -20,
+          "intensity": 0.32,
+          "color_temp_k": 3000,
+          "beam_angle_deg": 110,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Keeps shadows gentle so nobody looks threatened.",
+          "adjusted_for_shot": true
+        },
+        {
+          "id": "L-RIM",
+          "name": "Warm backlight from the shelves",
+          "role": "backlight",
+          "source": "artificial",
+          "kind": "fresnel",
+          "enabled": true,
+          "stage": {
+            "x": 0.18,
+            "y": 0.2,
+            "height_m": 2.4
+          },
+          "metres": {
+            "x": 1.08,
+            "y": 1.0,
+            "z": 2.4
+          },
+          "rotation_deg": 46.6,
+          "tilt_deg": -20,
+          "intensity": 0.35,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 50,
+          "softness": 0.5,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 8.0
+          },
+          "positional": true,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "Separates the people from the shelves with a soft edge.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-DOOR",
+          "name": "Street light through the door",
+          "role": "motivated",
+          "source": "natural",
+          "kind": "street",
+          "enabled": true,
+          "stage": {
+            "x": 0.1,
+            "y": 0.82,
+            "height_m": 1.8
+          },
+          "metres": {
+            "x": 0.6,
+            "y": 4.1,
+            "z": 1.8
+          },
+          "rotation_deg": 114.2,
+          "tilt_deg": -20,
+          "intensity": 0.25,
+          "color_temp_k": 2800,
+          "beam_angle_deg": 70,
+          "softness": 0.6,
+          "falloff": {
+            "mode": "inverse_square",
+            "range_m": 7.0
+          },
+          "positional": true,
+          "motivated_by": "P-DOOR",
+          "practical_object_id": "",
+          "narrative_purpose": "Reminds us of the rain outside and of how little time is left.",
+          "adjusted_for_shot": false
+        },
+        {
+          "id": "L-AMB",
+          "name": "Warm room glow",
+          "role": "ambient",
+          "source": "artificial",
+          "kind": "ambient",
+          "enabled": true,
+          "stage": {
+            "x": 0.5,
+            "y": 0.5,
+            "height_m": 2.0
+          },
+          "metres": {
+            "x": 3.0,
+            "y": 2.5,
+            "z": 2.0
+          },
+          "rotation_deg": 17.8,
+          "tilt_deg": -20,
+          "intensity": 0.18,
+          "color_temp_k": 2900,
+          "beam_angle_deg": 180,
+          "softness": 1.0,
+          "falloff": {
+            "mode": "none",
+            "range_m": 10.0
+          },
+          "positional": false,
+          "motivated_by": "",
+          "practical_object_id": "",
+          "narrative_purpose": "A low base level so shadows never go fully black.",
+          "adjusted_for_shot": false
+        }
+      ],
+      "switched_off": [],
+      "key_light_id": "L-KEY",
+      "key_side_of_camera": "right",
+      "subjects": [
+        {
+          "blocked_lights": [],
+          "character_id": "C-001",
+          "kelvin": 2858,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.265,
+          "level_start": 1.232,
+          "shadow_deg": 284.0
+        },
+        {
+          "blocked_lights": [],
+          "character_id": "C-002",
+          "kelvin": 2785,
+          "key_fill_ratio": 1.2,
+          "level_end": 0.445,
+          "level_start": 0.545,
+          "shadow_deg": 110.0
+        }
+      ],
+      "fixtures_in_frame": []
+    }
+  ],
+  "art_reference": {
+    "treatment_id": "TR-WARM-NOSTALGIA",
+    "treatment_name": "Warm nostalgia",
+    "art_hash": "dfaaebdf695328b0"
+  },
+  "model_note": "Positions and levels are planning estimates on the director's stage plan, not a physical lighting simulation.",
+  "plan_hash": "2cf50498d26ebead",
+  "generated_at": "2026-11-02T17:04:54.953Z"
+}

@@ -1,0 +1,505 @@
+{
+  "$id": "filmcraft.screenplay.v1",
+  "title": "Screenplay document: project, characters, structure, sequences, scenes, beats (Screenwriting Lab)",
+  "type": "object",
+  "required": [
+    "schema",
+    "project",
+    "characters",
+    "scenes"
+  ],
+  "properties": {
+    "schema": {
+      "const": "filmcraft.screenplay.v1"
+    },
+    "project": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$",
+          "maxLength": 64
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "logline": {
+          "type": "string"
+        },
+        "genre": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "story_idea": {
+          "type": "string"
+        },
+        "fps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 120
+        }
+      }
+    },
+    "revision": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "role": {
+            "type": "string"
+          },
+          "age_range": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "motivation": {
+            "type": "string"
+          },
+          "want": {
+            "type": "string"
+          },
+          "need": {
+            "type": "string"
+          },
+          "flaw": {
+            "type": "string"
+          },
+          "relationships": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "character_id"
+              ],
+              "properties": {
+                "character_id": {
+                  "type": "string"
+                },
+                "relation": {
+                  "type": "string"
+                },
+                "tension": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "emotional_arc": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "string"
+              },
+              "end": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "properties": {
+        "acts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "act"
+            ],
+            "properties": {
+              "act": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+              },
+              "label": {
+                "type": "string"
+              },
+              "purpose": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "act": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "summary": {
+            "type": "string"
+          },
+          "scene_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "heading",
+          "characters",
+          "elements"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"
+          },
+          "sequence_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "heading": {
+            "type": "object",
+            "required": [
+              "int_ext",
+              "location"
+            ],
+            "properties": {
+              "int_ext": {
+                "enum": [
+                  "INT.",
+                  "EXT.",
+                  "INT/EXT.",
+                  "EXT/INT."
+                ]
+              },
+              "location": {
+                "type": "string",
+                "minLength": 1
+              },
+              "time": {
+                "type": "string"
+              }
+            }
+          },
+          "slugline": {
+            "type": "string"
+          },
+          "synopsis": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "conflict": {
+            "type": "string"
+          },
+          "turning_point": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "characters": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "props": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "estimated_seconds_override": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 1,
+            "maximum": 7200
+          },
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "type",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"
+                },
+                "type": {
+                  "enum": [
+                    "action",
+                    "dialogue",
+                    "parenthetical",
+                    "transition"
+                  ]
+                },
+                "character_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "text": {
+                  "type": "string"
+                },
+                "pause_seconds": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 60
+                }
+              }
+            }
+          },
+          "beats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]*$"
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "description": {
+                  "type": "string"
+                },
+                "emotion": {
+                  "type": "string"
+                },
+                "role": {
+                  "enum": [
+                    "setup",
+                    "inciting",
+                    "rising",
+                    "turning_point",
+                    "climax",
+                    "resolution"
+                  ]
+                },
+                "act": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 3
+                },
+                "intensity": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "element_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "character_states": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "analysis": {
+      "type": "object"
+    },
+    "story": {
+      "type": "object",
+      "properties": {
+        "master_plot": {
+          "enum": [
+            "",
+            "overcoming_the_monster",
+            "rags_to_riches",
+            "the_quest",
+            "voyage_and_return",
+            "rebirth",
+            "comedy",
+            "tragedy",
+            "man_in_a_hole"
+          ]
+        },
+        "empathy": {
+          "type": "object",
+          "properties": {
+            "distress_risk": {
+              "enum": [
+                "",
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "target": {
+              "enum": [
+                "",
+                "bounded",
+                "ambassadorial",
+                "broadcast"
+              ]
+            },
+            "consciousness": {
+              "enum": [
+                "",
+                "free_indirect_discourse",
+                "interior_monologue",
+                "psycho_narration",
+                "behavioural_only"
+              ]
+            }
+          }
+        },
+        "defamiliarization": {
+          "type": "object",
+          "properties": {
+            "technique": {
+              "enum": [
+                "",
+                "unexpected_perspective",
+                "unconventional_sensory_detail",
+                "shifting_point_of_view",
+                "other"
+              ]
+            }
+          }
+        },
+        "agency": {
+          "type": "object",
+          "properties": {
+            "choices": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "conflict": {
+          "type": "object",
+          "properties": {
+            "expectation_gaps": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "information_gaps": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "subtext": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "revision": {
+          "type": "object",
+          "properties": {
+            "feedback": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1678 @@
+{
+  "schema": "filmcraft.storyboard_metadata.v1",
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "treatment_id": "TR-EMOTIONAL-DISTANCE",
+  "location": {
+    "name": "Page & Candle Bookshop",
+    "kind": "interior"
+  },
+  "previz_hint": {
+    "environment_preset": "CAFE",
+    "basis": "keywords in the location name and description",
+    "verify": "preset names taken from Dreambox's Previz status document, not from its code"
+  },
+  "shots": [
+    {
+      "shot_id": "SC-001-S01",
+      "beat_id": "SC-001-B1",
+      "camera_side": "A",
+      "size": "WS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "PR-LAMP",
+          "name": "Lamp",
+          "position": null
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.486,
+        "y": 1.36
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S02",
+      "beat_id": "SC-001-B1",
+      "camera_side": "A",
+      "size": "MWS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-BOOK",
+          "name": "Worn paperback",
+          "position": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        {
+          "id": "PR-COAT",
+          "name": "Coat",
+          "position": null
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.272,
+        "y": 1.11
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S03",
+      "beat_id": "SC-001-B2",
+      "camera_side": "A",
+      "size": "MS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-SIGN",
+          "name": "CLOSED / OPEN sign",
+          "position": {
+            "x": 0.14,
+            "y": 0.82
+          }
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.504,
+        "y": 1.035
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S04",
+      "beat_id": "SC-001-B2",
+      "camera_side": "A",
+      "size": "WS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-BOOK",
+          "name": "Worn paperback",
+          "position": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.504,
+        "y": 1.385
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S05",
+      "beat_id": "SC-001-B2",
+      "camera_side": "A",
+      "size": "MWS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.308,
+        "y": 1.16
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S06",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "size": "MCU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.7,
+        "y": 0.91
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S07",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "size": "CU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 0.8,
+        "x": 0.38,
+        "y": 0.81
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S08",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "size": "MS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.38,
+        "y": 1.01
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S09",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "size": "MCU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 0.8,
+        "x": 0.7,
+        "y": 0.91
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S10",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "size": "CU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.38,
+        "y": 0.81
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S11",
+      "beat_id": "SC-001-B4",
+      "camera_side": "A",
+      "size": "ECU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-SIGN",
+          "name": "CLOSED / OPEN sign",
+          "position": {
+            "x": 0.14,
+            "y": 0.82
+          }
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 2.4,
+        "x": 0.7,
+        "y": 0.71
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S12",
+      "beat_id": "SC-001-B4",
+      "camera_side": "A",
+      "size": "ECU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-BOOK",
+          "name": "Worn paperback",
+          "position": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        {
+          "id": "P-SIGN",
+          "name": "CLOSED / OPEN sign",
+          "position": {
+            "x": 0.14,
+            "y": 0.82
+          }
+        },
+        {
+          "id": "PR-TICKET",
+          "name": "Ticket",
+          "position": null
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 2.4,
+        "x": 0.576,
+        "y": 0.735
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S13",
+      "beat_id": "SC-001-B4",
+      "camera_side": "A",
+      "size": "CU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.452,
+        "y": 0.86
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S14",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "size": "MCU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 2.4,
+        "x": 0.448,
+        "y": 0.91
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S15",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "size": "CU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 2.4,
+        "x": 0.66,
+        "y": 0.81
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S16",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "size": "ECU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.448,
+        "y": 0.71
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S17",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "size": "MCU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 2.4,
+        "x": 0.66,
+        "y": 0.91
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S18",
+      "beat_id": "SC-001-B6",
+      "camera_side": "axis",
+      "size": "MS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "PR-TICKET",
+          "name": "Ticket",
+          "position": null
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.14,
+        "y": 0.585
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S19",
+      "beat_id": "SC-001-B6",
+      "camera_side": "B",
+      "size": "CU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.52,
+        "y": 0.36
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S20",
+      "beat_id": "SC-001-B6",
+      "camera_side": "B",
+      "size": "ECU",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [],
+      "set_objects_in_view": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        },
+        {
+          "id": "D-FLOORLAMP",
+          "name": "Floor lamp",
+          "kind": "decor"
+        },
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 2.4,
+        "x": 0.66,
+        "y": 0.41
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S21",
+      "beat_id": "SC-001-B7",
+      "camera_side": "axis",
+      "size": "MWS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-BOOK",
+          "name": "Worn paperback",
+          "position": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        {
+          "id": "PR-TICKET",
+          "name": "Ticket",
+          "position": null
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": -0.13,
+        "y": 0.7
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    },
+    {
+      "shot_id": "SC-001-S22",
+      "beat_id": "SC-001-B7",
+      "camera_side": "A",
+      "size": "WS",
+      "palette": [
+        {
+          "hex": "#CFD6D9",
+          "id": "C1",
+          "name": "Pale ash",
+          "role": "dominant"
+        },
+        {
+          "hex": "#5C6F80",
+          "id": "C2",
+          "name": "Slate blue",
+          "role": "accent"
+        },
+        {
+          "hex": "#F4F7F8",
+          "id": "C3",
+          "name": "Cold white",
+          "role": "light"
+        },
+        {
+          "hex": "#3A4046",
+          "id": "C4",
+          "name": "Graphite",
+          "role": "support"
+        },
+        {
+          "hex": "#8A949B",
+          "id": "C5",
+          "name": "Steel grey",
+          "role": "support"
+        }
+      ],
+      "variation": null,
+      "props_visible": [
+        {
+          "id": "P-SIGN",
+          "name": "CLOSED / OPEN sign",
+          "position": {
+            "x": 0.14,
+            "y": 0.82
+          }
+        }
+      ],
+      "set_objects_in_view": [
+        {
+          "id": "D-BENCH",
+          "name": "Single bench",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door",
+          "kind": "architecture"
+        },
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till",
+          "kind": "furniture"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry",
+          "kind": "furniture"
+        }
+      ],
+      "camera_layout": {
+        "height_m": 1.6,
+        "x": 0.42,
+        "y": 1.5
+      },
+      "texture_notes": [
+        "Smooth plaster",
+        "Brushed metal"
+      ]
+    }
+  ],
+  "note": "Metadata only. Craftbox draws no pictures; a storyboard or previz tool turns this into frames."
+}

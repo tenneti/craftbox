@@ -1,0 +1,1256 @@
+{
+  "analysis": {
+    "model": {
+      "action_words_per_second": 3.2,
+      "dialogue_gap_seconds": 0.35,
+      "note": "Duration is a rule-based estimate, not a measurement. Set estimated_seconds_override to fix a scene's length.",
+      "speech_words_per_second": 2.7
+    },
+    "scenes": [
+      {
+        "beats": [
+          {
+            "act": 1,
+            "duration_seconds": 9.06,
+            "element_ids": [
+              "SC-001-E01",
+              "SC-001-E02"
+            ],
+            "hash": "b5e9d763eb7ecfa7",
+            "id": "SC-001-B1",
+            "intensity": 2,
+            "role": "setup",
+            "start_seconds": 0.0
+          },
+          {
+            "act": 1,
+            "duration_seconds": 12.26,
+            "element_ids": [
+              "SC-001-E03",
+              "SC-001-E04",
+              "SC-001-E05",
+              "SC-001-E06"
+            ],
+            "hash": "8da88a9ad410042f",
+            "id": "SC-001-B2",
+            "intensity": 3,
+            "role": "inciting",
+            "start_seconds": 9.06
+          },
+          {
+            "act": 2,
+            "duration_seconds": 20.54,
+            "element_ids": [
+              "SC-001-E07",
+              "SC-001-E08",
+              "SC-001-E09",
+              "SC-001-E10",
+              "SC-001-E11",
+              "SC-001-E12",
+              "SC-001-E13"
+            ],
+            "hash": "315a23e0578ccd72",
+            "id": "SC-001-B3",
+            "intensity": 5,
+            "role": "rising",
+            "start_seconds": 21.32
+          },
+          {
+            "act": 2,
+            "duration_seconds": 8.02,
+            "element_ids": [
+              "SC-001-E14",
+              "SC-001-E15"
+            ],
+            "hash": "13d1fafbe66ce2f6",
+            "id": "SC-001-B4",
+            "intensity": 7,
+            "role": "turning_point",
+            "start_seconds": 41.86
+          },
+          {
+            "act": 2,
+            "duration_seconds": 13.62,
+            "element_ids": [
+              "SC-001-E16",
+              "SC-001-E17",
+              "SC-001-E18",
+              "SC-001-E19"
+            ],
+            "hash": "9472e17dad200d3b",
+            "id": "SC-001-B5",
+            "intensity": 8,
+            "role": "rising",
+            "start_seconds": 49.88
+          },
+          {
+            "act": 3,
+            "duration_seconds": 7.69,
+            "element_ids": [
+              "SC-001-E20",
+              "SC-001-E21",
+              "SC-001-E22"
+            ],
+            "hash": "6195da4409a5e2d0",
+            "id": "SC-001-B6",
+            "intensity": 10,
+            "role": "climax",
+            "start_seconds": 63.5
+          },
+          {
+            "act": 3,
+            "duration_seconds": 12.81,
+            "element_ids": [
+              "SC-001-E23",
+              "SC-001-E24"
+            ],
+            "hash": "445f903c1a6e01af",
+            "id": "SC-001-B7",
+            "intensity": 6,
+            "role": "resolution",
+            "start_seconds": 71.19
+          }
+        ],
+        "completeness": {
+          "has_beats": true,
+          "missing": [],
+          "uncovered_elements": []
+        },
+        "duration_frames": 2016,
+        "elements": [
+          {
+            "duration_seconds": 4.06,
+            "hash": "d35e5984770bbfc4",
+            "id": "SC-001-E01",
+            "start_seconds": 0.0,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 5.0,
+            "hash": "65f30aec41c697ab",
+            "id": "SC-001-E02",
+            "start_seconds": 4.06,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 1.09,
+            "hash": "d90e37dc05db5ab1",
+            "id": "SC-001-E03",
+            "start_seconds": 9.06,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 2.94,
+            "hash": "7dc920c22a1e8476",
+            "id": "SC-001-E04",
+            "start_seconds": 10.15,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 3.44,
+            "hash": "5835cf2e0ceaecdf",
+            "id": "SC-001-E05",
+            "start_seconds": 13.09,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 4.79,
+            "hash": "e9ac37707ec2e7c5",
+            "id": "SC-001-E06",
+            "start_seconds": 16.53,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 0.6,
+            "hash": "8a77f5d3ef703696",
+            "id": "SC-001-E07",
+            "start_seconds": 21.32,
+            "type": "parenthetical"
+          },
+          {
+            "duration_seconds": 2.2,
+            "hash": "ab1af1893ba2c6a2",
+            "id": "SC-001-E08",
+            "start_seconds": 21.92,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 3.68,
+            "hash": "5cd4e04158ace442",
+            "id": "SC-001-E09",
+            "start_seconds": 24.12,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 4.69,
+            "hash": "cf76f3bf933860f6",
+            "id": "SC-001-E10",
+            "start_seconds": 27.8,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 2.2,
+            "hash": "81d0eb9c4a4057af",
+            "id": "SC-001-E11",
+            "start_seconds": 32.49,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 4.05,
+            "hash": "047fd6c65a38b7d5",
+            "id": "SC-001-E12",
+            "start_seconds": 34.69,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 3.12,
+            "hash": "00658ef48d04e0d2",
+            "id": "SC-001-E13",
+            "start_seconds": 38.74,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 1.46,
+            "hash": "578700cf38360381",
+            "id": "SC-001-E14",
+            "start_seconds": 41.86,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 6.56,
+            "hash": "ccd4fc3f72ff4126",
+            "id": "SC-001-E15",
+            "start_seconds": 43.32,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 1.46,
+            "hash": "a4cf9f3d7b8bf6e4",
+            "id": "SC-001-E16",
+            "start_seconds": 49.88,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 5.91,
+            "hash": "d64ebf34950d25f5",
+            "id": "SC-001-E17",
+            "start_seconds": 51.34,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 1.83,
+            "hash": "d1ace5d04a1fcdf6",
+            "id": "SC-001-E18",
+            "start_seconds": 57.25,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 4.42,
+            "hash": "1908c803a091223f",
+            "id": "SC-001-E19",
+            "start_seconds": 59.08,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 4.38,
+            "hash": "49d78e79fa960a7c",
+            "id": "SC-001-E20",
+            "start_seconds": 63.5,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 1.09,
+            "hash": "58ec2fa7b494b8ff",
+            "id": "SC-001-E21",
+            "start_seconds": 67.88,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 2.22,
+            "hash": "a7c7652250c1d3f8",
+            "id": "SC-001-E22",
+            "start_seconds": 68.97,
+            "type": "dialogue"
+          },
+          {
+            "duration_seconds": 6.25,
+            "hash": "6e5091064d2e7d46",
+            "id": "SC-001-E23",
+            "start_seconds": 71.19,
+            "type": "action"
+          },
+          {
+            "duration_seconds": 6.56,
+            "hash": "3ba9e6fc64607963",
+            "id": "SC-001-E24",
+            "start_seconds": 77.44,
+            "type": "action"
+          }
+        ],
+        "estimated_seconds": 84.0,
+        "fps": 24,
+        "intensity_curve": [
+          {
+            "beat_id": "SC-001-B1",
+            "intensity": 2,
+            "start_seconds": 0.0
+          },
+          {
+            "beat_id": "SC-001-B2",
+            "intensity": 3,
+            "start_seconds": 9.06
+          },
+          {
+            "beat_id": "SC-001-B3",
+            "intensity": 5,
+            "start_seconds": 21.32
+          },
+          {
+            "beat_id": "SC-001-B4",
+            "intensity": 7,
+            "start_seconds": 41.86
+          },
+          {
+            "beat_id": "SC-001-B5",
+            "intensity": 8,
+            "start_seconds": 49.88
+          },
+          {
+            "beat_id": "SC-001-B6",
+            "intensity": 10,
+            "start_seconds": 63.5
+          },
+          {
+            "beat_id": "SC-001-B7",
+            "intensity": 6,
+            "start_seconds": 71.19
+          }
+        ],
+        "micro_structure": [
+          {
+            "act": 1,
+            "expected_share": 0.25,
+            "seconds": 21.32,
+            "share": 0.254
+          },
+          {
+            "act": 2,
+            "expected_share": 0.5,
+            "seconds": 42.18,
+            "share": 0.502
+          },
+          {
+            "act": 3,
+            "expected_share": 0.25,
+            "seconds": 20.5,
+            "share": 0.244
+          }
+        ],
+        "pacing": {
+          "action_share": 0.532,
+          "dialogue_share": 0.468,
+          "dialogue_words": 89,
+          "dialogue_words_per_minute": 63.6,
+          "label": "slow"
+        },
+        "scene_hash": "0f26e814d547b86c",
+        "scene_id": "SC-001",
+        "slugline": "INT. PAGE & CANDLE BOOKSHOP - NIGHT",
+        "speaking": {
+          "C-001": {
+            "lines": 7,
+            "seconds": 17.99
+          },
+          "C-002": {
+            "lines": 7,
+            "seconds": 21.35
+          }
+        }
+      }
+    ],
+    "screenplay_hash": "e9f8a27777254966",
+    "story": {
+      "overall": {
+        "advice": 4,
+        "missing": 0,
+        "note": "Advice only: nothing here blocks saving, planning or approval.",
+        "ok": 27,
+        "percent": 87,
+        "total": 31
+      },
+      "phases": [
+        {
+          "helps": "Stops you launching into a static situation that lacks friction, stakes or purpose.",
+          "items": [
+            {
+              "id": "setting",
+              "label": "Setting (world and context)",
+              "message": "A second-hand bookshop after closing, in the rain, on the last night before Nila leaves…",
+              "status": "ok"
+            },
+            {
+              "id": "core_conflict",
+              "label": "Core conflict (the primary risk or obstacle)",
+              "message": "She wants to leave unaffected; he wants to say nothing. Each is protecting themselves f…",
+              "status": "ok"
+            },
+            {
+              "id": "plot",
+              "label": "Plot (connected cause-and-effect events)",
+              "message": "She returns the book, so he makes her open it, so she finds the ticket he kept, so she …",
+              "status": "ok"
+            },
+            {
+              "id": "theme",
+              "label": "Theme (the underlying message)",
+              "message": "What we keep instead of asking for what we want.",
+              "status": "ok"
+            },
+            {
+              "id": "protagonist",
+              "label": "Characters: protagonist",
+              "message": "Chosen.",
+              "status": "ok"
+            },
+            {
+              "id": "antagonist",
+              "label": "Characters: antagonist (person or force)",
+              "message": "Arjun is the obstacle only through his silence. The real antagonist is the pride and fear both carry.",
+              "status": "ok"
+            },
+            {
+              "id": "supporting",
+              "label": "Characters: supporting cast",
+              "message": "None named. That is fine for a two-hander; add them if others shape the story.",
+              "status": "advice"
+            },
+            {
+              "id": "minimal",
+              "label": "Minimal narrative test",
+              "message": "“Nila returns the borrowed book in person” but when she turns to leave, “Arjun makes her open it and she finds the ticket he kept”",
+              "status": "ok"
+            },
+            {
+              "id": "master_plot",
+              "label": "Master plot arc",
+              "message": "Voyage and Return",
+              "status": "ok"
+            }
+          ],
+          "ok": 8,
+          "phase": 1,
+          "title": "Concept audit and baseline",
+          "total": 9
+        },
+        {
+          "helps": "Removes cliché openings and keeps the audience engaged from the first line.",
+          "items": [
+            {
+              "id": "breach",
+              "label": "Canonical script breach",
+              "message": "Norm: Ex-lovers return things by post and avoid each other; closing time is  / Breach: She walks in after closing, in person, with the book.",
+              "status": "ok"
+            },
+            {
+              "id": "hook",
+              "label": "The 15-second hook",
+              "message": "Delivered by SC-001-E02 at 4 s (inside the first 15 s).",
+              "status": "ok"
+            },
+            {
+              "id": "defamiliarization",
+              "label": "Defamiliarization lens",
+              "message": "Their history is told through objects (a leaning shelf, a CLOSED sign, an unused ticket) instead of ",
+              "status": "ok"
+            }
+          ],
+          "ok": 3,
+          "phase": 2,
+          "title": "Tellability and disruption",
+          "total": 3
+        },
+        {
+          "helps": "Gives you relatable, active characters the audience admires and invests in.",
+          "items": [
+            {
+              "id": "vulnerability",
+              "label": "Vulnerability calibration",
+              "message": "Both are shown guarded and quietly funny before they are exposed; neither begs or wallows.",
+              "status": "ok"
+            },
+            {
+              "id": "consciousness",
+              "label": "Consciousness representation",
+              "message": "Behaviour and objects only",
+              "status": "ok"
+            },
+            {
+              "id": "target",
+              "label": "Strategic empathy target",
+              "message": "Broadcast (universal vulnerability)",
+              "status": "ok"
+            },
+            {
+              "id": "agency",
+              "label": "Agency and effort",
+              "message": "3 costly choice(s) listed.",
+              "status": "ok"
+            }
+          ],
+          "ok": 4,
+          "phase": 3,
+          "title": "Empathy and character design",
+          "total": 4
+        },
+        {
+          "helps": "Prevents a sagging middle by building friction and trusting the audience with subtext.",
+          "items": [
+            {
+              "id": "unity",
+              "label": "Unity of opposites",
+              "message": "The unreturned book and the shop tie them together; she cannot leave until it is back, and he cannot",
+              "status": "ok"
+            },
+            {
+              "id": "expectation",
+              "label": "Expectation gap",
+              "message": "2 decision points mapped to beats.",
+              "status": "ok"
+            },
+            {
+              "id": "information",
+              "label": "Information gap",
+              "message": "2 withheld fact(s) with a reveal beat.",
+              "status": "ok"
+            },
+            {
+              "id": "subtext",
+              "label": "Subtext (iceberg)",
+              "message": "3 unspoken layer(s); dialogue density 64 words/min.",
+              "status": "ok"
+            }
+          ],
+          "ok": 4,
+          "phase": 4,
+          "title": "Conflict escalation and curiosity",
+          "total": 4
+        },
+        {
+          "helps": "Makes sure the story carries theme and answers the audience's question: so what?",
+          "items": [
+            {
+              "id": "labov_abstract",
+              "label": "Abstract (the summary hook)",
+              "message": "Two people who loved each other get one closing hour to say what they never said.",
+              "status": "ok"
+            },
+            {
+              "id": "labov_orientation",
+              "label": "Orientation (context and setting)",
+              "message": "A bookshop at night, rain at the window; Arjun closing up; Nila on her last night in the city.",
+              "status": "ok"
+            },
+            {
+              "id": "labov_complicating_action",
+              "label": "Complicating action (rising conflict)",
+              "message": "The book, the shelf, the ticket: each small thing forces a bigger truth.",
+              "status": "ok"
+            },
+            {
+              "id": "labov_evaluation",
+              "label": "Evaluation (why the story matters)",
+              "message": "The ticket shows that silence was the choice both made.",
+              "status": "ok"
+            },
+            {
+              "id": "labov_resolution",
+              "label": "Result / resolution (the outcome)",
+              "message": "She does not answer. She keeps the ticket, leaves the book and turns the sign to OPEN.",
+              "status": "ok"
+            },
+            {
+              "id": "labov_coda",
+              "label": "Coda (bridge back to present relevance)",
+              "message": "The door left ajar: the question outlives the scene.",
+              "status": "ok"
+            },
+            {
+              "id": "circle",
+              "label": "Story circle (8 steps)",
+              "message": "All 8 steps written and in script order.",
+              "status": "ok"
+            }
+          ],
+          "ok": 7,
+          "phase": 5,
+          "title": "Structure and evaluation",
+          "total": 7
+        },
+        {
+          "helps": "Turns the blueprint into a polished story that works as a safe rehearsal of human choices.",
+          "items": [
+            {
+              "id": "draft",
+              "label": "First draft",
+              "message": "24 script line(s) written.",
+              "status": "ok"
+            },
+            {
+              "id": "feedback",
+              "label": "Outside feedback",
+              "message": "1 note(s) still open.",
+              "status": "advice"
+            },
+            {
+              "id": "polish",
+              "label": "Polishing and proofreading",
+              "message": "Still to do: word choice.",
+              "status": "advice"
+            },
+            {
+              "id": "simulator",
+              "label": "Flight simulator verification",
+              "message": "Written; tick it off once a reader confirms the story really works as a safe rehearsal.",
+              "status": "advice"
+            }
+          ],
+          "ok": 1,
+          "phase": 6,
+          "title": "Execution, revision and testing",
+          "total": 4
+        }
+      ]
+    },
+    "structure": {
+      "acts": [
+        {
+          "act": 1,
+          "expected_share": 0.25,
+          "label": "Setup",
+          "scene_ids": [],
+          "seconds": 0,
+          "share": 0.0
+        },
+        {
+          "act": 2,
+          "expected_share": 0.5,
+          "label": "Confrontation",
+          "scene_ids": [
+            "SC-001"
+          ],
+          "seconds": 84.0,
+          "share": 1.0
+        },
+        {
+          "act": 3,
+          "expected_share": 0.25,
+          "label": "Resolution",
+          "scene_ids": [],
+          "seconds": 0,
+          "share": 0.0
+        }
+      ],
+      "notes": [
+        "Act 1 has no scenes yet (information only)",
+        "Act 3 has no scenes yet (information only)"
+      ]
+    },
+    "totals": {
+      "characters": 2,
+      "dialogue_words": 89,
+      "elements": 24,
+      "estimated_seconds": 84.0,
+      "scenes": 1,
+      "sequences": 1
+    },
+    "warnings": []
+  },
+  "characters": [
+    {
+      "age_range": "early 30s",
+      "description": "A translator, precise with other people's words and careful with her own. Leaving the city at dawn.",
+      "emotional_arc": {
+        "end": "Open, undecided",
+        "start": "Controlled, brisk"
+      },
+      "flaw": "Pride; she deflects with precision.",
+      "id": "C-001",
+      "motivation": "To close the chapter with dignity and without being seen to need anyone.",
+      "name": "Nila",
+      "need": "To say aloud what she never said.",
+      "relationships": [
+        {
+          "character_id": "C-002",
+          "relation": "Former love; she ended it two years ago",
+          "tension": "Unspoken regret on both sides"
+        }
+      ],
+      "role": "Protagonist",
+      "want": "To return the book and leave unaffected."
+    },
+    {
+      "age_range": "mid 30s",
+      "description": "Runs his late father's bookshop. Hides in routine; keeps things instead of asking for them.",
+      "emotional_arc": {
+        "end": "Exposed, hopeful",
+        "start": "Casual, guarded"
+      },
+      "flaw": "Fear of asking; he waits to be chosen.",
+      "id": "C-002",
+      "motivation": "To keep the evening ordinary so that nothing can be lost in it.",
+      "name": "Arjun",
+      "need": "To ask her to stay.",
+      "relationships": [
+        {
+          "character_id": "C-001",
+          "relation": "The one who did not follow her",
+          "tension": "He has rehearsed this meeting for two years"
+        }
+      ],
+      "role": "Deuteragonist",
+      "want": "To get through closing time without a scene."
+    }
+  ],
+  "project": {
+    "fps": 24,
+    "genre": "Romantic drama",
+    "id": "closing-hour",
+    "logline": "On the night before she leaves the city for good, a translator returns a borrowed book to the bookshop owner she once loved, and learns what he kept.",
+    "story_idea": "Two people who loved each other and never said the one thing that mattered get one quiet closing hour.",
+    "theme": "What we keep instead of asking for what we want",
+    "title": "The Closing Hour"
+  },
+  "revision": {
+    "note": "First complete draft of the test scene",
+    "number": 1
+  },
+  "scenes": [
+    {
+      "beats": [
+        {
+          "act": 1,
+          "character_states": {
+            "C-001": "Braced",
+            "C-002": "Guarded calm"
+          },
+          "description": "Arjun's ordinary evening; Nila's arrival breaks it.",
+          "element_ids": [
+            "SC-001-E01",
+            "SC-001-E02"
+          ],
+          "emotion": "Quiet routine, then alarm",
+          "id": "SC-001-B1",
+          "intensity": 2,
+          "role": "setup",
+          "title": "Closing routine"
+        },
+        {
+          "act": 1,
+          "character_states": {
+            "C-001": "Controlled",
+            "C-002": "Wary"
+          },
+          "description": "She sets the book down and tries to keep it businesslike.",
+          "element_ids": [
+            "SC-001-E03",
+            "SC-001-E04",
+            "SC-001-E05",
+            "SC-001-E06"
+          ],
+          "emotion": "Stiff politeness",
+          "id": "SC-001-B2",
+          "intensity": 3,
+          "role": "inciting",
+          "title": "The returned book"
+        },
+        {
+          "act": 2,
+          "character_states": {
+            "C-001": "Stung, deflecting",
+            "C-002": "Hiding behind humour"
+          },
+          "description": "Light remarks that are really accusations; the leaning shelf says what neither will.",
+          "element_ids": [
+            "SC-001-E07",
+            "SC-001-E08",
+            "SC-001-E09",
+            "SC-001-E10",
+            "SC-001-E11",
+            "SC-001-E12",
+            "SC-001-E13"
+          ],
+          "emotion": "Sparring, cracks showing",
+          "id": "SC-001-B3",
+          "intensity": 5,
+          "role": "rising",
+          "title": "Small cuts"
+        },
+        {
+          "act": 2,
+          "character_states": {
+            "C-001": "Stopped cold",
+            "C-002": "Committed"
+          },
+          "description": "As she turns to leave he makes her open the book. The ticket reveals what he kept.",
+          "element_ids": [
+            "SC-001-E14",
+            "SC-001-E15"
+          ],
+          "emotion": "Surprise",
+          "id": "SC-001-B4",
+          "intensity": 7,
+          "role": "turning_point",
+          "title": "Open it"
+        },
+        {
+          "act": 2,
+          "character_states": {
+            "C-001": "Shaken",
+            "C-002": "Raw"
+          },
+          "description": "He admits the day on the platform; she asks why now.",
+          "element_ids": [
+            "SC-001-E16",
+            "SC-001-E17",
+            "SC-001-E18",
+            "SC-001-E19"
+          ],
+          "emotion": "Confession",
+          "id": "SC-001-B5",
+          "intensity": 8,
+          "role": "rising",
+          "title": "What he kept"
+        },
+        {
+          "act": 3,
+          "character_states": {
+            "C-001": "Open",
+            "C-002": "Exposed"
+          },
+          "description": "She dares him to ask; he does, in one word.",
+          "element_ids": [
+            "SC-001-E20",
+            "SC-001-E21",
+            "SC-001-E22"
+          ],
+          "emotion": "Exposed, hopeful and terrified",
+          "id": "SC-001-B6",
+          "intensity": 10,
+          "role": "climax",
+          "title": "Ask me"
+        },
+        {
+          "act": 3,
+          "character_states": {
+            "C-001": "Undecided",
+            "C-002": "Waiting"
+          },
+          "description": "No answer, but the sign turns and the door stays ajar.",
+          "element_ids": [
+            "SC-001-E23",
+            "SC-001-E24"
+          ],
+          "emotion": "Unresolved; an open door",
+          "id": "SC-001-B7",
+          "intensity": 6,
+          "role": "resolution",
+          "title": "The sign"
+        }
+      ],
+      "characters": [
+        "C-001",
+        "C-002"
+      ],
+      "conflict": "Pride and fear. Each is waiting for the other to speak first, and both are hiding behind small talk.",
+      "elements": [
+        {
+          "character_id": null,
+          "id": "SC-001-E01",
+          "text": "Rain ticks on the window. ARJUN counts the till, alone, one lamp lit.",
+          "type": "action"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E02",
+          "text": "The door chimes. NILA enters, shaking rain from her coat, a worn paperback in her hand.",
+          "type": "action"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E03",
+          "text": "We're closed.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E04",
+          "text": "I know. I only need a minute.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E05",
+          "text": "She sets the paperback on the counter. He doesn't touch it.",
+          "type": "action"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E06",
+          "text": "It's yours. I kept it two years. Longer than I meant to.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E07",
+          "text": "too lightly",
+          "type": "parenthetical"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E08",
+          "text": "You could have mailed it.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E09",
+          "text": "Then I wouldn't have had to see the shop.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E10",
+          "text": "A pause. The rain fills it. Nila's eyes drift to a crooked shelf of poetry.",
+          "type": "action"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E11",
+          "text": "You never fixed that shelf.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E12",
+          "text": "It leans toward the door. Waiting for someone to leave.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E13",
+          "text": "Nila laughs, small, then stops herself. She turns to go.",
+          "type": "action"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E14",
+          "text": "Nila. Open it.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E15",
+          "text": "She stops. He nods at the book. She opens it. Inside: a train ticket to her city, two years old, unused.",
+          "type": "action"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E16",
+          "text": "You bought this.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E17",
+          "text": "The day after you left. I stood on the platform until the train pulled away.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E18",
+          "text": "Why tell me now?",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E19",
+          "text": "Because you leave at dawn, and I'm still counting the till.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E20",
+          "text": "Nila folds the ticket along its old crease. Her hand trembles. His does too.",
+          "type": "action"
+        },
+        {
+          "character_id": "C-001",
+          "id": "SC-001-E21",
+          "text": "Ask me.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": "C-002",
+          "id": "SC-001-E22",
+          "pause_seconds": 1.5,
+          "text": "Stay.",
+          "type": "dialogue"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E23",
+          "text": "She holds his gaze. Doesn't answer. Pockets the ticket, leaves the book on the counter, and walks to the door.",
+          "type": "action"
+        },
+        {
+          "character_id": null,
+          "id": "SC-001-E24",
+          "text": "At the threshold she stops, turns the CLOSED sign to OPEN, and steps out into the rain, leaving the door ajar.",
+          "type": "action"
+        }
+      ],
+      "heading": {
+        "int_ext": "INT.",
+        "location": "Page & Candle Bookshop",
+        "time": "Night"
+      },
+      "id": "SC-001",
+      "objective": "Nila wants to hand back the book and leave without feeling anything. Arjun wants to get through closing without a scene.",
+      "outcome": "She does not answer his question. She takes the ticket, leaves the book, and turns the sign to OPEN on her way out.",
+      "props": [
+        {
+          "id": "P-COUNTER",
+          "name": "Counter with till"
+        },
+        {
+          "id": "P-DOOR",
+          "name": "Shop door"
+        },
+        {
+          "id": "P-SHELF",
+          "name": "Crooked shelf of poetry"
+        },
+        {
+          "id": "P-BOOK",
+          "name": "Worn paperback"
+        },
+        {
+          "id": "P-SIGN",
+          "name": "CLOSED / OPEN sign"
+        }
+      ],
+      "sequence_id": "SEQ-1",
+      "slugline": "INT. PAGE & CANDLE BOOKSHOP - NIGHT",
+      "synopsis": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it.",
+      "turning_point": "Arjun makes her open the book: inside is a train ticket to her city that he bought and never used."
+    }
+  ],
+  "schema": "filmcraft.screenplay.v1",
+  "sequences": [
+    {
+      "act": 2,
+      "id": "SEQ-1",
+      "scene_ids": [
+        "SC-001"
+      ],
+      "summary": "One closing hour in the bookshop.",
+      "title": "The Returned Book"
+    }
+  ],
+  "story": {
+    "agency": {
+      "choices": [
+        {
+          "cost": "She must face him and the place she is leaving",
+          "text": "Nila returns the book in person instead of mailing it"
+        },
+        {
+          "cost": "He exposes two years of silence",
+          "text": "Arjun makes her open the book"
+        },
+        {
+          "cost": "She leaves the question unresolved",
+          "text": "Nila takes the ticket, leaves the book and turns the sign to OPEN without answering"
+        }
+      ],
+      "luck_note": "Nothing rescues them. Every change comes from a choice."
+    },
+    "breach": {
+      "norm": "Ex-lovers return things by post and avoid each other; closing time is for finishing quietly.",
+      "violation": "She walks in after closing, in person, with the book."
+    },
+    "circle": {
+      "change": {
+        "beat_id": "SC-001-B7",
+        "text": "She leaves with the ticket and changes the sign to OPEN"
+      },
+      "find": {
+        "beat_id": "SC-001-B4",
+        "text": "The ticket inside the book"
+      },
+      "go": {
+        "beat_id": "SC-001-B2",
+        "text": "She crosses the threshold and puts the book down"
+      },
+      "need": {
+        "beat_id": "SC-001-B2",
+        "text": "To finish this without feeling it"
+      },
+      "return": {
+        "beat_id": "SC-001-B6",
+        "text": "She turns back from the door to face the question"
+      },
+      "search": {
+        "beat_id": "SC-001-B3",
+        "text": "Small talk that tests how much is left"
+      },
+      "take": {
+        "beat_id": "SC-001-B5",
+        "text": "The price: admitting he waited and she left"
+      },
+      "you": {
+        "beat_id": "SC-001-B1",
+        "text": "Nila, controlled and precise, in her last hour in the city"
+      }
+    },
+    "conflict": {
+      "expectation_gaps": [
+        {
+          "action": "Nila jokes to keep control",
+          "beat_id": "SC-001-B3",
+          "reaction": "Arjun answers with the leaning shelf, naming the wait",
+          "stakes": "She can no longer pretend this is only a return"
+        },
+        {
+          "action": "She turns to leave",
+          "beat_id": "SC-001-B4",
+          "reaction": "He stops her with 'Open it'",
+          "stakes": "Silence is no longer safe for either of them"
+        }
+      ],
+      "information_gaps": [
+        {
+          "reveal_beat_id": "SC-001-B4",
+          "withheld": "What is inside the book"
+        },
+        {
+          "reveal_beat_id": "SC-001-B5",
+          "withheld": "Why he kept it, and the day on the platform"
+        }
+      ],
+      "subtext": [
+        {
+          "element_id": "SC-001-E12",
+          "surface": "A remark about a crooked shelf",
+          "unspoken": "I have been waiting for you to leave, and to come back"
+        },
+        {
+          "element_id": "SC-001-E19",
+          "surface": "I'm still counting the till",
+          "unspoken": "I have not moved on"
+        },
+        {
+          "element_id": "SC-001-E22",
+          "surface": "One word: Stay",
+          "unspoken": "Two years of everything unsaid"
+        }
+      ],
+      "unity_of_opposites": "The unreturned book and the shop tie them together; she cannot leave until it is back, and he cannot let it go until the ticket is seen."
+    },
+    "defamiliarization": {
+      "description": "Their history is told through objects (a leaning shelf, a CLOSED sign, an unused ticket) instead of flashback or exposition.",
+      "technique": "unconventional_sensory_detail"
+    },
+    "empathy": {
+      "consciousness": "behavioural_only",
+      "distress_risk": "low",
+      "target": "broadcast",
+      "vulnerability": "Both are shown guarded and quietly funny before they are exposed; neither begs or wallows."
+    },
+    "hook": {
+      "element_id": "SC-001-E02",
+      "text": "A woman arrives after closing, in the rain, carrying a book she was never meant to return in person."
+    },
+    "labov": {
+      "abstract": {
+        "beat_id": "SC-001-B1",
+        "text": "Two people who loved each other get one closing hour to say what they never said."
+      },
+      "coda": {
+        "beat_id": "SC-001-B7",
+        "text": "The door left ajar: the question outlives the scene."
+      },
+      "complicating_action": {
+        "beat_id": "SC-001-B3",
+        "text": "The book, the shelf, the ticket: each small thing forces a bigger truth."
+      },
+      "evaluation": {
+        "beat_id": "SC-001-B5",
+        "text": "The ticket shows that silence was the choice both made."
+      },
+      "orientation": {
+        "beat_id": "SC-001-B1",
+        "text": "A bookshop at night, rain at the window; Arjun closing up; Nila on her last night in the city."
+      },
+      "resolution": {
+        "beat_id": "SC-001-B7",
+        "text": "She does not answer. She keeps the ticket, leaves the book and turns the sign to OPEN."
+      }
+    },
+    "master_plot": "voyage_and_return",
+    "minimal_narrative": {
+      "event_1": "Nila returns the borrowed book in person",
+      "event_2": "Arjun makes her open it and she finds the ticket he kept",
+      "juncture": "but when she turns to leave,"
+    },
+    "pillars": {
+      "antagonist_id": "C-002",
+      "antagonist_note": "Arjun is the obstacle only through his silence. The real antagonist is the pride and fear both carry.",
+      "core_conflict": "She wants to leave unaffected; he wants to say nothing. Each is protecting themselves from the same rejection.",
+      "plot": "She returns the book, so he makes her open it, so she finds the ticket he kept, so she dares him to ask, so he does, and she must decide what to do with the answer she has not given.",
+      "protagonist_id": "C-001",
+      "setting": "A second-hand bookshop after closing, in the rain, on the last night before Nila leaves the city.",
+      "supporting_ids": [],
+      "theme": "What we keep instead of asking for what we want."
+    },
+    "revision": {
+      "feedback": [
+        {
+          "from": "Sample peer note",
+          "note": "The shelf line carries the most subtext; consider trimming the platform line.",
+          "status": "open"
+        }
+      ],
+      "polish": {
+        "consistency": true,
+        "prose": true,
+        "tone": true,
+        "word_choice": false
+      },
+      "simulator": {
+        "moral_choice": "Is it braver to ask, or to wait to be asked?",
+        "question": "What would you do if you were the one who kept the ticket?",
+        "verified": false
+      }
+    }
+  },
+  "structure": {
+    "acts": [
+      {
+        "act": 1,
+        "label": "Setup",
+        "purpose": "Introduce the people, the place and what each is hiding."
+      },
+      {
+        "act": 2,
+        "label": "Confrontation",
+        "purpose": "The returned book opens the old wound."
+      },
+      {
+        "act": 3,
+        "label": "Resolution",
+        "purpose": "The question is finally asked; the answer stays open."
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$id": "filmcraft.input.screenwriting.v1",
+  "title": "Screenwriting input: manually authored scene card",
+  "type": "object",
+  "required": ["project_id", "scene_id", "slugline", "action"],
+  "properties": {
+    "project_id": {"type": "string", "pattern": "\\S"},
+    "scene_id": {"type": "string", "pattern": "\\S"},
+    "slugline": {"type": "string", "pattern": "\\S"},
+    "action": {"type": "string", "pattern": "\\S"},
+    "synopsis": {"type": "string"},
+    "fps": {"type": "integer", "minimum": 1, "maximum": 120},
+    "estimated_seconds": {"type": "number", "minimum": 1, "maximum": 3600},
+    "characters": {"type": "array", "items": {"type": "object", "required": ["id"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}}}},
+    "dialogue": {"type": "array", "items": {"type": "object", "required": ["speaker_id"], "properties": {"speaker_id": {"type": "string"}, "text": {"type": "string"}}}}
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "a": {
+    "id": "4b3e16a8-7091-480f-a841-429d703de12c",
+    "experiment_id": "e33a1272-2c00-45a2-a461-8d2cd85d89c0",
+    "seq": 1,
+    "engine_version": "0.1.0",
+    "input_hash": "cb44e8f1d5aa8afbebaf0a5540c8cfc9dd480f801a72dbf0c8edaf4e0dc4c296",
+    "output_sha256": "83193a1126183eedb263e4bd2532a9cd0fee36c228099a4dc577670feaee3f21",
+    "created_at": "2026-11-01T14:53:22.886Z",
+    "approval_status": "draft"
+  },
+  "b": {
+    "id": "41723ad8-4ceb-4996-b174-0327e2821039",
+    "experiment_id": "a33fb96b-e0f7-47b1-ba05-88b294dd0e62",
+    "seq": 1,
+    "engine_version": "0.1.0",
+    "input_hash": "9e59a1fa46f3b684e12a47c4a1b0b050f6eb99ff8e12ec2087c05822103fe847",
+    "output_sha256": "becfb19edb79f718de1ab28bfe1f40fcf6d486b9c6d7c4a91ad8dddd4a0e6ac5",
+    "created_at": "2026-11-01T14:53:23.013Z",
+    "approval_status": "draft"
+  },
+  "identical_input": false,
+  "identical_output": false,
+  "input_changes": [
+    {
+      "path": "input.revision.note",
+      "change": "changed",
+      "a": "First complete draft of the test scene",
+      "b": "Softer line at the platform"
+    },
+    {
+      "path": "input.revision.number",
+      "change": "changed",
+      "a": 1,
+      "b": 2
+    },
+    {
+      "path": "input.scenes[SC-001].elements[SC-001-E17].text",
+      "change": "changed",
+      "a": "The day after you left. I stood on the platform until the train pulled away.",
+      "b": "The day after you left. I waited on the platform until the lights went out."
+    }
+  ],
+  "artifact_changes": [
+    {
+      "path": "artifact.analysis.scenes[SC-001].beats[SC-001-B5].hash",
+      "change": "changed",
+      "a": "9472e17dad200d3b",
+      "b": "49b360dda756c2b9"
+    },
+    {
+      "path": "artifact.analysis.scenes[SC-001].elements[SC-001-E17].hash",
+      "change": "changed",
+      "a": "d64ebf34950d25f5",
+      "b": "d8e0b512d316fb3a"
+    },
+    {
+      "path": "artifact.analysis.scenes[SC-001].scene_hash",
+      "change": "changed",
+      "a": "0f26e814d547b86c",
+      "b": "00de2286ce33e4bf"
+    },
+    {
+      "path": "artifact.analysis.screenplay_hash",
+      "change": "changed",
+      "a": "e9f8a27777254966",
+      "b": "0119bfcfcf450f50"
+    },
+    {
+      "path": "artifact.revision.note",
+      "change": "changed",
+      "a": "First complete draft of the test scene",
+      "b": "Softer line at the platform"
+    },
+    {
+      "path": "artifact.revision.number",
+      "change": "changed",
+      "a": 1,
+      "b": 2
+    },
+    {
+      "path": "artifact.scenes[SC-001].elements[SC-001-E17].text",
+      "change": "changed",
+      "a": "The day after you left. I stood on the platform until the train pulled away.",
+      "b": "The day after you left. I waited on the platform until the lights went out."
+    }
+  ],
+  "truncated": false,
+  "warning_changes": {
+    "only_in_a": [],
+    "only_in_b": []
+  }
+}

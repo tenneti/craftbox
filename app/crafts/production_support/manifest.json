@@ -1,0 +1,12 @@
+{
+  "id": "production_support",
+  "name": "Production Support / Set Care",
+  "group": "Production Operations",
+  "description": "Set readiness, welfare, cleaning and support checklists",
+  "dreambox_target": "Production Board",
+  "mvp": "Modern inclusive name for a historically gendered credit category.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}

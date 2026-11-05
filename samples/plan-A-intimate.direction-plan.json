@@ -1,0 +1,2002 @@
+{
+  "analysis": {
+    "avg_shot_seconds": 3.83,
+    "coverage": {
+      "beats": [
+        {
+          "beat_id": "SC-001-B1",
+          "covered": true,
+          "shots": [
+            "SC-001-S01",
+            "SC-001-S02"
+          ]
+        },
+        {
+          "beat_id": "SC-001-B2",
+          "covered": true,
+          "shots": [
+            "SC-001-S03",
+            "SC-001-S05"
+          ]
+        },
+        {
+          "beat_id": "SC-001-B3",
+          "covered": true,
+          "shots": [
+            "SC-001-S06",
+            "SC-001-S07",
+            "SC-001-S08",
+            "SC-001-S09",
+            "SC-001-S10"
+          ]
+        },
+        {
+          "beat_id": "SC-001-B4",
+          "covered": true,
+          "shots": [
+            "SC-001-S11",
+            "SC-001-S12",
+            "SC-001-S13"
+          ]
+        },
+        {
+          "beat_id": "SC-001-B5",
+          "covered": true,
+          "shots": [
+            "SC-001-S14",
+            "SC-001-S15",
+            "SC-001-S16",
+            "SC-001-S17"
+          ]
+        },
+        {
+          "beat_id": "SC-001-B6",
+          "covered": true,
+          "shots": [
+            "SC-001-S18",
+            "SC-001-S19",
+            "SC-001-S20"
+          ]
+        },
+        {
+          "beat_id": "SC-001-B7",
+          "covered": true,
+          "shots": [
+            "SC-001-S21",
+            "SC-001-S22"
+          ]
+        }
+      ],
+      "uncovered_action": [
+        "SC-001-E05"
+      ],
+      "uncovered_beats": [],
+      "uncovered_dialogue": []
+    },
+    "duration_delta": -0.042,
+    "issues": [],
+    "pacing": [
+      {
+        "avg_shot_seconds": 4.5,
+        "beat_id": "SC-001-B1",
+        "expected_shot_seconds": 4.83,
+        "intensity": 2,
+        "shots": 2
+      },
+      {
+        "avg_shot_seconds": 4.5,
+        "beat_id": "SC-001-B2",
+        "expected_shot_seconds": 4.55,
+        "intensity": 3,
+        "shots": 2
+      },
+      {
+        "avg_shot_seconds": 4.1,
+        "beat_id": "SC-001-B3",
+        "expected_shot_seconds": 3.98,
+        "intensity": 5,
+        "shots": 5
+      },
+      {
+        "avg_shot_seconds": 2.67,
+        "beat_id": "SC-001-B4",
+        "expected_shot_seconds": 3.42,
+        "intensity": 7,
+        "shots": 3
+      },
+      {
+        "avg_shot_seconds": 3.5,
+        "beat_id": "SC-001-B5",
+        "expected_shot_seconds": 3.13,
+        "intensity": 8,
+        "shots": 4
+      },
+      {
+        "avg_shot_seconds": 2.5,
+        "beat_id": "SC-001-B6",
+        "expected_shot_seconds": 2.56,
+        "intensity": 10,
+        "shots": 3
+      },
+      {
+        "avg_shot_seconds": 6.25,
+        "beat_id": "SC-001-B7",
+        "expected_shot_seconds": 3.7,
+        "intensity": 6,
+        "shots": 2
+      }
+    ],
+    "plan_hash": "8eaa26d6f5d6107d",
+    "purposes": {
+      "closure": 1,
+      "connect": 6,
+      "emphasize_emotion": 7,
+      "establish": 1,
+      "follow_movement": 2,
+      "reaction": 2,
+      "reveal": 1,
+      "transition": 1
+    },
+    "readiness": {
+      "advice": "Advice only: you can approve a plan with open issues; the reasons are recorded.",
+      "errors": 0,
+      "ready_for_approval": true,
+      "unreviewed": 0,
+      "warnings": 0
+    },
+    "script_seconds": 84.0,
+    "status_summary": {
+      "approved": 21,
+      "needs_review": 0,
+      "proposed": 0,
+      "rejected": 1
+    },
+    "timeline": [
+      {
+        "duration_frames": 96,
+        "end_seconds": 4.0,
+        "order": 1,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "R"
+        },
+        "shot_id": "SC-001-S01",
+        "start_frame": 0,
+        "start_seconds": 0.0
+      },
+      {
+        "duration_frames": 120,
+        "end_seconds": 9.0,
+        "order": 2,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "R"
+        },
+        "shot_id": "SC-001-S02",
+        "start_frame": 96,
+        "start_seconds": 4.0
+      },
+      {
+        "duration_frames": 96,
+        "end_seconds": 13.0,
+        "order": 3,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S03",
+        "start_frame": 216,
+        "start_seconds": 9.0
+      },
+      {
+        "duration_frames": 120,
+        "end_seconds": 18.0,
+        "order": 4,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S05",
+        "start_frame": 312,
+        "start_seconds": 13.0
+      },
+      {
+        "duration_frames": 72,
+        "end_seconds": 21.0,
+        "order": 5,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S06",
+        "start_frame": 432,
+        "start_seconds": 18.0
+      },
+      {
+        "duration_frames": 84,
+        "end_seconds": 24.5,
+        "order": 6,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S07",
+        "start_frame": 504,
+        "start_seconds": 21.0
+      },
+      {
+        "duration_frames": 168,
+        "end_seconds": 31.5,
+        "order": 7,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S08",
+        "start_frame": 588,
+        "start_seconds": 24.5
+      },
+      {
+        "duration_frames": 96,
+        "end_seconds": 35.5,
+        "order": 8,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S09",
+        "start_frame": 756,
+        "start_seconds": 31.5
+      },
+      {
+        "duration_frames": 72,
+        "end_seconds": 38.5,
+        "order": 9,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S10",
+        "start_frame": 852,
+        "start_seconds": 35.5
+      },
+      {
+        "duration_frames": 36,
+        "end_seconds": 40.0,
+        "order": 10,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S11",
+        "start_frame": 924,
+        "start_seconds": 38.5
+      },
+      {
+        "duration_frames": 120,
+        "end_seconds": 45.0,
+        "order": 11,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S12",
+        "start_frame": 960,
+        "start_seconds": 40.0
+      },
+      {
+        "duration_frames": 36,
+        "end_seconds": 46.5,
+        "order": 12,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S13",
+        "start_frame": 1080,
+        "start_seconds": 45.0
+      },
+      {
+        "duration_frames": 36,
+        "end_seconds": 48.0,
+        "order": 13,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S14",
+        "start_frame": 1116,
+        "start_seconds": 46.5
+      },
+      {
+        "duration_frames": 144,
+        "end_seconds": 54.0,
+        "order": 14,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S15",
+        "start_frame": 1152,
+        "start_seconds": 48.0
+      },
+      {
+        "duration_frames": 48,
+        "end_seconds": 56.0,
+        "order": 15,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S16",
+        "start_frame": 1296,
+        "start_seconds": 54.0
+      },
+      {
+        "duration_frames": 108,
+        "end_seconds": 60.5,
+        "order": 16,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S17",
+        "start_frame": 1344,
+        "start_seconds": 56.0
+      },
+      {
+        "duration_frames": 108,
+        "end_seconds": 65.0,
+        "order": 17,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S18",
+        "start_frame": 1452,
+        "start_seconds": 60.5
+      },
+      {
+        "duration_frames": 24,
+        "end_seconds": 66.0,
+        "order": 18,
+        "screen_facing": {
+          "C-001": "L",
+          "C-002": "R"
+        },
+        "shot_id": "SC-001-S19",
+        "start_frame": 1560,
+        "start_seconds": 65.0
+      },
+      {
+        "duration_frames": 48,
+        "end_seconds": 68.0,
+        "order": 19,
+        "screen_facing": {
+          "C-001": "L",
+          "C-002": "R"
+        },
+        "shot_id": "SC-001-S20",
+        "start_frame": 1584,
+        "start_seconds": 66.0
+      },
+      {
+        "duration_frames": 144,
+        "end_seconds": 74.0,
+        "order": 20,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S21",
+        "start_frame": 1632,
+        "start_seconds": 68.0
+      },
+      {
+        "duration_frames": 156,
+        "end_seconds": 80.5,
+        "order": 21,
+        "screen_facing": {
+          "C-001": "R",
+          "C-002": "L"
+        },
+        "shot_id": "SC-001-S22",
+        "start_frame": 1776,
+        "start_seconds": 74.0
+      }
+    ],
+    "total_seconds": 80.5,
+    "variety": {
+      "angles": {
+        "eye": 13,
+        "high": 6,
+        "low": 2
+      },
+      "close_ups": 9,
+      "distinct_setups": 20,
+      "framings": {
+        "insert": 1,
+        "over_shoulder": 5,
+        "single": 10,
+        "two_shot": 3,
+        "wide": 2
+      },
+      "longest_same_size_run": 2,
+      "movements": {
+        "handheld": 8,
+        "push_in": 7,
+        "static": 5,
+        "track": 1
+      },
+      "sizes": {
+        "CU": 5,
+        "ECU": 4,
+        "MCU": 4,
+        "MS": 3,
+        "MWS": 3,
+        "WS": 2
+      },
+      "variety_score": 0.95,
+      "wide": 2
+    }
+  },
+  "approach": {
+    "avg_shot_seconds": 4.5,
+    "id": "intimate",
+    "intensity_sensitivity": 0.7,
+    "lens_scale": 1.0,
+    "name": "A — Intimate: close, handheld, reactive",
+    "preset": "intimate",
+    "summary": "Stay close to faces and hands. Cut on emotional shifts, push in as pressure rises, and cross the axis once, at the climax, to mark the reversal."
+  },
+  "blocking": [
+    {
+      "beat_id": "SC-001-B1",
+      "characters": [
+        {
+          "action": "enters through the door",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.272,
+            "y": 0.56
+          },
+          "entrance": {
+            "from": "P-DOOR"
+          },
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "P-COUNTER"
+          },
+          "facing": "object:P-COUNTER",
+          "path": [
+            {
+              "x": 0.1,
+              "y": 0.88
+            },
+            {
+              "x": 0.186,
+              "y": 0.76
+            },
+            {
+              "x": 0.272,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.1,
+            "y": 0.88
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "P-COUNTER"
+          },
+          "facing": "object:P-COUNTER",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 2: distance is kept."
+    },
+    {
+      "beat_id": "SC-001-B2",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.308,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.272,
+              "y": 0.56
+            },
+            {
+              "x": 0.308,
+              "y": 0.61
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.272,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "composed",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 3: distance is kept."
+    },
+    {
+      "beat_id": "SC-001-B3",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.38,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.308,
+              "y": 0.61
+            },
+            {
+              "x": 0.38,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.308,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 5: distance is kept."
+    },
+    {
+      "beat_id": "SC-001-B4",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.452,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.38,
+              "y": 0.56
+            },
+            {
+              "x": 0.452,
+              "y": 0.61
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.38,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 7: characters close the distance."
+    },
+    {
+      "beat_id": "SC-001-B5",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.448,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.452,
+              "y": 0.61
+            },
+            {
+              "x": 0.448,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.452,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.66,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.7,
+              "y": 0.56
+            },
+            {
+              "x": 0.66,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.7,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 8: characters close the distance."
+    },
+    {
+      "beat_id": "SC-001-B6",
+      "characters": [
+        {
+          "action": "holds position",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.52,
+            "y": 0.61
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.448,
+              "y": 0.56
+            },
+            {
+              "x": 0.52,
+              "y": 0.61
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.448,
+            "y": 0.56
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.66,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.66,
+              "y": 0.56
+            },
+            {
+              "x": 0.66,
+              "y": 0.56
+            }
+          ],
+          "posture": "tense",
+          "start": {
+            "x": 0.66,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 10: characters close the distance."
+    },
+    {
+      "beat_id": "SC-001-B7",
+      "characters": [
+        {
+          "action": "leaves through the door",
+          "character_id": "C-001",
+          "end": {
+            "x": 0.14,
+            "y": 0.84
+          },
+          "entrance": null,
+          "exit": {
+            "to": "P-DOOR"
+          },
+          "eyeline": {
+            "note": "",
+            "target": "C-002"
+          },
+          "facing": "toward:C-002",
+          "path": [
+            {
+              "x": 0.52,
+              "y": 0.61
+            },
+            {
+              "x": 0.33,
+              "y": 0.765
+            },
+            {
+              "x": 0.14,
+              "y": 0.84
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.52,
+            "y": 0.61
+          }
+        },
+        {
+          "action": "holds position",
+          "character_id": "C-002",
+          "end": {
+            "x": 0.7,
+            "y": 0.56
+          },
+          "entrance": null,
+          "exit": null,
+          "eyeline": {
+            "note": "",
+            "target": "C-001"
+          },
+          "facing": "toward:C-001",
+          "path": [
+            {
+              "x": 0.66,
+              "y": 0.56
+            },
+            {
+              "x": 0.7,
+              "y": 0.56
+            }
+          ],
+          "posture": "guarded",
+          "start": {
+            "x": 0.66,
+            "y": 0.56
+          }
+        }
+      ],
+      "notes": "Intensity 6: characters close the distance."
+    }
+  ],
+  "fps": 24,
+  "interpretation": {
+    "directorial_intent": "Nila and Arjun are circling something neither will say. The camera stays close and slightly unsteady so the audience feels the pressure under the small talk, tightening as it rises and finally crossing the line between them when the truth is spoken.",
+    "emotional_arc": [
+      {
+        "beat_id": "SC-001-B1",
+        "emotion": "Quiet routine, then alarm",
+        "intensity": 2
+      },
+      {
+        "beat_id": "SC-001-B2",
+        "emotion": "Stiff politeness",
+        "intensity": 3
+      },
+      {
+        "beat_id": "SC-001-B3",
+        "emotion": "Sparring, cracks showing",
+        "intensity": 5
+      },
+      {
+        "beat_id": "SC-001-B4",
+        "emotion": "Surprise",
+        "intensity": 7
+      },
+      {
+        "beat_id": "SC-001-B5",
+        "emotion": "Confession",
+        "intensity": 8
+      },
+      {
+        "beat_id": "SC-001-B6",
+        "emotion": "Exposed, hopeful and terrified",
+        "intensity": 10
+      },
+      {
+        "beat_id": "SC-001-B7",
+        "emotion": "Unresolved; an open door",
+        "intensity": 6
+      }
+    ],
+    "key_moment_beat_id": "SC-001-B6",
+    "summary": "Nila returns a borrowed paperback minutes after closing; Arjun makes her open it. Nila wants to hand back the book and leave without feeling anything. Arjun wants to get through closing without a scene. Pride and fear. Each is waiting for the other to speak first, and both are hiding behind small talk. She does not answer his question. She takes the ticket, leaves the book, and turns the sign to OPEN on her way out.",
+    "tone": "Charged, close, a little unsteady",
+    "visual_motifs": [
+      "Hands and objects as emotional proxies",
+      "Faces held longer than is comfortable",
+      "The door always at the edge of frame"
+    ]
+  },
+  "note": "scripted sample decisions",
+  "project_id": "closing-hour",
+  "scene_id": "SC-001",
+  "schema": "filmcraft.direction_plan.v1",
+  "shots": [
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B1",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E01"
+      ],
+      "duration_seconds": 4.0,
+      "framing": "wide",
+      "intensity": 2,
+      "lens_mm": 30,
+      "movement": "static",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.486,
+          "y": 1.36
+        },
+        "fov_deg": 61.9,
+        "lens_mm": 30,
+        "movement": "static",
+        "notes": "",
+        "target": {
+          "x": 0.486,
+          "y": 0.56
+        }
+      },
+      "purpose": "establish",
+      "purpose_note": "Establish the room and the two people in it before anything is said (Closing routine). Covers: “Rain ticks on the window. ARJUN counts the till,…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S01",
+      "size": "WS",
+      "status": "approved",
+      "storyboard": {
+        "description": "WS wide, eye angle, static: Nila and Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001",
+        "C-002"
+      ],
+      "transition_in": "fade"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B1",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E02"
+      ],
+      "duration_seconds": 5.0,
+      "framing": "single",
+      "intensity": 2,
+      "lens_mm": 40,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.272,
+          "y": 1.11
+        },
+        "fov_deg": 48.5,
+        "lens_mm": 40,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.272,
+          "y": 0.56
+        }
+      },
+      "purpose": "follow_movement",
+      "purpose_note": "Follow Nila's movement so we see where the distance changes (Closing routine). Covers: “The door chimes. NILA enters, shaking rain from …”.",
+      "review_note": "",
+      "shot_id": "SC-001-S02",
+      "size": "MWS",
+      "status": "approved",
+      "storyboard": {
+        "description": "MWS single, eye angle, handheld: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B2",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E03",
+        "SC-001-E04"
+      ],
+      "duration_seconds": 4.0,
+      "framing": "two_shot",
+      "intensity": 3,
+      "lens_mm": 50,
+      "movement": "static",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.504,
+          "y": 1.035
+        },
+        "fov_deg": 39.6,
+        "lens_mm": 50,
+        "movement": "static",
+        "notes": "",
+        "target": {
+          "x": 0.504,
+          "y": 0.585
+        }
+      },
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (The returned book). Covers: “We're closed.”.",
+      "review_note": "",
+      "shot_id": "SC-001-S03",
+      "size": "MS",
+      "status": "approved",
+      "storyboard": {
+        "description": "MS two shot, eye angle, static: Nila and Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001",
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B2",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E05"
+      ],
+      "duration_seconds": 3.5,
+      "framing": "wide",
+      "intensity": 3,
+      "lens_mm": 30,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.504,
+          "y": 1.385
+        },
+        "fov_deg": 61.9,
+        "lens_mm": 30,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.504,
+          "y": 0.585
+        }
+      },
+      "purpose": "show_distance",
+      "purpose_note": "Frame Nila and Arjun apart to show the space still between them (The returned book). Covers: “She sets the paperback on the counter. He doesn'…”.",
+      "review_note": "The wide holds the distance too long; the OTS on the next shot already says it.",
+      "shot_id": "SC-001-S04",
+      "size": "WS",
+      "status": "rejected",
+      "storyboard": {
+        "description": "WS wide, eye angle, handheld: Nila and Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001",
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B2",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E06"
+      ],
+      "duration_seconds": 5.0,
+      "framing": "over_shoulder",
+      "intensity": 3,
+      "lens_mm": 40,
+      "movement": "static",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.308,
+          "y": 1.16
+        },
+        "fov_deg": 48.5,
+        "lens_mm": 40,
+        "movement": "static",
+        "notes": "",
+        "target": {
+          "x": 0.308,
+          "y": 0.61
+        }
+      },
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (The returned book). Covers: “It's yours. I kept it two years. Longer than I m…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S05",
+      "size": "MWS",
+      "status": "approved",
+      "storyboard": {
+        "description": "MWS over shoulder, eye angle, static: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E07",
+        "SC-001-E08"
+      ],
+      "duration_seconds": 3.0,
+      "framing": "over_shoulder",
+      "intensity": 5,
+      "lens_mm": 65,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.7,
+          "y": 0.91
+        },
+        "fov_deg": 31.0,
+        "lens_mm": 65,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        }
+      },
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (Small cuts). Covers: “too lightly”.",
+      "review_note": "",
+      "shot_id": "SC-001-S06",
+      "size": "MCU",
+      "status": "approved",
+      "storyboard": {
+        "description": "MCU over shoulder, eye angle, handheld: Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "low",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E09"
+      ],
+      "duration_seconds": 3.5,
+      "framing": "over_shoulder",
+      "intensity": 5,
+      "lens_mm": 85,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 0.8,
+          "x": 0.38,
+          "y": 0.81
+        },
+        "fov_deg": 23.9,
+        "lens_mm": 85,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        }
+      },
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (Small cuts). Covers: “Then I wouldn't have had to see the shop.”.",
+      "review_note": "",
+      "shot_id": "SC-001-S07",
+      "size": "CU",
+      "status": "approved",
+      "storyboard": {
+        "description": "CU over shoulder, low angle, push in: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E10",
+        "SC-001-E11"
+      ],
+      "duration_seconds": 7.0,
+      "framing": "over_shoulder",
+      "intensity": 5,
+      "lens_mm": 50,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.38,
+          "y": 1.01
+        },
+        "fov_deg": 39.6,
+        "lens_mm": 50,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        }
+      },
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (Small cuts). Covers: “A pause. The rain fills it. Nila's eyes drift to…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S08",
+      "size": "MS",
+      "status": "approved",
+      "storyboard": {
+        "description": "MS over shoulder, eye angle, handheld: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "low",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E12"
+      ],
+      "duration_seconds": 4.0,
+      "framing": "over_shoulder",
+      "intensity": 5,
+      "lens_mm": 65,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 0.8,
+          "x": 0.7,
+          "y": 0.91
+        },
+        "fov_deg": 31.0,
+        "lens_mm": 65,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        }
+      },
+      "purpose": "connect",
+      "purpose_note": "Keep both people in the exchange so we feel the pull between them (Small cuts). Covers: “It leans toward the door. Waiting for someone to…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S09",
+      "size": "MCU",
+      "status": "approved",
+      "storyboard": {
+        "description": "MCU over shoulder, low angle, push in: Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B3",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E13"
+      ],
+      "duration_seconds": 3.0,
+      "framing": "single",
+      "intensity": 5,
+      "lens_mm": 85,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.38,
+          "y": 0.81
+        },
+        "fov_deg": 23.9,
+        "lens_mm": 85,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.38,
+          "y": 0.56
+        }
+      },
+      "purpose": "reaction",
+      "purpose_note": "Show Nila taking in what was just said or shown (Small cuts). Covers: “Nila laughs, small, then stops herself. She turn…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S10",
+      "size": "CU",
+      "status": "approved",
+      "storyboard": {
+        "description": "CU single, eye angle, handheld: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "high",
+      "beat_id": "SC-001-B4",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E14"
+      ],
+      "duration_seconds": 1.5,
+      "framing": "single",
+      "intensity": 7,
+      "lens_mm": 100,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 2.4,
+          "x": 0.7,
+          "y": 0.71
+        },
+        "fov_deg": 20.4,
+        "lens_mm": 100,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.7,
+          "y": 0.56
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Arjun so the audience reads the feeling directly (Open it). Covers: “Nila. Open it.”.",
+      "review_note": "",
+      "shot_id": "SC-001-S11",
+      "size": "ECU",
+      "status": "approved",
+      "storyboard": {
+        "description": "ECU single, high angle, handheld: Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "high",
+      "beat_id": "SC-001-B4",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E15"
+      ],
+      "duration_seconds": 5.0,
+      "framing": "insert",
+      "intensity": 7,
+      "lens_mm": 100,
+      "movement": "static",
+      "previz": {
+        "camera_position": {
+          "height_m": 2.4,
+          "x": 0.576,
+          "y": 0.735
+        },
+        "fov_deg": 20.4,
+        "lens_mm": 100,
+        "movement": "static",
+        "notes": "",
+        "target": {
+          "x": 0.576,
+          "y": 0.585
+        }
+      },
+      "purpose": "reveal",
+      "purpose_note": "Reveal what changes the scene: hold on the space as it lands (Open it). Object: ticket. Covers: “She stops. He nods at the book. She opens it. In…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S12",
+      "size": "ECU",
+      "status": "approved",
+      "storyboard": {
+        "description": "ECU insert, high angle, static: the room.",
+        "frame_ref": null
+      },
+      "subject": [],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B4",
+      "camera_side": "A",
+      "covers": [],
+      "duration_seconds": 1.5,
+      "framing": "single",
+      "intensity": 7,
+      "lens_mm": 85,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.452,
+          "y": 0.86
+        },
+        "fov_deg": 23.9,
+        "lens_mm": 85,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.452,
+          "y": 0.61
+        }
+      },
+      "purpose": "reaction",
+      "purpose_note": "Show Nila taking in what was just said or shown (Open it).",
+      "review_note": "",
+      "shot_id": "SC-001-S13",
+      "size": "CU",
+      "status": "approved",
+      "storyboard": {
+        "description": "CU single, eye angle, push in: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "high",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E16"
+      ],
+      "duration_seconds": 1.5,
+      "framing": "single",
+      "intensity": 8,
+      "lens_mm": 65,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 2.4,
+          "x": 0.448,
+          "y": 0.91
+        },
+        "fov_deg": 31.0,
+        "lens_mm": 65,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.448,
+          "y": 0.56
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Nila so the audience reads the feeling directly (What he kept). Covers: “You bought this.”.",
+      "review_note": "",
+      "shot_id": "SC-001-S14",
+      "size": "MCU",
+      "status": "approved",
+      "storyboard": {
+        "description": "MCU single, high angle, handheld: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "high",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E17"
+      ],
+      "duration_seconds": 6.0,
+      "framing": "single",
+      "intensity": 8,
+      "lens_mm": 85,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.81
+        },
+        "fov_deg": 23.9,
+        "lens_mm": 85,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Arjun so the audience reads the feeling directly (What he kept). Covers: “The day after you left. I stood on the platform …”.",
+      "review_note": "",
+      "shot_id": "SC-001-S15",
+      "size": "CU",
+      "status": "approved",
+      "storyboard": {
+        "description": "CU single, high angle, push in: Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E18"
+      ],
+      "duration_seconds": 2.0,
+      "framing": "single",
+      "intensity": 8,
+      "lens_mm": 100,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.448,
+          "y": 0.71
+        },
+        "fov_deg": 20.4,
+        "lens_mm": 100,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.448,
+          "y": 0.56
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Nila so the audience reads the feeling directly (What he kept). Covers: “Why tell me now?”.",
+      "review_note": "",
+      "shot_id": "SC-001-S16",
+      "size": "ECU",
+      "status": "approved",
+      "storyboard": {
+        "description": "ECU single, eye angle, handheld: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "high",
+      "beat_id": "SC-001-B5",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E19"
+      ],
+      "duration_seconds": 4.5,
+      "framing": "single",
+      "intensity": 8,
+      "lens_mm": 65,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.91
+        },
+        "fov_deg": 31.0,
+        "lens_mm": 65,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Arjun so the audience reads the feeling directly (What he kept). Covers: “Because you leave at dawn, and I'm still countin…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S17",
+      "size": "MCU",
+      "status": "approved",
+      "storyboard": {
+        "description": "MCU single, high angle, push in: Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B6",
+      "camera_side": "axis",
+      "covers": [
+        "SC-001-E20"
+      ],
+      "duration_seconds": 4.5,
+      "framing": "two_shot",
+      "intensity": 10,
+      "lens_mm": 50,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.14,
+          "y": 0.585
+        },
+        "fov_deg": 39.6,
+        "lens_mm": 50,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.59,
+          "y": 0.585
+        }
+      },
+      "purpose": "transition",
+      "purpose_note": "Neutral on-axis shot that lets the camera change sides without breaking the geometry (Ask me). Covers: “Nila folds the ticket along its old crease. Her …”.",
+      "review_note": "",
+      "shot_id": "SC-001-S18",
+      "size": "MS",
+      "status": "approved",
+      "storyboard": {
+        "description": "MS two shot, eye angle, push in: Nila and Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001",
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B6",
+      "camera_side": "B",
+      "covers": [
+        "SC-001-E21"
+      ],
+      "duration_seconds": 1.0,
+      "framing": "single",
+      "intensity": 10,
+      "lens_mm": 85,
+      "movement": "handheld",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.52,
+          "y": 0.36
+        },
+        "fov_deg": 23.9,
+        "lens_mm": 85,
+        "movement": "handheld",
+        "notes": "",
+        "target": {
+          "x": 0.52,
+          "y": 0.61
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Nila so the audience reads the feeling directly (Ask me). Covers: “Ask me.”.",
+      "review_note": "",
+      "shot_id": "SC-001-S19",
+      "size": "CU",
+      "status": "approved",
+      "storyboard": {
+        "description": "CU single, eye angle, handheld: Nila.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "high",
+      "beat_id": "SC-001-B6",
+      "camera_side": "B",
+      "covers": [
+        "SC-001-E22"
+      ],
+      "duration_seconds": 2.0,
+      "framing": "single",
+      "intensity": 10,
+      "lens_mm": 100,
+      "movement": "push_in",
+      "previz": {
+        "camera_position": {
+          "height_m": 2.4,
+          "x": 0.66,
+          "y": 0.41
+        },
+        "fov_deg": 20.4,
+        "lens_mm": 100,
+        "movement": "push_in",
+        "notes": "",
+        "target": {
+          "x": 0.66,
+          "y": 0.56
+        }
+      },
+      "purpose": "emphasize_emotion",
+      "purpose_note": "Hold on Arjun so the audience reads the feeling directly (Ask me). Covers: “Stay.”.",
+      "review_note": "",
+      "shot_id": "SC-001-S20",
+      "size": "ECU",
+      "status": "approved",
+      "storyboard": {
+        "description": "ECU single, high angle, push in: Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B7",
+      "camera_side": "axis",
+      "covers": [
+        "SC-001-E23"
+      ],
+      "duration_seconds": 6.0,
+      "framing": "two_shot",
+      "intensity": 6,
+      "lens_mm": 40,
+      "movement": "track",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": -0.13,
+          "y": 0.7
+        },
+        "fov_deg": 48.5,
+        "lens_mm": 40,
+        "movement": "track",
+        "notes": "",
+        "target": {
+          "x": 0.42,
+          "y": 0.7
+        }
+      },
+      "purpose": "follow_movement",
+      "purpose_note": "Follow Nila and Arjun's movement so we see where the distance changes (The sign). Covers: “She holds his gaze. Doesn't answer. Pockets the …”.",
+      "review_note": "",
+      "shot_id": "SC-001-S21",
+      "size": "MWS",
+      "status": "approved",
+      "storyboard": {
+        "description": "MWS two shot, eye angle, track: Nila and Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001",
+        "C-002"
+      ],
+      "transition_in": "cut"
+    },
+    {
+      "angle": "eye",
+      "beat_id": "SC-001-B7",
+      "camera_side": "A",
+      "covers": [
+        "SC-001-E24"
+      ],
+      "duration_seconds": 6.5,
+      "framing": "wide",
+      "intensity": 6,
+      "lens_mm": 30,
+      "movement": "static",
+      "previz": {
+        "camera_position": {
+          "height_m": 1.6,
+          "x": 0.42,
+          "y": 1.5
+        },
+        "fov_deg": 61.9,
+        "lens_mm": 30,
+        "movement": "static",
+        "notes": "",
+        "target": {
+          "x": 0.42,
+          "y": 0.7
+        }
+      },
+      "purpose": "closure",
+      "purpose_note": "Close the scene on Nila and Arjun and leave the question open (The sign). Covers: “At the threshold she stops, turns the CLOSED sig…”.",
+      "review_note": "",
+      "shot_id": "SC-001-S22",
+      "size": "WS",
+      "status": "approved",
+      "storyboard": {
+        "description": "WS wide, eye angle, static: Nila and Arjun.",
+        "frame_ref": null
+      },
+      "subject": [
+        "C-001",
+        "C-002"
+      ],
+      "transition_in": "cut"
+    }
+  ],
+  "source": {
+    "beat_hashes": {
+      "SC-001-B1": "b5e9d763eb7ecfa7",
+      "SC-001-B2": "8da88a9ad410042f",
+      "SC-001-B3": "315a23e0578ccd72",
+      "SC-001-B4": "13d1fafbe66ce2f6",
+      "SC-001-B5": "9472e17dad200d3b",
+      "SC-001-B6": "6195da4409a5e2d0",
+      "SC-001-B7": "445f903c1a6e01af"
+    },
+    "element_hashes": {
+      "SC-001-E01": "d35e5984770bbfc4",
+      "SC-001-E02": "65f30aec41c697ab",
+      "SC-001-E03": "d90e37dc05db5ab1",
+      "SC-001-E04": "7dc920c22a1e8476",
+      "SC-001-E05": "5835cf2e0ceaecdf",
+      "SC-001-E06": "e9ac37707ec2e7c5",
+      "SC-001-E07": "8a77f5d3ef703696",
+      "SC-001-E08": "ab1af1893ba2c6a2",
+      "SC-001-E09": "5cd4e04158ace442",
+      "SC-001-E10": "cf76f3bf933860f6",
+      "SC-001-E11": "81d0eb9c4a4057af",
+      "SC-001-E12": "047fd6c65a38b7d5",
+      "SC-001-E13": "00658ef48d04e0d2",
+      "SC-001-E14": "578700cf38360381",
+      "SC-001-E15": "ccd4fc3f72ff4126",
+      "SC-001-E16": "a4cf9f3d7b8bf6e4",
+      "SC-001-E17": "d64ebf34950d25f5",
+      "SC-001-E18": "d1ace5d04a1fcdf6",
+      "SC-001-E19": "1908c803a091223f",
+      "SC-001-E20": "49d78e79fa960a7c",
+      "SC-001-E21": "58ec2fa7b494b8ff",
+      "SC-001-E22": "a7c7652250c1d3f8",
+      "SC-001-E23": "6e5091064d2e7d46",
+      "SC-001-E24": "3ba9e6fc64607963"
+    },
+    "project_id": "closing-hour",
+    "ref": {
+      "experiment_id": "e33a1272-2c00-45a2-a461-8d2cd85d89c0",
+      "run_id": "4b3e16a8-7091-480f-a841-429d703de12c"
+    },
+    "scene_hash": "0f26e814d547b86c",
+    "scene_id": "SC-001",
+    "screenplay_hash": "e9f8a27777254966",
+    "screenplay_revision": 1
+  },
+  "stage": {
+    "axis": {
+      "between": [
+        "C-001",
+        "C-002"
+      ],
+      "note": "Line between the two main characters; camera side A is the audience (master) side."
+    },
+    "depth_m": 5.0,
+    "layout_note": "Normalised 0-1 plan: x left to right as the master camera sees it, y back wall to audience.",
+    "objects": [
+      {
+        "id": "P-COUNTER",
+        "name": "Counter with till",
+        "x": 0.74,
+        "y": 0.42
+      },
+      {
+        "id": "P-DOOR",
+        "name": "Shop door",
+        "x": 0.08,
+        "y": 0.88
+      },
+      {
+        "id": "P-SHELF",
+        "name": "Crooked shelf of poetry",
+        "x": 0.5,
+        "y": 0.08
+      },
+      {
+        "id": "P-SIGN",
+        "name": "CLOSED / OPEN sign",
+        "x": 0.14,
+        "y": 0.82
+      },
+      {
+        "id": "P-BOOK",
+        "name": "Worn paperback",
+        "x": 0.5,
+        "y": 0.12
+      }
+    ],
+    "width_m": 6.0
+  }
+}

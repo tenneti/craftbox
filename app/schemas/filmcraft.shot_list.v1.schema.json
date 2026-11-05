@@ -1,0 +1,11 @@
+{
+  "$id": "filmcraft.shot_list.v1",
+  "title": "Shot list export: every shot in order with status, purpose, camera and timing",
+  "type": "object",
+  "required": ["schema", "project_id", "scene_id", "fps", "shots"],
+  "properties": {
+    "schema": {"const": "filmcraft.shot_list.v1"},
+    "project_id": {"type": "string"}, "scene_id": {"type": "string"}, "fps": {"type": "integer", "minimum": 1},
+    "shots": {"type": "array", "items": {"type": "object", "required": ["shot_id", "status", "beat_id", "purpose", "purpose_note", "size", "duration_seconds"]}}
+  }
+}

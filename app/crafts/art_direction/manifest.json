@@ -1,0 +1,28 @@
+{
+  "id": "art_direction",
+  "name": "Art Direction",
+  "group": "Visual Production",
+  "description": "Set, prop and location bible with per-scene continuity",
+  "dreambox_target": "Asset Library / Scene Maker",
+  "mvp": "Design one scene's look: location, set layout (on the director's stage coordinates), props with continuity, visual style and shot variations; compare treatments and export approved art direction.",
+  "status": "pilot",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false,
+  "input_schema": "filmcraft.input.art_direction.v1",
+  "output_schema": "filmcraft.art_direction.v1",
+  "modes": [
+    {
+      "id": "style_profile",
+      "match_schema": "filmcraft.style_profile.v1",
+      "input_schema": "filmcraft.style_profile.v1",
+      "output_schema": "filmcraft.style_profile.v1"
+    },
+    {
+      "id": "asset_register",
+      "match_schema": "filmcraft.asset_register.v1",
+      "input_schema": "filmcraft.asset_register.v1",
+      "output_schema": "filmcraft.asset_register.v1"
+    }
+  ]
+}

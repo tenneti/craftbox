@@ -1,0 +1,12 @@
+{
+  "id": "junior_artist_agent",
+  "name": "Junior Artist Agency",
+  "group": "Story & Direction",
+  "description": "Extras requirements, resource sourcing and approval workflow",
+  "dreambox_target": "Production Board",
+  "mvp": "Manage crowd requirements and releases; do not simulate actual hiring automatically.",
+  "status": "planned",
+  "contract_version": "1.0",
+  "ai_default": false,
+  "requires_gpu": false
+}
